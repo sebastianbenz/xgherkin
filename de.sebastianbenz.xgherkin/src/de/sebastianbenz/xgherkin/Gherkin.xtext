@@ -97,7 +97,7 @@ terminal THEN_TEXT: 'Then ' !('\r' | '\n')* '\r'? '\n'?;
 terminal GIVEN_TEXT: 'Given ' !('\r' | '\n')* '\r'? '\n'?;
 terminal AND_TEXT: 'And ' !('\r' | '\n')* '\r'? '\n'?;
 
-terminal EXAMPLE_CELL: '|' !('\r' | '\n' | '|')*;
+terminal EXAMPLE_CELL: '|' !('\r' | '\n' | '|')+;
 terminal EXAMPLE_ROW_END: '|' '\r'? '\n';
 
 terminal CODE: '"""' -> '"""' | "'''" -> "'''";
@@ -107,6 +107,6 @@ terminal TAG: '@' !('\r' | '\n')+ '\r'? '\n'?;
 terminal SL_COMMENT: '#' !('\r' | '\n')+ '\r'? '\n'?;
 
 terminal TEXT: !('|'|' '|'\t'|'\r'|'\n'|'@') !('\r' | '\n')* '\r'? '\n'?;
-terminal WS			: (' '|'\t'|'\r'|'\n')+;
+terminal WS  : (' '|'\t'|'\r'|'\n')+;
 
 

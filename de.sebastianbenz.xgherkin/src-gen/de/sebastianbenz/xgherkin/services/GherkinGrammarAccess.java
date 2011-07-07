@@ -823,7 +823,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	} 
 
 	//terminal EXAMPLE_CELL:
-	//	"|" !("\r" | "\n" | "|")*;
+	//	"|" !("\r" | "\n" | "|")+;
 	public TerminalRule getEXAMPLE_CELLRule() {
 		return (tEXAMPLE_CELL != null) ? tEXAMPLE_CELL : (tEXAMPLE_CELL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "EXAMPLE_CELL"));
 	} 

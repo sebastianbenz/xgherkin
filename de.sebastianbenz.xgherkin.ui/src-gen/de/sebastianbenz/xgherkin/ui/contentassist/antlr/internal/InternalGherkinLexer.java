@@ -1,13 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2011 Sebastian Benz.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- * 
- * Contributors:
- *     Sebastian Benz - initial API and implementation
- ******************************************************************************/
 package de.sebastianbenz.xgherkin.ui.contentassist.antlr.internal;
 
 // Hack: Use our own Lexer superclass by means of import. 
@@ -1204,11 +1194,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_EXAMPLE_CELL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:19: ( '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )* )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:21: '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:19: ( '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )+ )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:21: '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )+
             {
             match('|'); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:25: (~ ( ( '\\r' | '\\n' | '|' ) ) )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:25: (~ ( ( '\\r' | '\\n' | '|' ) ) )+
+            int cnt39=0;
             loop39:
             do {
                 int alt39=2;
@@ -1237,8 +1228,12 @@ public class InternalGherkinLexer extends Lexer {
             	    break;
 
             	default :
-            	    break loop39;
+            	    if ( cnt39 >= 1 ) break loop39;
+                        EarlyExitException eee =
+                            new EarlyExitException(39, input);
+                        throw eee;
                 }
+                cnt39++;
             } while (true);
 
 
@@ -1930,59 +1925,58 @@ public class InternalGherkinLexer extends Lexer {
 
     protected DFA54 dfa54 = new DFA54(this);
     static final String DFA54_eotS =
-        "\1\uffff\12\20\1\37\2\20\1\uffff\1\20\2\uffff\14\20\2\uffff\2\20"+
-        "\1\63\16\20\1\63\2\uffff\5\20\1\120\1\123\22\20\2\120\2\uffff\1"+
-        "\123\2\uffff\1\123\2\20\1\146\1\152\2\20\1\uffff\10\20\1\146\2\uffff"+
-        "\1\146\1\152\2\uffff\1\152\1\171\2\133\7\20\2\171\2\uffff\2\20\1"+
-        "\u0085\6\20\1\u0085\2\uffff\1\u0085\3\20\1\u0094\3\20\1\uffff\1"+
-        "\u0085\1\20\1\u009c\1\u0094\2\uffff\1\u0094\2\20\1\uffff\1\u00a2"+
-        "\1\u009c\2\uffff\1\u009c\1\20\1\u00a8\1\u00a2\2\uffff\1\u00a2\1"+
-        "\20\2\u00a8\2\uffff\4\20\3\u00b1\2\uffff";
+        "\1\uffff\12\20\1\uffff\2\20\1\uffff\1\20\2\uffff\14\20\2\uffff\2"+
+        "\20\1\63\16\20\1\63\2\uffff\5\20\1\120\1\124\22\20\2\120\2\uffff"+
+        "\2\124\2\uffff\2\20\1\147\1\152\1\20\1\uffff\11\20\2\147\2\uffff"+
+        "\1\152\2\uffff\1\152\1\171\2\132\7\20\2\171\2\uffff\2\20\1\u0085"+
+        "\6\20\1\u0085\2\uffff\1\u0085\3\20\1\u0095\3\20\1\uffff\1\u0085"+
+        "\1\20\1\u009d\2\u0095\2\uffff\2\20\1\uffff\1\u00a2\2\u009d\2\uffff"+
+        "\1\20\1\u00a8\1\u00a2\2\uffff\1\u00a2\1\20\2\u00a8\2\uffff\4\20"+
+        "\3\u00b1\2\uffff";
     static final String DFA54_eofS =
         "\u00b2\uffff";
     static final String DFA54_minS =
-        "\1\0\1\170\1\141\1\145\1\40\1\156\1\143\1\141\2\150\1\151\1\12\1"+
+        "\1\0\1\170\1\141\1\145\1\40\1\156\1\143\1\141\2\150\1\151\1\0\1"+
         "\42\1\47\1\uffff\1\0\2\uffff\1\141\1\162\1\141\1\40\1\167\1\40\1"+
         "\144\1\145\1\143\2\145\1\166\2\uffff\1\42\1\47\1\0\1\155\1\162\1"+
         "\164\1\157\2\141\1\40\1\156\1\153\2\156\1\145\2\0\1\12\2\uffff\1"+
         "\160\1\141\1\165\1\162\1\156\2\0\1\141\1\147\2\40\1\156\10\0\1\154"+
-        "\1\164\1\162\1\144\1\164\1\0\1\12\2\uffff\1\12\2\uffff\1\0\2\162"+
-        "\2\0\1\40\1\0\1\uffff\1\0\1\145\1\151\2\145\1\40\1\151\1\157\1\12"+
-        "\2\uffff\1\0\1\12\2\uffff\4\0\1\163\1\166\1\72\1\162\1\164\1\157"+
-        "\1\165\1\0\1\12\2\uffff\1\72\1\145\1\0\1\40\1\157\1\40\1\156\1\12"+
-        "\1\72\1\12\2\uffff\1\0\1\164\2\40\1\0\1\165\1\144\1\12\1\uffff\1"+
-        "\0\1\157\1\0\1\12\2\uffff\1\0\1\164\1\72\1\uffff\1\0\1\12\2\uffff"+
-        "\1\0\1\154\1\0\1\12\2\uffff\1\0\1\151\1\0\1\12\2\uffff\1\156\1\145"+
-        "\2\40\2\0\1\12\2\uffff";
+        "\1\164\1\162\1\144\1\164\1\0\1\12\2\uffff\1\0\1\12\2\uffff\2\162"+
+        "\2\0\1\40\1\uffff\2\0\1\145\1\151\2\145\1\40\1\151\1\157\1\0\1\12"+
+        "\2\uffff\1\12\2\uffff\4\0\1\163\1\166\1\72\1\162\1\164\1\157\1\165"+
+        "\1\0\1\12\2\uffff\1\72\1\145\1\0\1\40\1\157\1\40\1\156\1\12\1\72"+
+        "\1\12\2\uffff\1\0\1\164\2\40\1\0\1\165\1\144\1\12\1\uffff\1\0\1"+
+        "\157\2\0\1\12\2\uffff\1\164\1\72\1\uffff\2\0\1\12\2\uffff\1\154"+
+        "\1\0\1\12\2\uffff\1\0\1\151\1\0\1\12\2\uffff\1\156\1\145\2\40\2"+
+        "\0\1\12\2\uffff";
     static final String DFA54_maxS =
         "\1\uffff\1\170\1\141\1\145\1\156\1\163\1\143\1\141\2\150\1\151\1"+
-        "\15\1\42\1\47\1\uffff\1\uffff\2\uffff\1\141\1\162\1\141\1\40\1\167"+
-        "\1\40\1\144\1\145\1\143\2\145\1\166\2\uffff\1\42\1\47\1\uffff\1"+
-        "\155\1\162\1\164\1\157\2\141\1\40\1\156\1\153\2\156\1\145\2\uffff"+
+        "\uffff\1\42\1\47\1\uffff\1\uffff\2\uffff\1\141\1\162\1\141\1\40"+
+        "\1\167\1\40\1\144\1\145\1\143\2\145\1\166\2\uffff\1\42\1\47\1\uffff"+
+        "\1\155\1\162\1\164\1\157\2\141\1\40\1\156\1\153\2\156\1\145\2\uffff"+
         "\1\12\2\uffff\1\160\1\141\1\165\1\162\1\156\2\uffff\1\141\1\147"+
         "\2\40\1\156\10\uffff\1\154\1\164\1\162\1\144\1\164\1\uffff\1\12"+
-        "\2\uffff\1\12\2\uffff\1\uffff\2\162\2\uffff\1\40\1\uffff\1\uffff"+
-        "\1\uffff\1\145\1\151\2\145\1\40\1\151\1\157\1\12\2\uffff\1\uffff"+
-        "\1\12\2\uffff\4\uffff\1\163\1\166\1\72\1\162\1\164\1\157\1\165\1"+
-        "\uffff\1\12\2\uffff\1\72\1\145\1\uffff\1\40\1\157\1\117\1\156\1"+
-        "\15\1\72\1\12\2\uffff\1\uffff\1\164\1\40\1\117\1\uffff\1\165\1\144"+
-        "\1\12\1\uffff\1\uffff\1\157\1\uffff\1\12\2\uffff\1\uffff\1\164\1"+
-        "\72\1\uffff\1\uffff\1\12\2\uffff\1\uffff\1\154\1\uffff\1\12\2\uffff"+
-        "\1\uffff\1\151\1\uffff\1\12\2\uffff\1\156\1\145\2\72\2\uffff\1\12"+
-        "\2\uffff";
+        "\2\uffff\1\uffff\1\12\2\uffff\2\162\2\uffff\1\40\1\uffff\2\uffff"+
+        "\1\145\1\151\2\145\1\40\1\151\1\157\1\uffff\1\12\2\uffff\1\12\2"+
+        "\uffff\4\uffff\1\163\1\166\1\72\1\162\1\164\1\157\1\165\1\uffff"+
+        "\1\12\2\uffff\1\72\1\145\1\uffff\1\40\1\157\1\117\1\156\1\15\1\72"+
+        "\1\12\2\uffff\1\uffff\1\164\1\40\1\117\1\uffff\1\165\1\144\1\12"+
+        "\1\uffff\1\uffff\1\157\2\uffff\1\12\2\uffff\1\164\1\72\1\uffff\2"+
+        "\uffff\1\12\2\uffff\1\154\1\uffff\1\12\2\uffff\1\uffff\1\151\1\uffff"+
+        "\1\12\2\uffff\1\156\1\145\2\72\2\uffff\1\12\2\uffff";
     static final String DFA54_acceptS =
         "\16\uffff\1\20\1\uffff\1\22\1\23\14\uffff\1\16\1\15\22\uffff\2\21"+
-        "\33\uffff\2\4\1\uffff\2\14\7\uffff\1\17\11\uffff\2\11\2\uffff\2"+
-        "\12\15\uffff\2\13\12\uffff\2\2\10\uffff\1\1\4\uffff\2\6\3\uffff"+
-        "\1\1\2\uffff\2\5\4\uffff\2\3\4\uffff\2\10\7\uffff\2\7";
+        "\33\uffff\2\4\2\uffff\2\14\5\uffff\1\17\13\uffff\2\11\1\uffff\2"+
+        "\12\15\uffff\2\13\12\uffff\2\2\10\uffff\1\1\5\uffff\2\6\2\uffff"+
+        "\1\1\3\uffff\2\5\3\uffff\2\3\4\uffff\2\10\7\uffff\2\7";
     static final String DFA54_specialS =
-        "\1\36\16\uffff\1\5\22\uffff\1\42\14\uffff\1\33\1\13\10\uffff\1\2"+
-        "\1\24\5\uffff\1\20\1\6\1\35\1\27\1\12\1\3\1\1\1\40\5\uffff\1\30"+
-        "\6\uffff\1\32\2\uffff\1\7\1\23\1\uffff\1\31\1\uffff\1\11\12\uffff"+
-        "\1\16\3\uffff\1\26\1\47\1\4\1\45\7\uffff\1\0\5\uffff\1\15\11\uffff"+
-        "\1\17\3\uffff\1\44\4\uffff\1\34\1\uffff\1\37\3\uffff\1\21\3\uffff"+
-        "\1\46\3\uffff\1\25\1\uffff\1\14\3\uffff\1\43\1\uffff\1\22\7\uffff"+
-        "\1\41\1\10\3\uffff}>";
+        "\1\41\12\uffff\1\47\3\uffff\1\0\22\uffff\1\46\14\uffff\1\34\1\12"+
+        "\10\uffff\1\3\1\16\5\uffff\1\1\1\36\1\30\1\23\1\17\1\6\1\4\1\50"+
+        "\5\uffff\1\22\3\uffff\1\27\5\uffff\1\45\1\20\2\uffff\1\25\1\10\7"+
+        "\uffff\1\21\6\uffff\1\24\1\35\1\14\1\37\7\uffff\1\2\5\uffff\1\32"+
+        "\11\uffff\1\31\3\uffff\1\42\4\uffff\1\26\1\uffff\1\40\1\13\6\uffff"+
+        "\1\43\1\15\4\uffff\1\11\3\uffff\1\44\1\uffff\1\33\7\uffff\1\7\1"+
+        "\5\3\uffff}>";
     static final String[] DFA54_transitionS = {
             "\11\20\2\21\2\20\1\21\22\20\1\21\1\20\1\14\1\17\3\20\1\15\30"+
             "\20\1\16\1\5\1\7\2\20\1\1\1\3\1\12\1\20\1\4\4\20\1\2\4\20\1"+
@@ -1997,7 +1991,7 @@ public class InternalGherkinLexer extends Lexer {
             "\1\33",
             "\1\34",
             "\1\35",
-            "\1\36\2\uffff\1\36",
+            "\12\37\1\36\2\37\1\36\156\37\1\uffff\uff83\37",
             "\1\40",
             "\1\41",
             "",
@@ -2033,7 +2027,7 @@ public class InternalGherkinLexer extends Lexer {
             "\1\75",
             "\1\76",
             "\1\77",
-            "\12\103\1\102\2\103\1\101\24\103\1\100\uffdd\103",
+            "\12\103\1\101\2\103\1\100\24\103\1\102\uffdd\103",
             "\12\107\1\105\2\107\1\104\31\107\1\106\uffd8\107",
             "\1\62",
             "",
@@ -2044,18 +2038,18 @@ public class InternalGherkinLexer extends Lexer {
             "\1\113",
             "\1\114",
             "\12\115\1\117\2\115\1\116\ufff2\115",
-            "\12\124\1\122\2\124\1\121\ufff2\124",
+            "\12\121\1\123\2\121\1\122\ufff2\121",
             "\1\125",
             "\1\126",
             "\1\127",
             "\1\130",
             "\1\131",
-            "\12\103\1\102\2\103\1\101\24\103\1\132\uffdd\103",
-            "\12\133\1\102\ufff5\133",
-            "\0\133",
-            "\12\103\1\102\2\103\1\101\24\103\1\100\uffdd\103",
-            "\12\133\1\105\ufff5\133",
-            "\0\133",
+            "\12\132\1\101\ufff5\132",
+            "\0\132",
+            "\12\103\1\101\2\103\1\100\24\103\1\133\uffdd\103",
+            "\12\103\1\101\2\103\1\100\24\103\1\102\uffdd\103",
+            "\12\132\1\105\ufff5\132",
+            "\0\132",
             "\12\107\1\105\2\107\1\104\31\107\1\134\uffd8\107",
             "\12\107\1\105\2\107\1\104\31\107\1\106\uffd8\107",
             "\1\135",
@@ -2067,17 +2061,17 @@ public class InternalGherkinLexer extends Lexer {
             "\1\117",
             "",
             "",
-            "\1\122",
+            "\12\121\1\123\2\121\1\122\ufff2\121",
+            "\1\123",
             "",
             "",
-            "\12\124\1\122\2\124\1\121\ufff2\124",
             "\1\142",
             "\1\143",
-            "\12\147\1\145\2\147\1\144\ufff2\147",
+            "\12\144\1\146\2\144\1\145\ufff2\144",
             "\12\153\1\151\2\153\1\150\ufff2\153",
             "\1\154",
-            "\12\103\1\102\2\103\1\101\24\103\1\155\uffdd\103",
             "",
+            "\12\103\1\101\2\103\1\100\24\103\1\155\uffdd\103",
             "\12\107\1\105\2\107\1\104\31\107\1\156\uffd8\107",
             "\1\157",
             "\1\160",
@@ -2086,16 +2080,16 @@ public class InternalGherkinLexer extends Lexer {
             "\1\163",
             "\1\164",
             "\1\165",
-            "\1\145",
+            "\12\144\1\146\2\144\1\145\ufff2\144",
+            "\1\146",
             "",
             "",
-            "\12\147\1\145\2\147\1\144\ufff2\147",
             "\1\151",
             "",
             "",
             "\12\153\1\151\2\153\1\150\ufff2\153",
             "\12\166\1\170\2\166\1\167\ufff2\166",
-            "\12\103\1\102\2\103\1\101\24\103\1\155\uffdd\103",
+            "\12\103\1\101\2\103\1\100\24\103\1\155\uffdd\103",
             "\12\107\1\105\2\107\1\104\31\107\1\156\uffd8\107",
             "\1\172",
             "\1\173",
@@ -2124,26 +2118,26 @@ public class InternalGherkinLexer extends Lexer {
             "\1\u0090",
             "\1\u0091",
             "\1\u0089\31\uffff\1\u008a\24\uffff\1\u008b",
-            "\12\u0095\1\u0093\2\u0095\1\u0092\ufff2\u0095",
+            "\12\u0092\1\u0094\2\u0092\1\u0093\ufff2\u0092",
             "\1\u0096",
             "\1\u0097",
             "\1\u008e",
             "",
             "\12\u0086\1\u0084\2\u0086\1\u0083\ufff2\u0086",
             "\1\u0099",
-            "\12\u009d\1\u009b\2\u009d\1\u009a\ufff2\u009d",
-            "\1\u0093",
+            "\12\u009a\1\u009c\2\u009a\1\u009b\ufff2\u009a",
+            "\12\u0092\1\u0094\2\u0092\1\u0093\ufff2\u0092",
+            "\1\u0094",
             "",
             "",
-            "\12\u0095\1\u0093\2\u0095\1\u0092\ufff2\u0095",
             "\1\u009e",
             "\1\u009f",
             "",
             "\12\u00a3\1\u00a1\2\u00a3\1\u00a0\ufff2\u00a3",
-            "\1\u009b",
+            "\12\u009a\1\u009c\2\u009a\1\u009b\ufff2\u009a",
+            "\1\u009c",
             "",
             "",
-            "\12\u009d\1\u009b\2\u009d\1\u009a\ufff2\u009d",
             "\1\u00a4",
             "\12\u00a5\1\u00a7\2\u00a5\1\u00a6\ufff2\u00a5",
             "\1\u00a1",
@@ -2203,6 +2197,28 @@ public class InternalGherkinLexer extends Lexer {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
+                        int LA54_15 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_15>='\u0000' && LA54_15<='\t')||(LA54_15>='\u000B' && LA54_15<='\f')||(LA54_15>='\u000E' && LA54_15<='\uFFFF')) ) {s = 34;}
+
+                        else s = 16;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA54_64 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_64>='\u0000' && LA54_64<='\t')||(LA54_64>='\u000B' && LA54_64<='\uFFFF')) ) {s = 90;}
+
+                        else if ( (LA54_64=='\n') ) {s = 65;}
+
+                        else s = 16;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
                         int LA54_118 = input.LA(1);
 
                         s = -1;
@@ -2216,7 +2232,21 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 1 : 
+                    case 3 : 
+                        int LA54_57 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_57>='\u0000' && LA54_57<='\t')||(LA54_57>='\u000B' && LA54_57<='\f')||(LA54_57>='\u000E' && LA54_57<='\uFFFF')) ) {s = 77;}
+
+                        else if ( (LA54_57=='\r') ) {s = 78;}
+
+                        else if ( (LA54_57=='\n') ) {s = 79;}
+
+                        else s = 80;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
                         int LA54_70 = input.LA(1);
 
                         s = -1;
@@ -2232,83 +2262,7 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
-                        int LA54_57 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA54_57>='\u0000' && LA54_57<='\t')||(LA54_57>='\u000B' && LA54_57<='\f')||(LA54_57>='\u000E' && LA54_57<='\uFFFF')) ) {s = 77;}
-
-                        else if ( (LA54_57=='\r') ) {s = 78;}
-
-                        else if ( (LA54_57=='\n') ) {s = 79;}
-
-                        else s = 80;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA54_69 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA54_69>='\u0000' && LA54_69<='\uFFFF')) ) {s = 91;}
-
-                        else s = 16;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA54_109 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_109=='\"') ) {s = 109;}
-
-                        else if ( (LA54_109=='\r') ) {s = 65;}
-
-                        else if ( (LA54_109=='\n') ) {s = 66;}
-
-                        else if ( ((LA54_109>='\u0000' && LA54_109<='\t')||(LA54_109>='\u000B' && LA54_109<='\f')||(LA54_109>='\u000E' && LA54_109<='!')||(LA54_109>='#' && LA54_109<='\uFFFF')) ) {s = 67;}
-
-                        else s = 91;
-
-                        if ( s>=0 ) return s;
-                        break;
                     case 5 : 
-                        int LA54_15 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA54_15>='\u0000' && LA54_15<='\t')||(LA54_15>='\u000B' && LA54_15<='\f')||(LA54_15>='\u000E' && LA54_15<='\uFFFF')) ) {s = 34;}
-
-                        else s = 16;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA54_65 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA54_65>='\u0000' && LA54_65<='\t')||(LA54_65>='\u000B' && LA54_65<='\uFFFF')) ) {s = 91;}
-
-                        else if ( (LA54_65=='\n') ) {s = 66;}
-
-                        else s = 16;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA54_87 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_87=='\r') ) {s = 100;}
-
-                        else if ( (LA54_87=='\n') ) {s = 101;}
-
-                        else if ( ((LA54_87>='\u0000' && LA54_87<='\t')||(LA54_87>='\u000B' && LA54_87<='\f')||(LA54_87>='\u000E' && LA54_87<='\uFFFF')) ) {s = 103;}
-
-                        else s = 102;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
                         int LA54_174 = input.LA(1);
 
                         s = -1;
@@ -2322,7 +2276,31 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 9 : 
+                    case 6 : 
+                        int LA54_69 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_69>='\u0000' && LA54_69<='\uFFFF')) ) {s = 90;}
+
+                        else s = 16;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA54_173 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_173>='\u0000' && LA54_173<='\t')||(LA54_173>='\u000B' && LA54_173<='\f')||(LA54_173>='\u000E' && LA54_173<='\uFFFF')) ) {s = 174;}
+
+                        else if ( (LA54_173=='\r') ) {s = 175;}
+
+                        else if ( (LA54_173=='\n') ) {s = 176;}
+
+                        else s = 177;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
                         int LA54_92 = input.LA(1);
 
                         s = -1;
@@ -2338,19 +2316,21 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 10 : 
-                        int LA54_68 = input.LA(1);
+                    case 9 : 
+                        int LA54_159 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA54_68>='\u0000' && LA54_68<='\t')||(LA54_68>='\u000B' && LA54_68<='\uFFFF')) ) {s = 91;}
+                        if ( ((LA54_159>='\u0000' && LA54_159<='\t')||(LA54_159>='\u000B' && LA54_159<='\f')||(LA54_159>='\u000E' && LA54_159<='\uFFFF')) ) {s = 165;}
 
-                        else if ( (LA54_68=='\n') ) {s = 69;}
+                        else if ( (LA54_159=='\r') ) {s = 166;}
 
-                        else s = 16;
+                        else if ( (LA54_159=='\n') ) {s = 167;}
+
+                        else s = 168;
 
                         if ( s>=0 ) return s;
                         break;
-                    case 11 : 
+                    case 10 : 
                         int LA54_48 = input.LA(1);
 
                         s = -1;
@@ -2366,107 +2346,77 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 12 : 
-                        int LA54_159 = input.LA(1);
+                    case 11 : 
+                        int LA54_146 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA54_159>='\u0000' && LA54_159<='\t')||(LA54_159>='\u000B' && LA54_159<='\f')||(LA54_159>='\u000E' && LA54_159<='\uFFFF')) ) {s = 165;}
+                        if ( (LA54_146=='\r') ) {s = 147;}
 
-                        else if ( (LA54_159=='\r') ) {s = 166;}
+                        else if ( (LA54_146=='\n') ) {s = 148;}
 
-                        else if ( (LA54_159=='\n') ) {s = 167;}
+                        else if ( ((LA54_146>='\u0000' && LA54_146<='\t')||(LA54_146>='\u000B' && LA54_146<='\f')||(LA54_146>='\u000E' && LA54_146<='\uFFFF')) ) {s = 146;}
 
-                        else s = 168;
+                        else s = 149;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 12 : 
+                        int LA54_109 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_109=='\"') ) {s = 109;}
+
+                        else if ( (LA54_109=='\r') ) {s = 64;}
+
+                        else if ( (LA54_109=='\n') ) {s = 65;}
+
+                        else if ( ((LA54_109>='\u0000' && LA54_109<='\t')||(LA54_109>='\u000B' && LA54_109<='\f')||(LA54_109>='\u000E' && LA54_109<='!')||(LA54_109>='#' && LA54_109<='\uFFFF')) ) {s = 67;}
+
+                        else s = 90;
 
                         if ( s>=0 ) return s;
                         break;
                     case 13 : 
-                        int LA54_124 = input.LA(1);
+                        int LA54_154 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_124=='\r') ) {s = 131;}
+                        if ( (LA54_154=='\r') ) {s = 155;}
 
-                        else if ( (LA54_124=='\n') ) {s = 132;}
+                        else if ( (LA54_154=='\n') ) {s = 156;}
 
-                        else if ( ((LA54_124>='\u0000' && LA54_124<='\t')||(LA54_124>='\u000B' && LA54_124<='\f')||(LA54_124>='\u000E' && LA54_124<='\uFFFF')) ) {s = 134;}
+                        else if ( ((LA54_154>='\u0000' && LA54_154<='\t')||(LA54_154>='\u000B' && LA54_154<='\f')||(LA54_154>='\u000E' && LA54_154<='\uFFFF')) ) {s = 154;}
 
-                        else s = 133;
+                        else s = 157;
 
                         if ( s>=0 ) return s;
                         break;
                     case 14 : 
-                        int LA54_103 = input.LA(1);
+                        int LA54_58 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_103=='\r') ) {s = 100;}
+                        if ( ((LA54_58>='\u0000' && LA54_58<='\t')||(LA54_58>='\u000B' && LA54_58<='\f')||(LA54_58>='\u000E' && LA54_58<='\uFFFF')) ) {s = 81;}
 
-                        else if ( (LA54_103=='\n') ) {s = 101;}
+                        else if ( (LA54_58=='\r') ) {s = 82;}
 
-                        else if ( ((LA54_103>='\u0000' && LA54_103<='\t')||(LA54_103>='\u000B' && LA54_103<='\f')||(LA54_103>='\u000E' && LA54_103<='\uFFFF')) ) {s = 103;}
+                        else if ( (LA54_58=='\n') ) {s = 83;}
 
-                        else s = 102;
+                        else s = 84;
 
                         if ( s>=0 ) return s;
                         break;
                     case 15 : 
-                        int LA54_134 = input.LA(1);
+                        int LA54_68 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_134=='\r') ) {s = 131;}
+                        if ( (LA54_68=='\n') ) {s = 69;}
 
-                        else if ( (LA54_134=='\n') ) {s = 132;}
-
-                        else if ( ((LA54_134>='\u0000' && LA54_134<='\t')||(LA54_134>='\u000B' && LA54_134<='\f')||(LA54_134>='\u000E' && LA54_134<='\uFFFF')) ) {s = 134;}
-
-                        else s = 133;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 16 : 
-                        int LA54_64 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_64=='\"') ) {s = 90;}
-
-                        else if ( (LA54_64=='\r') ) {s = 65;}
-
-                        else if ( (LA54_64=='\n') ) {s = 66;}
-
-                        else if ( ((LA54_64>='\u0000' && LA54_64<='\t')||(LA54_64>='\u000B' && LA54_64<='\f')||(LA54_64>='\u000E' && LA54_64<='!')||(LA54_64>='#' && LA54_64<='\uFFFF')) ) {s = 67;}
+                        else if ( ((LA54_68>='\u0000' && LA54_68<='\t')||(LA54_68>='\u000B' && LA54_68<='\uFFFF')) ) {s = 90;}
 
                         else s = 16;
 
                         if ( s>=0 ) return s;
                         break;
-                    case 17 : 
-                        int LA54_149 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_149=='\r') ) {s = 146;}
-
-                        else if ( (LA54_149=='\n') ) {s = 147;}
-
-                        else if ( ((LA54_149>='\u0000' && LA54_149<='\t')||(LA54_149>='\u000B' && LA54_149<='\f')||(LA54_149>='\u000E' && LA54_149<='\uFFFF')) ) {s = 149;}
-
-                        else s = 148;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 18 : 
-                        int LA54_165 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_165=='\r') ) {s = 166;}
-
-                        else if ( (LA54_165=='\n') ) {s = 167;}
-
-                        else if ( ((LA54_165>='\u0000' && LA54_165<='\t')||(LA54_165>='\u000B' && LA54_165<='\f')||(LA54_165>='\u000E' && LA54_165<='\uFFFF')) ) {s = 165;}
-
-                        else s = 168;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 19 : 
+                    case 16 : 
                         int LA54_88 = input.LA(1);
 
                         s = -1;
@@ -2480,65 +2430,21 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 20 : 
-                        int LA54_58 = input.LA(1);
+                    case 17 : 
+                        int LA54_100 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_58=='\r') ) {s = 81;}
+                        if ( (LA54_100=='\r') ) {s = 101;}
 
-                        else if ( (LA54_58=='\n') ) {s = 82;}
+                        else if ( (LA54_100=='\n') ) {s = 102;}
 
-                        else if ( ((LA54_58>='\u0000' && LA54_58<='\t')||(LA54_58>='\u000B' && LA54_58<='\f')||(LA54_58>='\u000E' && LA54_58<='\uFFFF')) ) {s = 84;}
+                        else if ( ((LA54_100>='\u0000' && LA54_100<='\t')||(LA54_100>='\u000B' && LA54_100<='\f')||(LA54_100>='\u000E' && LA54_100<='\uFFFF')) ) {s = 100;}
 
-                        else s = 83;
+                        else s = 103;
 
                         if ( s>=0 ) return s;
                         break;
-                    case 21 : 
-                        int LA54_157 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_157=='\r') ) {s = 154;}
-
-                        else if ( (LA54_157=='\n') ) {s = 155;}
-
-                        else if ( ((LA54_157>='\u0000' && LA54_157<='\t')||(LA54_157>='\u000B' && LA54_157<='\f')||(LA54_157>='\u000E' && LA54_157<='\uFFFF')) ) {s = 157;}
-
-                        else s = 156;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 22 : 
-                        int LA54_107 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_107=='\r') ) {s = 104;}
-
-                        else if ( (LA54_107=='\n') ) {s = 105;}
-
-                        else if ( ((LA54_107>='\u0000' && LA54_107<='\t')||(LA54_107>='\u000B' && LA54_107<='\f')||(LA54_107>='\u000E' && LA54_107<='\uFFFF')) ) {s = 107;}
-
-                        else s = 106;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 23 : 
-                        int LA54_67 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_67=='\"') ) {s = 64;}
-
-                        else if ( (LA54_67=='\r') ) {s = 65;}
-
-                        else if ( (LA54_67=='\n') ) {s = 66;}
-
-                        else if ( ((LA54_67>='\u0000' && LA54_67<='\t')||(LA54_67>='\u000B' && LA54_67<='\f')||(LA54_67>='\u000E' && LA54_67<='!')||(LA54_67>='#' && LA54_67<='\uFFFF')) ) {s = 67;}
-
-                        else s = 16;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 24 : 
+                    case 18 : 
                         int LA54_77 = input.LA(1);
 
                         s = -1;
@@ -2552,53 +2458,53 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 25 : 
-                        int LA54_90 = input.LA(1);
+                    case 19 : 
+                        int LA54_67 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_90=='\"') ) {s = 109;}
+                        if ( (LA54_67=='\"') ) {s = 66;}
 
-                        else if ( (LA54_90=='\r') ) {s = 65;}
+                        else if ( (LA54_67=='\r') ) {s = 64;}
 
-                        else if ( (LA54_90=='\n') ) {s = 66;}
+                        else if ( (LA54_67=='\n') ) {s = 65;}
 
-                        else if ( ((LA54_90>='\u0000' && LA54_90<='\t')||(LA54_90>='\u000B' && LA54_90<='\f')||(LA54_90>='\u000E' && LA54_90<='!')||(LA54_90>='#' && LA54_90<='\uFFFF')) ) {s = 67;}
+                        else if ( ((LA54_67>='\u0000' && LA54_67<='\t')||(LA54_67>='\u000B' && LA54_67<='\f')||(LA54_67>='\u000E' && LA54_67<='!')||(LA54_67>='#' && LA54_67<='\uFFFF')) ) {s = 67;}
 
                         else s = 16;
 
                         if ( s>=0 ) return s;
                         break;
-                    case 26 : 
-                        int LA54_84 = input.LA(1);
+                    case 20 : 
+                        int LA54_107 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_84=='\r') ) {s = 81;}
+                        if ( (LA54_107=='\r') ) {s = 104;}
 
-                        else if ( (LA54_84=='\n') ) {s = 82;}
+                        else if ( (LA54_107=='\n') ) {s = 105;}
 
-                        else if ( ((LA54_84>='\u0000' && LA54_84<='\t')||(LA54_84>='\u000B' && LA54_84<='\f')||(LA54_84>='\u000E' && LA54_84<='\uFFFF')) ) {s = 84;}
+                        else if ( ((LA54_107>='\u0000' && LA54_107<='\t')||(LA54_107>='\u000B' && LA54_107<='\f')||(LA54_107>='\u000E' && LA54_107<='\uFFFF')) ) {s = 107;}
 
-                        else s = 83;
+                        else s = 106;
 
                         if ( s>=0 ) return s;
                         break;
-                    case 27 : 
-                        int LA54_47 = input.LA(1);
+                    case 21 : 
+                        int LA54_91 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_47=='\"') ) {s = 64;}
+                        if ( (LA54_91=='\"') ) {s = 109;}
 
-                        else if ( (LA54_47=='\r') ) {s = 65;}
+                        else if ( (LA54_91=='\r') ) {s = 64;}
 
-                        else if ( (LA54_47=='\n') ) {s = 66;}
+                        else if ( (LA54_91=='\n') ) {s = 65;}
 
-                        else if ( ((LA54_47>='\u0000' && LA54_47<='\t')||(LA54_47>='\u000B' && LA54_47<='\f')||(LA54_47>='\u000E' && LA54_47<='!')||(LA54_47>='#' && LA54_47<='\uFFFF')) ) {s = 67;}
+                        else if ( ((LA54_91>='\u0000' && LA54_91<='\t')||(LA54_91>='\u000B' && LA54_91<='\f')||(LA54_91>='\u000E' && LA54_91<='!')||(LA54_91>='#' && LA54_91<='\uFFFF')) ) {s = 67;}
 
                         else s = 16;
 
                         if ( s>=0 ) return s;
                         break;
-                    case 28 : 
+                    case 22 : 
                         int LA54_143 = input.LA(1);
 
                         s = -1;
@@ -2612,17 +2518,149 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 29 : 
+                    case 23 : 
+                        int LA54_81 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_81=='\r') ) {s = 82;}
+
+                        else if ( (LA54_81=='\n') ) {s = 83;}
+
+                        else if ( ((LA54_81>='\u0000' && LA54_81<='\t')||(LA54_81>='\u000B' && LA54_81<='\f')||(LA54_81>='\u000E' && LA54_81<='\uFFFF')) ) {s = 81;}
+
+                        else s = 84;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 24 : 
                         int LA54_66 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA54_66>='\u0000' && LA54_66<='\uFFFF')) ) {s = 91;}
+                        if ( (LA54_66=='\"') ) {s = 91;}
+
+                        else if ( (LA54_66=='\r') ) {s = 64;}
+
+                        else if ( (LA54_66=='\n') ) {s = 65;}
+
+                        else if ( ((LA54_66>='\u0000' && LA54_66<='\t')||(LA54_66>='\u000B' && LA54_66<='\f')||(LA54_66>='\u000E' && LA54_66<='!')||(LA54_66>='#' && LA54_66<='\uFFFF')) ) {s = 67;}
 
                         else s = 16;
 
                         if ( s>=0 ) return s;
                         break;
+                    case 25 : 
+                        int LA54_134 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_134=='\r') ) {s = 131;}
+
+                        else if ( (LA54_134=='\n') ) {s = 132;}
+
+                        else if ( ((LA54_134>='\u0000' && LA54_134<='\t')||(LA54_134>='\u000B' && LA54_134<='\f')||(LA54_134>='\u000E' && LA54_134<='\uFFFF')) ) {s = 134;}
+
+                        else s = 133;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 26 : 
+                        int LA54_124 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_124=='\r') ) {s = 131;}
+
+                        else if ( (LA54_124=='\n') ) {s = 132;}
+
+                        else if ( ((LA54_124>='\u0000' && LA54_124<='\t')||(LA54_124>='\u000B' && LA54_124<='\f')||(LA54_124>='\u000E' && LA54_124<='\uFFFF')) ) {s = 134;}
+
+                        else s = 133;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 27 : 
+                        int LA54_165 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_165=='\r') ) {s = 166;}
+
+                        else if ( (LA54_165=='\n') ) {s = 167;}
+
+                        else if ( ((LA54_165>='\u0000' && LA54_165<='\t')||(LA54_165>='\u000B' && LA54_165<='\f')||(LA54_165>='\u000E' && LA54_165<='\uFFFF')) ) {s = 165;}
+
+                        else s = 168;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 28 : 
+                        int LA54_47 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_47=='\r') ) {s = 64;}
+
+                        else if ( (LA54_47=='\n') ) {s = 65;}
+
+                        else if ( (LA54_47=='\"') ) {s = 66;}
+
+                        else if ( ((LA54_47>='\u0000' && LA54_47<='\t')||(LA54_47>='\u000B' && LA54_47<='\f')||(LA54_47>='\u000E' && LA54_47<='!')||(LA54_47>='#' && LA54_47<='\uFFFF')) ) {s = 67;}
+
+                        else s = 16;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 29 : 
+                        int LA54_108 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_108>='\u0000' && LA54_108<='\t')||(LA54_108>='\u000B' && LA54_108<='\f')||(LA54_108>='\u000E' && LA54_108<='\uFFFF')) ) {s = 118;}
+
+                        else if ( (LA54_108=='\r') ) {s = 119;}
+
+                        else if ( (LA54_108=='\n') ) {s = 120;}
+
+                        else s = 121;
+
+                        if ( s>=0 ) return s;
+                        break;
                     case 30 : 
+                        int LA54_65 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_65>='\u0000' && LA54_65<='\uFFFF')) ) {s = 90;}
+
+                        else s = 16;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 31 : 
+                        int LA54_110 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_110=='\'') ) {s = 110;}
+
+                        else if ( (LA54_110=='\r') ) {s = 68;}
+
+                        else if ( (LA54_110=='\n') ) {s = 69;}
+
+                        else if ( ((LA54_110>='\u0000' && LA54_110<='\t')||(LA54_110>='\u000B' && LA54_110<='\f')||(LA54_110>='\u000E' && LA54_110<='&')||(LA54_110>='(' && LA54_110<='\uFFFF')) ) {s = 71;}
+
+                        else s = 90;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 32 : 
+                        int LA54_145 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_145>='\u0000' && LA54_145<='\t')||(LA54_145>='\u000B' && LA54_145<='\f')||(LA54_145>='\u000E' && LA54_145<='\uFFFF')) ) {s = 154;}
+
+                        else if ( (LA54_145=='\r') ) {s = 155;}
+
+                        else if ( (LA54_145=='\n') ) {s = 156;}
+
+                        else s = 157;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 33 : 
                         int LA54_0 = input.LA(1);
 
                         s = -1;
@@ -2662,109 +2700,21 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 31 : 
-                        int LA54_145 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_145=='\r') ) {s = 154;}
-
-                        else if ( (LA54_145=='\n') ) {s = 155;}
-
-                        else if ( ((LA54_145>='\u0000' && LA54_145<='\t')||(LA54_145>='\u000B' && LA54_145<='\f')||(LA54_145>='\u000E' && LA54_145<='\uFFFF')) ) {s = 157;}
-
-                        else s = 156;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 32 : 
-                        int LA54_71 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_71=='\'') ) {s = 70;}
-
-                        else if ( (LA54_71=='\r') ) {s = 68;}
-
-                        else if ( (LA54_71=='\n') ) {s = 69;}
-
-                        else if ( ((LA54_71>='\u0000' && LA54_71<='\t')||(LA54_71>='\u000B' && LA54_71<='\f')||(LA54_71>='\u000E' && LA54_71<='&')||(LA54_71>='(' && LA54_71<='\uFFFF')) ) {s = 71;}
-
-                        else s = 16;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 33 : 
-                        int LA54_173 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA54_173>='\u0000' && LA54_173<='\t')||(LA54_173>='\u000B' && LA54_173<='\f')||(LA54_173>='\u000E' && LA54_173<='\uFFFF')) ) {s = 174;}
-
-                        else if ( (LA54_173=='\r') ) {s = 175;}
-
-                        else if ( (LA54_173=='\n') ) {s = 176;}
-
-                        else s = 177;
-
-                        if ( s>=0 ) return s;
-                        break;
                     case 34 : 
-                        int LA54_34 = input.LA(1);
+                        int LA54_138 = input.LA(1);
 
                         s = -1;
-                        if ( (LA54_34=='\r') ) {s = 49;}
+                        if ( ((LA54_138>='\u0000' && LA54_138<='\t')||(LA54_138>='\u000B' && LA54_138<='\f')||(LA54_138>='\u000E' && LA54_138<='\uFFFF')) ) {s = 146;}
 
-                        else if ( (LA54_34=='\n') ) {s = 50;}
+                        else if ( (LA54_138=='\r') ) {s = 147;}
 
-                        else if ( ((LA54_34>='\u0000' && LA54_34<='\t')||(LA54_34>='\u000B' && LA54_34<='\f')||(LA54_34>='\u000E' && LA54_34<='\uFFFF')) ) {s = 34;}
+                        else if ( (LA54_138=='\n') ) {s = 148;}
 
-                        else s = 51;
+                        else s = 149;
 
                         if ( s>=0 ) return s;
                         break;
                     case 35 : 
-                        int LA54_163 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_163=='\r') ) {s = 160;}
-
-                        else if ( (LA54_163=='\n') ) {s = 161;}
-
-                        else if ( ((LA54_163>='\u0000' && LA54_163<='\t')||(LA54_163>='\u000B' && LA54_163<='\f')||(LA54_163>='\u000E' && LA54_163<='\uFFFF')) ) {s = 163;}
-
-                        else s = 162;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 36 : 
-                        int LA54_138 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_138=='\r') ) {s = 146;}
-
-                        else if ( (LA54_138=='\n') ) {s = 147;}
-
-                        else if ( ((LA54_138>='\u0000' && LA54_138<='\t')||(LA54_138>='\u000B' && LA54_138<='\f')||(LA54_138>='\u000E' && LA54_138<='\uFFFF')) ) {s = 149;}
-
-                        else s = 148;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 37 : 
-                        int LA54_110 = input.LA(1);
-
-                        s = -1;
-                        if ( (LA54_110=='\'') ) {s = 110;}
-
-                        else if ( (LA54_110=='\r') ) {s = 68;}
-
-                        else if ( (LA54_110=='\n') ) {s = 69;}
-
-                        else if ( ((LA54_110>='\u0000' && LA54_110<='\t')||(LA54_110>='\u000B' && LA54_110<='\f')||(LA54_110>='\u000E' && LA54_110<='&')||(LA54_110>='(' && LA54_110<='\uFFFF')) ) {s = 71;}
-
-                        else s = 91;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 38 : 
                         int LA54_153 = input.LA(1);
 
                         s = -1;
@@ -2778,17 +2728,71 @@ public class InternalGherkinLexer extends Lexer {
 
                         if ( s>=0 ) return s;
                         break;
-                    case 39 : 
-                        int LA54_108 = input.LA(1);
+                    case 36 : 
+                        int LA54_163 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA54_108>='\u0000' && LA54_108<='\t')||(LA54_108>='\u000B' && LA54_108<='\f')||(LA54_108>='\u000E' && LA54_108<='\uFFFF')) ) {s = 118;}
+                        if ( (LA54_163=='\r') ) {s = 160;}
 
-                        else if ( (LA54_108=='\r') ) {s = 119;}
+                        else if ( (LA54_163=='\n') ) {s = 161;}
 
-                        else if ( (LA54_108=='\n') ) {s = 120;}
+                        else if ( ((LA54_163>='\u0000' && LA54_163<='\t')||(LA54_163>='\u000B' && LA54_163<='\f')||(LA54_163>='\u000E' && LA54_163<='\uFFFF')) ) {s = 163;}
 
-                        else s = 121;
+                        else s = 162;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 37 : 
+                        int LA54_87 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA54_87>='\u0000' && LA54_87<='\t')||(LA54_87>='\u000B' && LA54_87<='\f')||(LA54_87>='\u000E' && LA54_87<='\uFFFF')) ) {s = 100;}
+
+                        else if ( (LA54_87=='\r') ) {s = 101;}
+
+                        else if ( (LA54_87=='\n') ) {s = 102;}
+
+                        else s = 103;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 38 : 
+                        int LA54_34 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_34=='\r') ) {s = 49;}
+
+                        else if ( (LA54_34=='\n') ) {s = 50;}
+
+                        else if ( ((LA54_34>='\u0000' && LA54_34<='\t')||(LA54_34>='\u000B' && LA54_34<='\f')||(LA54_34>='\u000E' && LA54_34<='\uFFFF')) ) {s = 34;}
+
+                        else s = 51;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 39 : 
+                        int LA54_11 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_11=='\n'||LA54_11=='\r') ) {s = 30;}
+
+                        else if ( ((LA54_11>='\u0000' && LA54_11<='\t')||(LA54_11>='\u000B' && LA54_11<='\f')||(LA54_11>='\u000E' && LA54_11<='{')||(LA54_11>='}' && LA54_11<='\uFFFF')) ) {s = 31;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 40 : 
+                        int LA54_71 = input.LA(1);
+
+                        s = -1;
+                        if ( (LA54_71=='\r') ) {s = 68;}
+
+                        else if ( (LA54_71=='\n') ) {s = 69;}
+
+                        else if ( (LA54_71=='\'') ) {s = 70;}
+
+                        else if ( ((LA54_71>='\u0000' && LA54_71<='\t')||(LA54_71>='\u000B' && LA54_71<='\f')||(LA54_71>='\u000E' && LA54_71<='&')||(LA54_71>='(' && LA54_71<='\uFFFF')) ) {s = 71;}
+
+                        else s = 16;
 
                         if ( s>=0 ) return s;
                         break;

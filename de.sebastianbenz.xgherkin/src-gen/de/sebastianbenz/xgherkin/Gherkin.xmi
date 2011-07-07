@@ -437,7 +437,7 @@
     </type>
     <alternatives xsi:type="xtext:Group">
       <elements xsi:type="xtext:Keyword" value="|"/>
-      <elements xsi:type="xtext:NegatedToken" cardinality="*">
+      <elements xsi:type="xtext:NegatedToken" cardinality="+">
         <terminal xsi:type="xtext:Alternatives">
           <elements xsi:type="xtext:Keyword" value="&#xD;"/>
           <elements xsi:type="xtext:Keyword" value="&#xA;"/>

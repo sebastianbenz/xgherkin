@@ -27,6 +27,7 @@ public class HighlightingConfiguration extends DefaultHighlightingConfiguration 
 	public static final String TAG_ID = "Tag";
 	public static final String CODE_ID = "Code";
 	public static final String FEATURE_ID = "Feature";
+	public static final String CODE_BOLD_ID = "CodeBold";
 
 	public void configure(IHighlightingConfigurationAcceptor acceptor) {
 		acceptor.acceptDefaultHighlighting(COMMENT_ID, "Comment", commentTextStyle());
@@ -37,6 +38,7 @@ public class HighlightingConfiguration extends DefaultHighlightingConfiguration 
 		acceptor.acceptDefaultHighlighting(FEATURE_ID, "Feature", featureTextStyle());
 		acceptor.acceptDefaultHighlighting(TAG_ID, "Tag", tagTextStyle());
 		acceptor.acceptDefaultHighlighting(CODE_ID, "Code", codeTextStyle());
+		acceptor.acceptDefaultHighlighting(CODE_BOLD_ID, "Code Bold", codeBoldTextStyle());
 		acceptor.acceptDefaultHighlighting(KEYWORD_ID, "Keyword", keywordTextStyle());
 	}
 
@@ -52,9 +54,15 @@ public class HighlightingConfiguration extends DefaultHighlightingConfiguration 
 	}
 	
 	public TextStyle codeTextStyle() {
-		TextStyle result = super.defaultTextStyle().copy();
-		result.setColor(new RGB(0, 64, 128));
-		return result;
+		TextStyle textStyle = super.defaultTextStyle().copy();
+		textStyle.setColor(new RGB(42, 0, 255));
+		return textStyle;
+	}
+	
+	public TextStyle codeBoldTextStyle() {
+		TextStyle textStyle = super.defaultTextStyle().copy();
+		textStyle.setColor(new RGB(255,0,0));
+		return textStyle;
 	}
 	
 	public TextStyle keywordTextStyle() {

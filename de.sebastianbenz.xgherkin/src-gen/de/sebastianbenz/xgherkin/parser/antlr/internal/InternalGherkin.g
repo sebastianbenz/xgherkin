@@ -1172,7 +1172,7 @@ RULE_GIVEN_TEXT : 'Given ' ~(('\r'|'\n'))* '\r'? '\n'?;
 
 RULE_AND_TEXT : 'And ' ~(('\r'|'\n'))* '\r'? '\n'?;
 
-RULE_EXAMPLE_CELL : '|' ~(('\r'|'\n'|'|'))*;
+RULE_EXAMPLE_CELL : '|' ~(('\r'|'\n'|'|'))+;
 
 RULE_EXAMPLE_ROW_END : '|' '\r'? '\n';
 
