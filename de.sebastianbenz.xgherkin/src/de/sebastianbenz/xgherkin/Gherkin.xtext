@@ -1,0 +1,112 @@
+grammar de.sebastianbenz.xgherkin.Gherkin hidden (WS, SL_COMMENT)
+
+generate gherkin "http://www.sebastianbenz.de/xgherkin/Gherkin"
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+Feature:
+	tags+=TAG*
+	name=FEATURE_TEXT
+	elements+=NarrativeElement*
+	scenarios+=AbstractScenario*
+;
+
+
+NarrativeElement:
+	InOrderTo | AsA | IWantTo | FreeText
+;
+
+FreeText:
+	name = TEXT
+;
+
+AsA:
+	name=AS_A
+;
+
+InOrderTo:
+	name=IN_ORDER_TO
+;
+
+IWantTo:
+	name=I_WANT_TO
+;
+
+AbstractScenario:
+	Background | Scenario | ScenarioWithOutline
+;
+
+Scenario:
+	tags+=TAG* 
+	name=SCENARIO_TEXT
+	(steps += Step)*
+;
+
+ScenarioWithOutline:
+	tags+=TAG* 
+	name=SCENARIO_OUTLINE_TEXT
+	(steps += Step)*
+	EXAMPLE_HEADING
+	heading = ExampleRow
+	(rows += ExampleRow)*
+;
+
+ExampleRow:
+	cells+=EXAMPLE_CELL+ EXAMPLE_ROW_END
+;
+
+Background:
+	tags+=TAG* 
+	name=BACKGROUND_TEXT
+	(steps += Step)*
+;
+
+Step:
+	WhenStep | ThenStep | GivenStep | AndStep
+;
+
+WhenStep:
+	tags+=TAG* desc+=WHEN_TEXT (desc+=TEXT | desc+=CODE)*
+;
+
+ThenStep:
+	tags+=TAG* desc+=THEN_TEXT (desc+=TEXT | desc+=CODE)*
+;
+
+GivenStep:
+	tags+=TAG* desc+=GIVEN_TEXT (desc+=TEXT | desc+=CODE)*
+;
+AndStep:
+	desc+=AND_TEXT (desc+=TEXT | desc+=CODE)*
+;
+
+terminal EXAMPLE_HEADING: ('Examples:') '\r'? '\n';
+
+terminal FEATURE_TEXT: ('Narrative:' | 'Feature:') !('\r' | '\n')* '\r'? '\n'?;
+
+terminal IN_ORDER_TO : 'In order to'  !('\r' | '\n')* '\r'? '\n'?;
+terminal AS_A : 'As a' !('\r' | '\n')* '\r'? '\n'?;
+terminal I_WANT_TO : 'I want to ' !('\r' | '\n')* '\r'? '\n'?;
+
+terminal SCENARIO_TEXT: 'Scenario' ' '* ':' !('\r' | '\n')* '\r'? '\n'?;
+terminal SCENARIO_OUTLINE_TEXT: 'Scenario' ' '* 'Outline' ' '* ':' !('\r' | '\n')* '\r'? '\n'?;
+terminal BACKGROUND_TEXT: 'Background:' !('\r' | '\n')* '\r'? '\n'?;
+
+terminal WHEN_TEXT: 'When ' !('\r' | '\n')* '\r'? '\n'?;
+terminal THEN_TEXT: 'Then ' !('\r' | '\n')* '\r'? '\n'?;
+terminal GIVEN_TEXT: 'Given ' !('\r' | '\n')* '\r'? '\n'?;
+terminal AND_TEXT: 'And ' !('\r' | '\n')* '\r'? '\n'?;
+
+terminal EXAMPLE_CELL: '|' !('\r' | '\n' | '|')*;
+terminal EXAMPLE_ROW_END: '|' '\r'? '\n';
+
+terminal CODE: '"""' -> '"""' | "'''" -> "'''";
+
+terminal TAG: '@' !('\r' | '\n')+ '\r'? '\n'?;
+
+terminal SL_COMMENT: '#' !('\r' | '\n')+ '\r'? '\n'?;
+
+terminal TEXT: !('|'|' '|'\t'|'\r'|'\n'|'@') !('\r' | '\n')* '\r'? '\n'?;
+terminal WS			: (' '|'\t'|'\r'|'\n')+;
+
+
