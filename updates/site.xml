@@ -3,7 +3,7 @@
    <description name="Xgherkin" url="http://sebastianbenz.github.com/xgherkin/updates">
       Update site
    </description>
-   <feature url="features/de.sebastianbenz.xgherkin_1.0.0.201107072348.jar" id="de.sebastianbenz.xgherkin" version="1.0.0.201107072348">
+   <feature url="features/de.sebastianbenz.xgherkin_1.0.0.201107080018.jar" id="de.sebastianbenz.xgherkin" version="1.0.0.201107080018">
       <category name="Xgherkin"/>
    </feature>
    <category-def name="Xgherkin" label="Xgherkin"/>
