@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: de.sebastianbenz.xgherkin.ui
-Bundle-Vendor: My Company
+Bundle-Name: Xgherkin UI
+Bundle-Vendor: Sebastian Benz
 Bundle-Version: 1.0.0
 Bundle-SymbolicName: de.sebastianbenz.xgherkin.ui; singleton:=true
 Bundle-ActivationPolicy: lazy

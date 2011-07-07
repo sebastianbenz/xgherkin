@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: de.sebastianbenz.xgherkin
-Bundle-Vendor: My Company
+Bundle-Name: Xgherkin Runtime
+Bundle-Vendor: Sebastian Benz
 Bundle-Version: 1.0.0
 Bundle-SymbolicName: de.sebastianbenz.xgherkin; singleton:=true
 Bundle-ActivationPolicy: lazy

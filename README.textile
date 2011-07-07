@@ -1,0 +1,17 @@
+h1. A simple Eclipse editor for Cucumber feature definitions based on Xtext.
+
+!http://sebastianbenz.github.com/xgherkin/images/Example.png(Screenshot)!
+
+h2. Installation
+
+The editor can be installed via the following update site:
+
+http://sebastianbenz.github.com/xgherkin/updates
+
+h2. Dependencies
+
+Xtext 2.0 
+
+h2. License
+
+Copyright (C) 2010 Sebastian Benz. Distributed under the Eclipse Public License.
