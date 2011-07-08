@@ -13,10 +13,35 @@
 */
 package de.sebastianbenz.xgherkin.ui.contentassist;
 
-import de.sebastianbenz.xgherkin.ui.contentassist.AbstractGherkinProposalProvider;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.EcoreUtil2;
+import org.eclipse.xtext.RuleCall;
+import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
+import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor;
+
+import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
+import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
+import de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline;
 /**
  * see http://www.eclipse.org/Xtext/documentation/latest/xtext.html#contentAssist on how to customize content assistant
  */
 public class GherkinProposalProvider extends AbstractGherkinProposalProvider {
 
+	public void complete_Step(EObject model, RuleCall ruleCall, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+		if(!context.getPrefix().trim().endsWith("<")){
+			return;
+		}
+		ScenarioWithOutline scenarioWithOutline = EcoreUtil2.getContainerOfType(model, ScenarioWithOutline.class);
+		if(scenarioWithOutline == null){
+			return;
+		}
+		ExampleRow heading = scenarioWithOutline.getHeading();
+		if(heading == null){
+			return;
+		}
+		for (ExampleCell cell : heading.getCells()) {
+			String cellValue = cell.getValue().replaceAll("\\|", "").trim();
+			acceptor.accept(createCompletionProposal(context.getPrefix() + cellValue, cellValue, null, context));
+		}
+	}
 }

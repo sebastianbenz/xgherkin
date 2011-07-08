@@ -2,6 +2,7 @@
  * <copyright>
  * </copyright>
  *
+
  */
 package de.sebastianbenz.xgherkin.gherkin;
 
@@ -28,19 +29,19 @@ import org.eclipse.emf.ecore.EObject;
 public interface ExampleRow extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Cells</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Cells</b></em>' containment reference list.
+   * The list contents are of type {@link de.sebastianbenz.xgherkin.gherkin.ExampleCell}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Cells</em>' attribute list isn't clear,
+   * If the meaning of the '<em>Cells</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Cells</em>' attribute list.
+   * @return the value of the '<em>Cells</em>' containment reference list.
    * @see de.sebastianbenz.xgherkin.gherkin.GherkinPackage#getExampleRow_Cells()
-   * @model unique="false"
+   * @model containment="true"
    * @generated
    */
-  EList<String> getCells();
+  EList<ExampleCell> getCells();
 
 } // ExampleRow

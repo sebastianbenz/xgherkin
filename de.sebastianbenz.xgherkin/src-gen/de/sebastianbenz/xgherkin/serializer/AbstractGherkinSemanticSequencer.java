@@ -5,6 +5,7 @@ import com.google.inject.Provider;
 import de.sebastianbenz.xgherkin.gherkin.AndStep;
 import de.sebastianbenz.xgherkin.gherkin.AsA;
 import de.sebastianbenz.xgherkin.gherkin.Background;
+import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.Feature;
 import de.sebastianbenz.xgherkin.gherkin.FreeText;
@@ -75,6 +76,12 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 				if(context == grammarAccess.getAbstractScenarioRule() ||
 				   context == grammarAccess.getBackgroundRule()) {
 					sequence_Background_Background(context, (Background) semanticObject); 
+					return; 
+				}
+				else break;
+			case GherkinPackage.EXAMPLE_CELL:
+				if(context == grammarAccess.getExampleCellRule()) {
+					sequence_ExampleCell_ExampleCell(context, (ExampleCell) semanticObject); 
 					return; 
 				}
 				else break;
@@ -152,7 +159,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (desc+=AND_TEXT (desc+=TEXT | desc+=CODE)*)
+	 *     (desc+=AND_TEXT desc+=OptionalText*)
 	 *
 	 * Features:
 	 *    desc[1, *]
@@ -197,7 +204,26 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     cells+=EXAMPLE_CELL+
+	 *     value=EXAMPLE_CELL
+	 *
+	 * Features:
+	 *    value[1, 1]
+	 */
+	protected void sequence_ExampleCell_ExampleCell(EObject context, ExampleCell semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, GherkinPackage.Literals.EXAMPLE_CELL__VALUE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, GherkinPackage.Literals.EXAMPLE_CELL__VALUE));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getExampleCellAccess().getValueEXAMPLE_CELLTerminalRuleCall_0(), semanticObject.getValue());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     cells+=ExampleCell+
 	 *
 	 * Features:
 	 *    cells[1, *]
@@ -243,7 +269,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* desc+=GIVEN_TEXT (desc+=TEXT | desc+=CODE)*)
+	 *     (tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*)
 	 *
 	 * Features:
 	 *    desc[1, *]
@@ -324,7 +350,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* desc+=THEN_TEXT (desc+=TEXT | desc+=CODE)*)
+	 *     (tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*)
 	 *
 	 * Features:
 	 *    desc[1, *]
@@ -337,7 +363,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* desc+=WHEN_TEXT (desc+=TEXT | desc+=CODE)*)
+	 *     (tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*)
 	 *
 	 * Features:
 	 *    desc[1, *]

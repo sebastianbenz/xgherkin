@@ -40,10 +40,7 @@ public class GherkinParser extends AbstractContentAssistParser {
 					put(grammarAccess.getNarrativeElementAccess().getAlternatives(), "rule__NarrativeElement__Alternatives");
 					put(grammarAccess.getAbstractScenarioAccess().getAlternatives(), "rule__AbstractScenario__Alternatives");
 					put(grammarAccess.getStepAccess().getAlternatives(), "rule__Step__Alternatives");
-					put(grammarAccess.getWhenStepAccess().getAlternatives_2(), "rule__WhenStep__Alternatives_2");
-					put(grammarAccess.getThenStepAccess().getAlternatives_2(), "rule__ThenStep__Alternatives_2");
-					put(grammarAccess.getGivenStepAccess().getAlternatives_2(), "rule__GivenStep__Alternatives_2");
-					put(grammarAccess.getAndStepAccess().getAlternatives_1(), "rule__AndStep__Alternatives_1");
+					put(grammarAccess.getOptionalTextAccess().getAlternatives(), "rule__OptionalText__Alternatives");
 					put(grammarAccess.getFeatureAccess().getGroup(), "rule__Feature__Group__0");
 					put(grammarAccess.getScenarioAccess().getGroup(), "rule__Scenario__Group__0");
 					put(grammarAccess.getScenarioWithOutlineAccess().getGroup(), "rule__ScenarioWithOutline__Group__0");
@@ -70,24 +67,21 @@ public class GherkinParser extends AbstractContentAssistParser {
 					put(grammarAccess.getScenarioWithOutlineAccess().getHeadingAssignment_4(), "rule__ScenarioWithOutline__HeadingAssignment_4");
 					put(grammarAccess.getScenarioWithOutlineAccess().getRowsAssignment_5(), "rule__ScenarioWithOutline__RowsAssignment_5");
 					put(grammarAccess.getExampleRowAccess().getCellsAssignment_0(), "rule__ExampleRow__CellsAssignment_0");
+					put(grammarAccess.getExampleCellAccess().getValueAssignment(), "rule__ExampleCell__ValueAssignment");
 					put(grammarAccess.getBackgroundAccess().getTagsAssignment_0(), "rule__Background__TagsAssignment_0");
 					put(grammarAccess.getBackgroundAccess().getNameAssignment_1(), "rule__Background__NameAssignment_1");
 					put(grammarAccess.getBackgroundAccess().getStepsAssignment_2(), "rule__Background__StepsAssignment_2");
 					put(grammarAccess.getWhenStepAccess().getTagsAssignment_0(), "rule__WhenStep__TagsAssignment_0");
 					put(grammarAccess.getWhenStepAccess().getDescAssignment_1(), "rule__WhenStep__DescAssignment_1");
-					put(grammarAccess.getWhenStepAccess().getDescAssignment_2_0(), "rule__WhenStep__DescAssignment_2_0");
-					put(grammarAccess.getWhenStepAccess().getDescAssignment_2_1(), "rule__WhenStep__DescAssignment_2_1");
+					put(grammarAccess.getWhenStepAccess().getDescAssignment_2(), "rule__WhenStep__DescAssignment_2");
 					put(grammarAccess.getThenStepAccess().getTagsAssignment_0(), "rule__ThenStep__TagsAssignment_0");
 					put(grammarAccess.getThenStepAccess().getDescAssignment_1(), "rule__ThenStep__DescAssignment_1");
-					put(grammarAccess.getThenStepAccess().getDescAssignment_2_0(), "rule__ThenStep__DescAssignment_2_0");
-					put(grammarAccess.getThenStepAccess().getDescAssignment_2_1(), "rule__ThenStep__DescAssignment_2_1");
+					put(grammarAccess.getThenStepAccess().getDescAssignment_2(), "rule__ThenStep__DescAssignment_2");
 					put(grammarAccess.getGivenStepAccess().getTagsAssignment_0(), "rule__GivenStep__TagsAssignment_0");
 					put(grammarAccess.getGivenStepAccess().getDescAssignment_1(), "rule__GivenStep__DescAssignment_1");
-					put(grammarAccess.getGivenStepAccess().getDescAssignment_2_0(), "rule__GivenStep__DescAssignment_2_0");
-					put(grammarAccess.getGivenStepAccess().getDescAssignment_2_1(), "rule__GivenStep__DescAssignment_2_1");
+					put(grammarAccess.getGivenStepAccess().getDescAssignment_2(), "rule__GivenStep__DescAssignment_2");
 					put(grammarAccess.getAndStepAccess().getDescAssignment_0(), "rule__AndStep__DescAssignment_0");
-					put(grammarAccess.getAndStepAccess().getDescAssignment_1_0(), "rule__AndStep__DescAssignment_1_0");
-					put(grammarAccess.getAndStepAccess().getDescAssignment_1_1(), "rule__AndStep__DescAssignment_1_1");
+					put(grammarAccess.getAndStepAccess().getDescAssignment_1(), "rule__AndStep__DescAssignment_1");
 				}
 			};
 		}

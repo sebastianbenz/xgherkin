@@ -2,6 +2,7 @@
  * <copyright>
  * </copyright>
  *
+
  */
 package de.sebastianbenz.xgherkin.gherkin.util;
 
@@ -148,6 +149,13 @@ public class GherkinSwitch<T> extends Switch<T>
       {
         ExampleRow exampleRow = (ExampleRow)theEObject;
         T result = caseExampleRow(exampleRow);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case GherkinPackage.EXAMPLE_CELL:
+      {
+        ExampleCell exampleCell = (ExampleCell)theEObject;
+        T result = caseExampleCell(exampleCell);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -358,6 +366,22 @@ public class GherkinSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseExampleRow(ExampleRow object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Example Cell</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Example Cell</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseExampleCell(ExampleCell object)
   {
     return null;
   }

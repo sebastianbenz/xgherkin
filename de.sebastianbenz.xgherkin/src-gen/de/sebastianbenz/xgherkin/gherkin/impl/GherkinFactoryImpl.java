@@ -2,6 +2,7 @@
  * <copyright>
  * </copyright>
  *
+
  */
 package de.sebastianbenz.xgherkin.gherkin.impl;
 
@@ -77,6 +78,7 @@ public class GherkinFactoryImpl extends EFactoryImpl implements GherkinFactory
       case GherkinPackage.SCENARIO: return createScenario();
       case GherkinPackage.SCENARIO_WITH_OUTLINE: return createScenarioWithOutline();
       case GherkinPackage.EXAMPLE_ROW: return createExampleRow();
+      case GherkinPackage.EXAMPLE_CELL: return createExampleCell();
       case GherkinPackage.BACKGROUND: return createBackground();
       case GherkinPackage.STEP: return createStep();
       case GherkinPackage.WHEN_STEP: return createWhenStep();
@@ -196,6 +198,17 @@ public class GherkinFactoryImpl extends EFactoryImpl implements GherkinFactory
   {
     ExampleRowImpl exampleRow = new ExampleRowImpl();
     return exampleRow;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public ExampleCell createExampleCell()
+  {
+    ExampleCellImpl exampleCell = new ExampleCellImpl();
+    return exampleCell;
   }
 
   /**

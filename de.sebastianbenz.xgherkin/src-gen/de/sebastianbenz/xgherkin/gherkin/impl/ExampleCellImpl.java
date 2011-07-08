@@ -6,48 +6,57 @@
  */
 package de.sebastianbenz.xgherkin.gherkin.impl;
 
+import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
 import de.sebastianbenz.xgherkin.gherkin.GherkinPackage;
-import de.sebastianbenz.xgherkin.gherkin.WhenStep;
 
-import java.util.Collection;
-
-import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>When Step</b></em>'.
+ * An implementation of the model object '<em><b>Example Cell</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.WhenStepImpl#getTags <em>Tags</em>}</li>
+ *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleCellImpl#getValue <em>Value</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class WhenStepImpl extends StepImpl implements WhenStep
+public class ExampleCellImpl extends MinimalEObjectImpl.Container implements ExampleCell
 {
   /**
-   * The cached value of the '{@link #getTags() <em>Tags</em>}' attribute list.
+   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTags()
+   * @see #getValue()
    * @generated
    * @ordered
    */
-  protected EList<String> tags;
+  protected static final String VALUE_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getValue()
+   * @generated
+   * @ordered
+   */
+  protected String value = VALUE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected WhenStepImpl()
+  protected ExampleCellImpl()
   {
     super();
   }
@@ -60,7 +69,7 @@ public class WhenStepImpl extends StepImpl implements WhenStep
   @Override
   protected EClass eStaticClass()
   {
-    return GherkinPackage.Literals.WHEN_STEP;
+    return GherkinPackage.Literals.EXAMPLE_CELL;
   }
 
   /**
@@ -68,13 +77,22 @@ public class WhenStepImpl extends StepImpl implements WhenStep
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getTags()
+  public String getValue()
   {
-    if (tags == null)
-    {
-      tags = new EDataTypeEList<String>(String.class, this, GherkinPackage.WHEN_STEP__TAGS);
-    }
-    return tags;
+    return value;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setValue(String newValue)
+  {
+    String oldValue = value;
+    value = newValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, GherkinPackage.EXAMPLE_CELL__VALUE, oldValue, value));
   }
 
   /**
@@ -87,8 +105,8 @@ public class WhenStepImpl extends StepImpl implements WhenStep
   {
     switch (featureID)
     {
-      case GherkinPackage.WHEN_STEP__TAGS:
-        return getTags();
+      case GherkinPackage.EXAMPLE_CELL__VALUE:
+        return getValue();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -98,15 +116,13 @@ public class WhenStepImpl extends StepImpl implements WhenStep
    * <!-- end-user-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
     switch (featureID)
     {
-      case GherkinPackage.WHEN_STEP__TAGS:
-        getTags().clear();
-        getTags().addAll((Collection<? extends String>)newValue);
+      case GherkinPackage.EXAMPLE_CELL__VALUE:
+        setValue((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -122,8 +138,8 @@ public class WhenStepImpl extends StepImpl implements WhenStep
   {
     switch (featureID)
     {
-      case GherkinPackage.WHEN_STEP__TAGS:
-        getTags().clear();
+      case GherkinPackage.EXAMPLE_CELL__VALUE:
+        setValue(VALUE_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -139,8 +155,8 @@ public class WhenStepImpl extends StepImpl implements WhenStep
   {
     switch (featureID)
     {
-      case GherkinPackage.WHEN_STEP__TAGS:
-        return tags != null && !tags.isEmpty();
+      case GherkinPackage.EXAMPLE_CELL__VALUE:
+        return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
     }
     return super.eIsSet(featureID);
   }
@@ -156,10 +172,10 @@ public class WhenStepImpl extends StepImpl implements WhenStep
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (tags: ");
-    result.append(tags);
+    result.append(" (value: ");
+    result.append(value);
     result.append(')');
     return result.toString();
   }
 
-} //WhenStepImpl
+} //ExampleCellImpl

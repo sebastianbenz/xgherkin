@@ -2,6 +2,7 @@
  * <copyright>
  * </copyright>
  *
+
  */
 package de.sebastianbenz.xgherkin.gherkin.util;
 
@@ -126,6 +127,11 @@ public class GherkinAdapterFactory extends AdapterFactoryImpl
       public Adapter caseExampleRow(ExampleRow object)
       {
         return createExampleRowAdapter();
+      }
+      @Override
+      public Adapter caseExampleCell(ExampleCell object)
+      {
+        return createExampleCellAdapter();
       }
       @Override
       public Adapter caseBackground(Background object)
@@ -325,6 +331,21 @@ public class GherkinAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createExampleRowAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link de.sebastianbenz.xgherkin.gherkin.ExampleCell <em>Example Cell</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see de.sebastianbenz.xgherkin.gherkin.ExampleCell
+   * @generated
+   */
+  public Adapter createExampleCellAdapter()
   {
     return null;
   }

@@ -2,6 +2,7 @@
  * <copyright>
  * </copyright>
  *
+
  */
 package de.sebastianbenz.xgherkin.gherkin;
 
@@ -421,7 +422,7 @@ public interface GherkinPackage extends EPackage
   int EXAMPLE_ROW = 9;
 
   /**
-   * The feature id for the '<em><b>Cells</b></em>' attribute list.
+   * The feature id for the '<em><b>Cells</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -439,6 +440,34 @@ public interface GherkinPackage extends EPackage
   int EXAMPLE_ROW_FEATURE_COUNT = 1;
 
   /**
+   * The meta object id for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleCellImpl <em>Example Cell</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see de.sebastianbenz.xgherkin.gherkin.impl.ExampleCellImpl
+   * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getExampleCell()
+   * @generated
+   */
+  int EXAMPLE_CELL = 10;
+
+  /**
+   * The feature id for the '<em><b>Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EXAMPLE_CELL__VALUE = 0;
+
+  /**
+   * The number of structural features of the '<em>Example Cell</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EXAMPLE_CELL_FEATURE_COUNT = 1;
+
+  /**
    * The meta object id for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.BackgroundImpl <em>Background</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -446,7 +475,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getBackground()
    * @generated
    */
-  int BACKGROUND = 10;
+  int BACKGROUND = 11;
 
   /**
    * The feature id for the '<em><b>Tags</b></em>' attribute list.
@@ -492,7 +521,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getStep()
    * @generated
    */
-  int STEP = 11;
+  int STEP = 12;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -520,7 +549,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getWhenStep()
    * @generated
    */
-  int WHEN_STEP = 12;
+  int WHEN_STEP = 13;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -557,7 +586,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getThenStep()
    * @generated
    */
-  int THEN_STEP = 13;
+  int THEN_STEP = 14;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -594,7 +623,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getGivenStep()
    * @generated
    */
-  int GIVEN_STEP = 14;
+  int GIVEN_STEP = 15;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -631,7 +660,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getAndStep()
    * @generated
    */
-  int AND_STEP = 15;
+  int AND_STEP = 16;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -863,15 +892,36 @@ public interface GherkinPackage extends EPackage
   EClass getExampleRow();
 
   /**
-   * Returns the meta object for the attribute list '{@link de.sebastianbenz.xgherkin.gherkin.ExampleRow#getCells <em>Cells</em>}'.
+   * Returns the meta object for the containment reference list '{@link de.sebastianbenz.xgherkin.gherkin.ExampleRow#getCells <em>Cells</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Cells</em>'.
+   * @return the meta object for the containment reference list '<em>Cells</em>'.
    * @see de.sebastianbenz.xgherkin.gherkin.ExampleRow#getCells()
    * @see #getExampleRow()
    * @generated
    */
-  EAttribute getExampleRow_Cells();
+  EReference getExampleRow_Cells();
+
+  /**
+   * Returns the meta object for class '{@link de.sebastianbenz.xgherkin.gherkin.ExampleCell <em>Example Cell</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Example Cell</em>'.
+   * @see de.sebastianbenz.xgherkin.gherkin.ExampleCell
+   * @generated
+   */
+  EClass getExampleCell();
+
+  /**
+   * Returns the meta object for the attribute '{@link de.sebastianbenz.xgherkin.gherkin.ExampleCell#getValue <em>Value</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Value</em>'.
+   * @see de.sebastianbenz.xgherkin.gherkin.ExampleCell#getValue()
+   * @see #getExampleCell()
+   * @generated
+   */
+  EAttribute getExampleCell_Value();
 
   /**
    * Returns the meta object for class '{@link de.sebastianbenz.xgherkin.gherkin.Background <em>Background</em>}'.
@@ -1181,12 +1231,30 @@ public interface GherkinPackage extends EPackage
     EClass EXAMPLE_ROW = eINSTANCE.getExampleRow();
 
     /**
-     * The meta object literal for the '<em><b>Cells</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Cells</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute EXAMPLE_ROW__CELLS = eINSTANCE.getExampleRow_Cells();
+    EReference EXAMPLE_ROW__CELLS = eINSTANCE.getExampleRow_Cells();
+
+    /**
+     * The meta object literal for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleCellImpl <em>Example Cell</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see de.sebastianbenz.xgherkin.gherkin.impl.ExampleCellImpl
+     * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getExampleCell()
+     * @generated
+     */
+    EClass EXAMPLE_CELL = eINSTANCE.getExampleCell();
+
+    /**
+     * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute EXAMPLE_CELL__VALUE = eINSTANCE.getExampleCell_Value();
 
     /**
      * The meta object literal for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.BackgroundImpl <em>Background</em>}' class.

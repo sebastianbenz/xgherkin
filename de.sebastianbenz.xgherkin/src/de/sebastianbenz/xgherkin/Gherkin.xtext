@@ -52,7 +52,11 @@ ScenarioWithOutline:
 ;
 
 ExampleRow:
-	cells+=EXAMPLE_CELL+ EXAMPLE_ROW_END
+	cells+=ExampleCell+ EXAMPLE_ROW_END
+;
+
+ExampleCell:
+	value=EXAMPLE_CELL
 ;
 
 Background:
@@ -66,47 +70,55 @@ Step:
 ;
 
 WhenStep:
-	tags+=TAG* desc+=WHEN_TEXT (desc+=TEXT | desc+=CODE)*
+	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*
 ;
 
 ThenStep:
-	tags+=TAG* desc+=THEN_TEXT (desc+=TEXT | desc+=CODE)*
+	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*
 ;
 
 GivenStep:
-	tags+=TAG* desc+=GIVEN_TEXT (desc+=TEXT | desc+=CODE)*
+	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*
 ;
+
 AndStep:
-	desc+=AND_TEXT (desc+=TEXT | desc+=CODE)*
+	desc+=AND_TEXT desc+=OptionalText*
 ;
 
-terminal EXAMPLE_HEADING: ('Examples:') '\r'? '\n';
+OptionalText returns ecore::EString:
+	TEXT | CODE
+;
 
-terminal FEATURE_TEXT: ('Narrative:' | 'Feature:') !('\r' | '\n')* '\r'? '\n'?;
+terminal EXAMPLE_HEADING: 'Examples' SPACES ':' SPACES '\r'? '\n';
 
-terminal IN_ORDER_TO : 'In order to'  !('\r' | '\n')* '\r'? '\n'?;
-terminal AS_A : 'As a' !('\r' | '\n')* '\r'? '\n'?;
-terminal I_WANT_TO : 'I want to ' !('\r' | '\n')* '\r'? '\n'?;
+terminal fragment NNL: !('\r' | '\n');
+terminal fragment NL: '\r'? '\n'?;
+terminal fragment SPACES: (' '|'\t')*;
+terminal FEATURE_TEXT: ('Narrative:' | 'Feature:') NNL* NL;
 
-terminal SCENARIO_TEXT: 'Scenario' ' '* ':' !('\r' | '\n')* '\r'? '\n'?;
-terminal SCENARIO_OUTLINE_TEXT: 'Scenario' ' '* 'Outline' ' '* ':' !('\r' | '\n')* '\r'? '\n'?;
-terminal BACKGROUND_TEXT: 'Background:' !('\r' | '\n')* '\r'? '\n'?;
+terminal IN_ORDER_TO : 'In order to'  NNL* NL;
+terminal AS_A : 'As a' NNL* NL;
+terminal I_WANT_TO : 'I want to ' NNL* NL;
 
-terminal WHEN_TEXT: 'When ' !('\r' | '\n')* '\r'? '\n'?;
-terminal THEN_TEXT: 'Then ' !('\r' | '\n')* '\r'? '\n'?;
-terminal GIVEN_TEXT: 'Given ' !('\r' | '\n')* '\r'? '\n'?;
-terminal AND_TEXT: 'And ' !('\r' | '\n')* '\r'? '\n'?;
+terminal SCENARIO_TEXT: 'Scenario' SPACES ':' NNL* NL;
+terminal SCENARIO_OUTLINE_TEXT: 'Scenario' SPACES 'Outline' SPACES ':' NNL* NL;
+terminal BACKGROUND_TEXT: 'Background' SPACES ':' NNL* NL;
+
+terminal WHEN_TEXT: 'When ' NNL* NL;
+terminal THEN_TEXT: 'Then ' NNL* NL;
+terminal GIVEN_TEXT: 'Given ' NNL* NL;
+terminal AND_TEXT: 'And ' NNL* NL;
 
 terminal EXAMPLE_CELL: '|' !('\r' | '\n' | '|')+;
 terminal EXAMPLE_ROW_END: '|' '\r'? '\n';
 
 terminal CODE: '"""' -> '"""' | "'''" -> "'''";
 
-terminal TAG: '@' !('\r' | '\n')+ '\r'? '\n'?;
+terminal TAG: '@' NNL+ NL;
 
-terminal SL_COMMENT: '#' !('\r' | '\n')+ '\r'? '\n'?;
+terminal SL_COMMENT: '#' NNL+ NL;
 
-terminal TEXT: !('|'|' '|'\t'|'\r'|'\n'|'@') !('\r' | '\n')* '\r'? '\n'?;
+terminal TEXT: !('|'|' '|'\t'|'\r'|'\n'|'@') NNL* NL;
 terminal WS  : (' '|'\t'|'\r'|'\n')+;
 
 

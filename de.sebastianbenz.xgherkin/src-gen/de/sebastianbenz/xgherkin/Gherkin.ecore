@@ -37,8 +37,12 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExampleRow">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cells" unique="false" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cells" upperBound="-1"
+        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleCell"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExampleCell">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Background" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario"/>
   <eClassifiers xsi:type="ecore:EClass" name="Step">

@@ -2,6 +2,7 @@
  * <copyright>
  * </copyright>
  *
+
  */
 package de.sebastianbenz.xgherkin.gherkin.impl;
 
@@ -9,6 +10,7 @@ import de.sebastianbenz.xgherkin.gherkin.AbstractScenario;
 import de.sebastianbenz.xgherkin.gherkin.AndStep;
 import de.sebastianbenz.xgherkin.gherkin.AsA;
 import de.sebastianbenz.xgherkin.gherkin.Background;
+import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.Feature;
 import de.sebastianbenz.xgherkin.gherkin.FreeText;
@@ -108,6 +110,13 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * @generated
    */
   private EClass exampleRowEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass exampleCellEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -419,9 +428,29 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getExampleRow_Cells()
+  public EReference getExampleRow_Cells()
   {
-    return (EAttribute)exampleRowEClass.getEStructuralFeatures().get(0);
+    return (EReference)exampleRowEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getExampleCell()
+  {
+    return exampleCellEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getExampleCell_Value()
+  {
+    return (EAttribute)exampleCellEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -583,7 +612,10 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
     createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__ROWS);
 
     exampleRowEClass = createEClass(EXAMPLE_ROW);
-    createEAttribute(exampleRowEClass, EXAMPLE_ROW__CELLS);
+    createEReference(exampleRowEClass, EXAMPLE_ROW__CELLS);
+
+    exampleCellEClass = createEClass(EXAMPLE_CELL);
+    createEAttribute(exampleCellEClass, EXAMPLE_CELL__VALUE);
 
     backgroundEClass = createEClass(BACKGROUND);
 
@@ -673,7 +705,10 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
     initEReference(getScenarioWithOutline_Rows(), this.getExampleRow(), null, "rows", null, 0, -1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(exampleRowEClass, ExampleRow.class, "ExampleRow", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getExampleRow_Cells(), ecorePackage.getEString(), "cells", null, 0, -1, ExampleRow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getExampleRow_Cells(), this.getExampleCell(), null, "cells", null, 0, -1, ExampleRow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(exampleCellEClass, ExampleCell.class, "ExampleCell", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getExampleCell_Value(), ecorePackage.getEString(), "value", null, 0, 1, ExampleCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(backgroundEClass, Background.class, "Background", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

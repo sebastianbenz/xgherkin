@@ -272,24 +272,40 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ExampleRow");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cCellsAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cCellsEXAMPLE_CELLTerminalRuleCall_0_0 = (RuleCall)cCellsAssignment_0.eContents().get(0);
+		private final RuleCall cCellsExampleCellParserRuleCall_0_0 = (RuleCall)cCellsAssignment_0.eContents().get(0);
 		private final RuleCall cEXAMPLE_ROW_ENDTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
 		
 		//ExampleRow:
-		//	cells+=EXAMPLE_CELL+ EXAMPLE_ROW_END;
+		//	cells+=ExampleCell+ EXAMPLE_ROW_END;
 		public ParserRule getRule() { return rule; }
 
-		//cells+=EXAMPLE_CELL+ EXAMPLE_ROW_END
+		//cells+=ExampleCell+ EXAMPLE_ROW_END
 		public Group getGroup() { return cGroup; }
 
-		//cells+=EXAMPLE_CELL+
+		//cells+=ExampleCell+
 		public Assignment getCellsAssignment_0() { return cCellsAssignment_0; }
 
-		//EXAMPLE_CELL
-		public RuleCall getCellsEXAMPLE_CELLTerminalRuleCall_0_0() { return cCellsEXAMPLE_CELLTerminalRuleCall_0_0; }
+		//ExampleCell
+		public RuleCall getCellsExampleCellParserRuleCall_0_0() { return cCellsExampleCellParserRuleCall_0_0; }
 
 		//EXAMPLE_ROW_END
 		public RuleCall getEXAMPLE_ROW_ENDTerminalRuleCall_1() { return cEXAMPLE_ROW_ENDTerminalRuleCall_1; }
+	}
+
+	public class ExampleCellElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ExampleCell");
+		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
+		private final RuleCall cValueEXAMPLE_CELLTerminalRuleCall_0 = (RuleCall)cValueAssignment.eContents().get(0);
+		
+		//ExampleCell:
+		//	value=EXAMPLE_CELL;
+		public ParserRule getRule() { return rule; }
+
+		//value=EXAMPLE_CELL
+		public Assignment getValueAssignment() { return cValueAssignment; }
+
+		//EXAMPLE_CELL
+		public RuleCall getValueEXAMPLE_CELLTerminalRuleCall_0() { return cValueEXAMPLE_CELLTerminalRuleCall_0; }
 	}
 
 	public class BackgroundElements extends AbstractParserRuleElementFinder {
@@ -363,17 +379,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cTagsTAGTerminalRuleCall_0_0 = (RuleCall)cTagsAssignment_0.eContents().get(0);
 		private final Assignment cDescAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cDescWHEN_TEXTTerminalRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
-		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
-		private final Assignment cDescAssignment_2_0 = (Assignment)cAlternatives_2.eContents().get(0);
-		private final RuleCall cDescTEXTTerminalRuleCall_2_0_0 = (RuleCall)cDescAssignment_2_0.eContents().get(0);
-		private final Assignment cDescAssignment_2_1 = (Assignment)cAlternatives_2.eContents().get(1);
-		private final RuleCall cDescCODETerminalRuleCall_2_1_0 = (RuleCall)cDescAssignment_2_1.eContents().get(0);
+		private final Assignment cDescAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cDescOptionalTextParserRuleCall_2_0 = (RuleCall)cDescAssignment_2.eContents().get(0);
 		
 		//WhenStep:
-		//	tags+=TAG* desc+=WHEN_TEXT (desc+=TEXT | desc+=CODE)*;
+		//	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* desc+=WHEN_TEXT (desc+=TEXT | desc+=CODE)*
+		//tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -388,20 +401,11 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		//WHEN_TEXT
 		public RuleCall getDescWHEN_TEXTTerminalRuleCall_1_0() { return cDescWHEN_TEXTTerminalRuleCall_1_0; }
 
-		//(desc+=TEXT | desc+=CODE)*
-		public Alternatives getAlternatives_2() { return cAlternatives_2; }
+		//desc+=OptionalText*
+		public Assignment getDescAssignment_2() { return cDescAssignment_2; }
 
-		//desc+=TEXT
-		public Assignment getDescAssignment_2_0() { return cDescAssignment_2_0; }
-
-		//TEXT
-		public RuleCall getDescTEXTTerminalRuleCall_2_0_0() { return cDescTEXTTerminalRuleCall_2_0_0; }
-
-		//desc+=CODE
-		public Assignment getDescAssignment_2_1() { return cDescAssignment_2_1; }
-
-		//CODE
-		public RuleCall getDescCODETerminalRuleCall_2_1_0() { return cDescCODETerminalRuleCall_2_1_0; }
+		//OptionalText
+		public RuleCall getDescOptionalTextParserRuleCall_2_0() { return cDescOptionalTextParserRuleCall_2_0; }
 	}
 
 	public class ThenStepElements extends AbstractParserRuleElementFinder {
@@ -411,17 +415,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cTagsTAGTerminalRuleCall_0_0 = (RuleCall)cTagsAssignment_0.eContents().get(0);
 		private final Assignment cDescAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cDescTHEN_TEXTTerminalRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
-		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
-		private final Assignment cDescAssignment_2_0 = (Assignment)cAlternatives_2.eContents().get(0);
-		private final RuleCall cDescTEXTTerminalRuleCall_2_0_0 = (RuleCall)cDescAssignment_2_0.eContents().get(0);
-		private final Assignment cDescAssignment_2_1 = (Assignment)cAlternatives_2.eContents().get(1);
-		private final RuleCall cDescCODETerminalRuleCall_2_1_0 = (RuleCall)cDescAssignment_2_1.eContents().get(0);
+		private final Assignment cDescAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cDescOptionalTextParserRuleCall_2_0 = (RuleCall)cDescAssignment_2.eContents().get(0);
 		
 		//ThenStep:
-		//	tags+=TAG* desc+=THEN_TEXT (desc+=TEXT | desc+=CODE)*;
+		//	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* desc+=THEN_TEXT (desc+=TEXT | desc+=CODE)*
+		//tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -436,20 +437,11 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		//THEN_TEXT
 		public RuleCall getDescTHEN_TEXTTerminalRuleCall_1_0() { return cDescTHEN_TEXTTerminalRuleCall_1_0; }
 
-		//(desc+=TEXT | desc+=CODE)*
-		public Alternatives getAlternatives_2() { return cAlternatives_2; }
+		//desc+=OptionalText*
+		public Assignment getDescAssignment_2() { return cDescAssignment_2; }
 
-		//desc+=TEXT
-		public Assignment getDescAssignment_2_0() { return cDescAssignment_2_0; }
-
-		//TEXT
-		public RuleCall getDescTEXTTerminalRuleCall_2_0_0() { return cDescTEXTTerminalRuleCall_2_0_0; }
-
-		//desc+=CODE
-		public Assignment getDescAssignment_2_1() { return cDescAssignment_2_1; }
-
-		//CODE
-		public RuleCall getDescCODETerminalRuleCall_2_1_0() { return cDescCODETerminalRuleCall_2_1_0; }
+		//OptionalText
+		public RuleCall getDescOptionalTextParserRuleCall_2_0() { return cDescOptionalTextParserRuleCall_2_0; }
 	}
 
 	public class GivenStepElements extends AbstractParserRuleElementFinder {
@@ -459,17 +451,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cTagsTAGTerminalRuleCall_0_0 = (RuleCall)cTagsAssignment_0.eContents().get(0);
 		private final Assignment cDescAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cDescGIVEN_TEXTTerminalRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
-		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
-		private final Assignment cDescAssignment_2_0 = (Assignment)cAlternatives_2.eContents().get(0);
-		private final RuleCall cDescTEXTTerminalRuleCall_2_0_0 = (RuleCall)cDescAssignment_2_0.eContents().get(0);
-		private final Assignment cDescAssignment_2_1 = (Assignment)cAlternatives_2.eContents().get(1);
-		private final RuleCall cDescCODETerminalRuleCall_2_1_0 = (RuleCall)cDescAssignment_2_1.eContents().get(0);
+		private final Assignment cDescAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cDescOptionalTextParserRuleCall_2_0 = (RuleCall)cDescAssignment_2.eContents().get(0);
 		
 		//GivenStep:
-		//	tags+=TAG* desc+=GIVEN_TEXT (desc+=TEXT | desc+=CODE)*;
+		//	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* desc+=GIVEN_TEXT (desc+=TEXT | desc+=CODE)*
+		//tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -484,20 +473,11 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		//GIVEN_TEXT
 		public RuleCall getDescGIVEN_TEXTTerminalRuleCall_1_0() { return cDescGIVEN_TEXTTerminalRuleCall_1_0; }
 
-		//(desc+=TEXT | desc+=CODE)*
-		public Alternatives getAlternatives_2() { return cAlternatives_2; }
+		//desc+=OptionalText*
+		public Assignment getDescAssignment_2() { return cDescAssignment_2; }
 
-		//desc+=TEXT
-		public Assignment getDescAssignment_2_0() { return cDescAssignment_2_0; }
-
-		//TEXT
-		public RuleCall getDescTEXTTerminalRuleCall_2_0_0() { return cDescTEXTTerminalRuleCall_2_0_0; }
-
-		//desc+=CODE
-		public Assignment getDescAssignment_2_1() { return cDescAssignment_2_1; }
-
-		//CODE
-		public RuleCall getDescCODETerminalRuleCall_2_1_0() { return cDescCODETerminalRuleCall_2_1_0; }
+		//OptionalText
+		public RuleCall getDescOptionalTextParserRuleCall_2_0() { return cDescOptionalTextParserRuleCall_2_0; }
 	}
 
 	public class AndStepElements extends AbstractParserRuleElementFinder {
@@ -505,17 +485,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cDescAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cDescAND_TEXTTerminalRuleCall_0_0 = (RuleCall)cDescAssignment_0.eContents().get(0);
-		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
-		private final Assignment cDescAssignment_1_0 = (Assignment)cAlternatives_1.eContents().get(0);
-		private final RuleCall cDescTEXTTerminalRuleCall_1_0_0 = (RuleCall)cDescAssignment_1_0.eContents().get(0);
-		private final Assignment cDescAssignment_1_1 = (Assignment)cAlternatives_1.eContents().get(1);
-		private final RuleCall cDescCODETerminalRuleCall_1_1_0 = (RuleCall)cDescAssignment_1_1.eContents().get(0);
+		private final Assignment cDescAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cDescOptionalTextParserRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
 		
 		//AndStep:
-		//	desc+=AND_TEXT (desc+=TEXT | desc+=CODE)*;
+		//	desc+=AND_TEXT desc+=OptionalText*;
 		public ParserRule getRule() { return rule; }
 
-		//desc+=AND_TEXT (desc+=TEXT | desc+=CODE)*
+		//desc+=AND_TEXT desc+=OptionalText*
 		public Group getGroup() { return cGroup; }
 
 		//desc+=AND_TEXT
@@ -524,20 +501,31 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		//AND_TEXT
 		public RuleCall getDescAND_TEXTTerminalRuleCall_0_0() { return cDescAND_TEXTTerminalRuleCall_0_0; }
 
-		//(desc+=TEXT | desc+=CODE)*
-		public Alternatives getAlternatives_1() { return cAlternatives_1; }
+		//desc+=OptionalText*
+		public Assignment getDescAssignment_1() { return cDescAssignment_1; }
 
-		//desc+=TEXT
-		public Assignment getDescAssignment_1_0() { return cDescAssignment_1_0; }
+		//OptionalText
+		public RuleCall getDescOptionalTextParserRuleCall_1_0() { return cDescOptionalTextParserRuleCall_1_0; }
+	}
+
+	public class OptionalTextElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "OptionalText");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cTEXTTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cCODETerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//OptionalText returns ecore::EString:
+		//	TEXT | CODE;
+		public ParserRule getRule() { return rule; }
+
+		//TEXT | CODE
+		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//TEXT
-		public RuleCall getDescTEXTTerminalRuleCall_1_0_0() { return cDescTEXTTerminalRuleCall_1_0_0; }
-
-		//desc+=CODE
-		public Assignment getDescAssignment_1_1() { return cDescAssignment_1_1; }
+		public RuleCall getTEXTTerminalRuleCall_0() { return cTEXTTerminalRuleCall_0; }
 
 		//CODE
-		public RuleCall getDescCODETerminalRuleCall_1_1_0() { return cDescCODETerminalRuleCall_1_1_0; }
+		public RuleCall getCODETerminalRuleCall_1() { return cCODETerminalRuleCall_1; }
 	}
 	
 	
@@ -551,13 +539,18 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	private ScenarioElements pScenario;
 	private ScenarioWithOutlineElements pScenarioWithOutline;
 	private ExampleRowElements pExampleRow;
+	private ExampleCellElements pExampleCell;
 	private BackgroundElements pBackground;
 	private StepElements pStep;
 	private WhenStepElements pWhenStep;
 	private ThenStepElements pThenStep;
 	private GivenStepElements pGivenStep;
 	private AndStepElements pAndStep;
+	private OptionalTextElements pOptionalText;
 	private TerminalRule tEXAMPLE_HEADING;
+	private TerminalRule tNNL;
+	private TerminalRule tNL;
+	private TerminalRule tSPACES;
 	private TerminalRule tFEATURE_TEXT;
 	private TerminalRule tIN_ORDER_TO;
 	private TerminalRule tAS_A;
@@ -681,13 +674,23 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ExampleRow:
-	//	cells+=EXAMPLE_CELL+ EXAMPLE_ROW_END;
+	//	cells+=ExampleCell+ EXAMPLE_ROW_END;
 	public ExampleRowElements getExampleRowAccess() {
 		return (pExampleRow != null) ? pExampleRow : (pExampleRow = new ExampleRowElements());
 	}
 	
 	public ParserRule getExampleRowRule() {
 		return getExampleRowAccess().getRule();
+	}
+
+	//ExampleCell:
+	//	value=EXAMPLE_CELL;
+	public ExampleCellElements getExampleCellAccess() {
+		return (pExampleCell != null) ? pExampleCell : (pExampleCell = new ExampleCellElements());
+	}
+	
+	public ParserRule getExampleCellRule() {
+		return getExampleCellAccess().getRule();
 	}
 
 	//Background:
@@ -711,7 +714,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//WhenStep:
-	//	tags+=TAG* desc+=WHEN_TEXT (desc+=TEXT | desc+=CODE)*;
+	//	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*;
 	public WhenStepElements getWhenStepAccess() {
 		return (pWhenStep != null) ? pWhenStep : (pWhenStep = new WhenStepElements());
 	}
@@ -721,7 +724,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ThenStep:
-	//	tags+=TAG* desc+=THEN_TEXT (desc+=TEXT | desc+=CODE)*;
+	//	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*;
 	public ThenStepElements getThenStepAccess() {
 		return (pThenStep != null) ? pThenStep : (pThenStep = new ThenStepElements());
 	}
@@ -731,7 +734,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//GivenStep:
-	//	tags+=TAG* desc+=GIVEN_TEXT (desc+=TEXT | desc+=CODE)*;
+	//	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*;
 	public GivenStepElements getGivenStepAccess() {
 		return (pGivenStep != null) ? pGivenStep : (pGivenStep = new GivenStepElements());
 	}
@@ -741,7 +744,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//AndStep:
-	//	desc+=AND_TEXT (desc+=TEXT | desc+=CODE)*;
+	//	desc+=AND_TEXT desc+=OptionalText*;
 	public AndStepElements getAndStepAccess() {
 		return (pAndStep != null) ? pAndStep : (pAndStep = new AndStepElements());
 	}
@@ -750,74 +753,102 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		return getAndStepAccess().getRule();
 	}
 
+	//OptionalText returns ecore::EString:
+	//	TEXT | CODE;
+	public OptionalTextElements getOptionalTextAccess() {
+		return (pOptionalText != null) ? pOptionalText : (pOptionalText = new OptionalTextElements());
+	}
+	
+	public ParserRule getOptionalTextRule() {
+		return getOptionalTextAccess().getRule();
+	}
+
 	//terminal EXAMPLE_HEADING:
-	//	"Examples:" "\r"? "\n";
+	//	"Examples" SPACES ":" SPACES "\r"? "\n";
 	public TerminalRule getEXAMPLE_HEADINGRule() {
 		return (tEXAMPLE_HEADING != null) ? tEXAMPLE_HEADING : (tEXAMPLE_HEADING = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "EXAMPLE_HEADING"));
 	} 
 
+	//terminal fragment NNL:
+	//	!("\r" | "\n");
+	public TerminalRule getNNLRule() {
+		return (tNNL != null) ? tNNL : (tNNL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "NNL"));
+	} 
+
+	//terminal fragment NL:
+	//	"\r"? "\n"?;
+	public TerminalRule getNLRule() {
+		return (tNL != null) ? tNL : (tNL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "NL"));
+	} 
+
+	//terminal fragment SPACES:
+	//	(" " | "\t")*;
+	public TerminalRule getSPACESRule() {
+		return (tSPACES != null) ? tSPACES : (tSPACES = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SPACES"));
+	} 
+
 	//terminal FEATURE_TEXT:
-	//	("Narrative:" | "Feature:") !("\r" | "\n")* "\r"? "\n"?;
+	//	("Narrative:" | "Feature:") NNL* NL;
 	public TerminalRule getFEATURE_TEXTRule() {
 		return (tFEATURE_TEXT != null) ? tFEATURE_TEXT : (tFEATURE_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "FEATURE_TEXT"));
 	} 
 
 	//terminal IN_ORDER_TO:
-	//	"In order to" !("\r" | "\n")* "\r"? "\n"?;
+	//	"In order to" NNL* NL;
 	public TerminalRule getIN_ORDER_TORule() {
 		return (tIN_ORDER_TO != null) ? tIN_ORDER_TO : (tIN_ORDER_TO = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "IN_ORDER_TO"));
 	} 
 
 	//terminal AS_A:
-	//	"As a" !("\r" | "\n")* "\r"? "\n"?;
+	//	"As a" NNL* NL;
 	public TerminalRule getAS_ARule() {
 		return (tAS_A != null) ? tAS_A : (tAS_A = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "AS_A"));
 	} 
 
 	//terminal I_WANT_TO:
-	//	"I want to " !("\r" | "\n")* "\r"? "\n"?;
+	//	"I want to " NNL* NL;
 	public TerminalRule getI_WANT_TORule() {
 		return (tI_WANT_TO != null) ? tI_WANT_TO : (tI_WANT_TO = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "I_WANT_TO"));
 	} 
 
 	//terminal SCENARIO_TEXT:
-	//	"Scenario" " "* ":" !("\r" | "\n")* "\r"? "\n"?;
+	//	"Scenario" SPACES ":" NNL* NL;
 	public TerminalRule getSCENARIO_TEXTRule() {
 		return (tSCENARIO_TEXT != null) ? tSCENARIO_TEXT : (tSCENARIO_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SCENARIO_TEXT"));
 	} 
 
 	//terminal SCENARIO_OUTLINE_TEXT:
-	//	"Scenario" " "* "Outline" " "* ":" !("\r" | "\n")* "\r"? "\n"?;
+	//	"Scenario" SPACES "Outline" SPACES ":" NNL* NL;
 	public TerminalRule getSCENARIO_OUTLINE_TEXTRule() {
 		return (tSCENARIO_OUTLINE_TEXT != null) ? tSCENARIO_OUTLINE_TEXT : (tSCENARIO_OUTLINE_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SCENARIO_OUTLINE_TEXT"));
 	} 
 
 	//terminal BACKGROUND_TEXT:
-	//	"Background:" !("\r" | "\n")* "\r"? "\n"?;
+	//	"Background" SPACES ":" NNL* NL;
 	public TerminalRule getBACKGROUND_TEXTRule() {
 		return (tBACKGROUND_TEXT != null) ? tBACKGROUND_TEXT : (tBACKGROUND_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "BACKGROUND_TEXT"));
 	} 
 
 	//terminal WHEN_TEXT:
-	//	"When " !("\r" | "\n")* "\r"? "\n"?;
+	//	"When " NNL* NL;
 	public TerminalRule getWHEN_TEXTRule() {
 		return (tWHEN_TEXT != null) ? tWHEN_TEXT : (tWHEN_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "WHEN_TEXT"));
 	} 
 
 	//terminal THEN_TEXT:
-	//	"Then " !("\r" | "\n")* "\r"? "\n"?;
+	//	"Then " NNL* NL;
 	public TerminalRule getTHEN_TEXTRule() {
 		return (tTHEN_TEXT != null) ? tTHEN_TEXT : (tTHEN_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "THEN_TEXT"));
 	} 
 
 	//terminal GIVEN_TEXT:
-	//	"Given " !("\r" | "\n")* "\r"? "\n"?;
+	//	"Given " NNL* NL;
 	public TerminalRule getGIVEN_TEXTRule() {
 		return (tGIVEN_TEXT != null) ? tGIVEN_TEXT : (tGIVEN_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "GIVEN_TEXT"));
 	} 
 
 	//terminal AND_TEXT:
-	//	"And " !("\r" | "\n")* "\r"? "\n"?;
+	//	"And " NNL* NL;
 	public TerminalRule getAND_TEXTRule() {
 		return (tAND_TEXT != null) ? tAND_TEXT : (tAND_TEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "AND_TEXT"));
 	} 
@@ -841,19 +872,19 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	} 
 
 	//terminal TAG:
-	//	"@" !("\r" | "\n")+ "\r"? "\n"?;
+	//	"@" NNL+ NL;
 	public TerminalRule getTAGRule() {
 		return (tTAG != null) ? tTAG : (tTAG = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "TAG"));
 	} 
 
 	//terminal SL_COMMENT:
-	//	"#" !("\r" | "\n")+ "\r"? "\n"?;
+	//	"#" NNL+ NL;
 	public TerminalRule getSL_COMMENTRule() {
 		return (tSL_COMMENT != null) ? tSL_COMMENT : (tSL_COMMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SL_COMMENT"));
 	} 
 
 	//terminal TEXT:
-	//	!("|" | " " | "\t" | "\r" | "\n" | "@") !("\r" | "\n")* "\r"? "\n"?;
+	//	!("|" | " " | "\t" | "\r" | "\n" | "@") NNL* NL;
 	public TerminalRule getTEXTRule() {
 		return (tTEXT != null) ? tTEXT : (tTEXT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "TEXT"));
 	} 

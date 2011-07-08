@@ -33,7 +33,10 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ScenarioWithOutline/rows"/>
     </genClasses>
     <genClasses ecoreClass="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleRow">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleRow/cells"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleRow/cells"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleCell">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleCell/value"/>
     </genClasses>
     <genClasses ecoreClass="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Background"/>
     <genClasses ecoreClass="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Step">
