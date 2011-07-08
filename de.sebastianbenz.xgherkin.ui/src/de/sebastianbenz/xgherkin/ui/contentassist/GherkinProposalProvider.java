@@ -13,8 +13,9 @@
 */
 package de.sebastianbenz.xgherkin.ui.contentassist;
 
+import static org.eclipse.xtext.EcoreUtil2.getContainerOfType;
+
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
 import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor;
@@ -31,7 +32,7 @@ public class GherkinProposalProvider extends AbstractGherkinProposalProvider {
 		if(!context.getPrefix().trim().endsWith("<")){
 			return;
 		}
-		ScenarioWithOutline scenarioWithOutline = EcoreUtil2.getContainerOfType(model, ScenarioWithOutline.class);
+		ScenarioWithOutline scenarioWithOutline = getContainerOfType(model, ScenarioWithOutline.class);
 		if(scenarioWithOutline == null){
 			return;
 		}
