@@ -39,13 +39,15 @@ AbstractScenario:
 Scenario:
 	tags+=TAG* 
 	name=SCENARIO_TEXT
-	(steps += Step)*
+	elements+=NarrativeElement*
+	(steps += Step)+
 ;
 
 ScenarioWithOutline:
 	tags+=TAG* 
 	name=SCENARIO_OUTLINE_TEXT
-	(steps += Step)*
+	elements+=NarrativeElement*
+	(steps += Step)+
 	EXAMPLE_HEADING
 	heading = ExampleRow
 	(rows += ExampleRow)*
@@ -109,8 +111,8 @@ terminal THEN_TEXT: 'Then ' NNL* NL;
 terminal GIVEN_TEXT: 'Given ' NNL* NL;
 terminal AND_TEXT: 'And ' NNL* NL;
 
+terminal EXAMPLE_ROW_END: '|' SPACES NL;
 terminal EXAMPLE_CELL: '|' !('\r' | '\n' | '|')+;
-terminal EXAMPLE_ROW_END: '|' '\r'? '\n';
 
 terminal CODE: '"""' -> '"""' | "'''" -> "'''";
 

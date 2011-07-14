@@ -1,4 +1,6 @@
-h1. A simple Eclipse editor for Cucumber feature definitions based on Xtext.
+h1. An Eclipse editor for Cucumber feature definitions based on Xtext.
+
+The editor provides syntax highlighting, syntax validation (and some code completions) for cucumber features definitions in Eclipse. 
 
 !http://sebastianbenz.github.com/xgherkin/images/Example.png(Screenshot)!
 

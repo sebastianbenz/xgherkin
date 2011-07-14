@@ -1,4 +1,4 @@
-package de.sebastianbenz.xgherkin.tests;
+package de.sebastianbenz.xgherkin.tests.parser;
 
 import static org.junit.Assert.assertTrue;
 

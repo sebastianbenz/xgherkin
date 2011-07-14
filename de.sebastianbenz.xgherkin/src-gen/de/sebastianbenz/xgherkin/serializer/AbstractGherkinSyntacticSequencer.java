@@ -36,7 +36,7 @@ public class AbstractGherkinSyntacticSequencer extends AbstractSyntacticSequence
 	protected String getEXAMPLE_ROW_ENDToken(RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);
-		return "|\n";
+		return "|";
 	}
 	
 	@Override

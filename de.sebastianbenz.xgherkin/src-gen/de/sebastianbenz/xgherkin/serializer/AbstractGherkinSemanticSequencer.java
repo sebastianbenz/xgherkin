@@ -320,12 +320,20 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* name=SCENARIO_OUTLINE_TEXT steps+=Step* heading=ExampleRow rows+=ExampleRow*)
+	 *     (
+	 *         tags+=TAG* 
+	 *         name=SCENARIO_OUTLINE_TEXT 
+	 *         elements+=NarrativeElement* 
+	 *         steps+=Step+ 
+	 *         heading=ExampleRow 
+	 *         rows+=ExampleRow*
+	 *     )
 	 *
 	 * Features:
 	 *    tags[0, *]
 	 *    name[1, 1]
-	 *    steps[0, *]
+	 *    steps[1, *]
+	 *    elements[0, *]
 	 *    heading[1, 1]
 	 *    rows[0, *]
 	 */
@@ -336,12 +344,13 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* name=SCENARIO_TEXT steps+=Step*)
+	 *     (tags+=TAG* name=SCENARIO_TEXT elements+=NarrativeElement* steps+=Step+)
 	 *
 	 * Features:
 	 *    tags[0, *]
 	 *    name[1, 1]
-	 *    steps[0, *]
+	 *    steps[1, *]
+	 *    elements[0, *]
 	 */
 	protected void sequence_Scenario_Scenario(EObject context, Scenario semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

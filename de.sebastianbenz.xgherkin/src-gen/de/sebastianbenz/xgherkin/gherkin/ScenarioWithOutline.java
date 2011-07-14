@@ -2,7 +2,6 @@
  * <copyright>
  * </copyright>
  *
-
  */
 package de.sebastianbenz.xgherkin.gherkin;
 
@@ -16,6 +15,7 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
+ *   <li>{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getElements <em>Elements</em>}</li>
  *   <li>{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getHeading <em>Heading</em>}</li>
  *   <li>{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getRows <em>Rows</em>}</li>
  * </ul>
@@ -27,6 +27,22 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface ScenarioWithOutline extends AbstractScenario
 {
+  /**
+   * Returns the value of the '<em><b>Elements</b></em>' containment reference list.
+   * The list contents are of type {@link de.sebastianbenz.xgherkin.gherkin.NarrativeElement}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Elements</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Elements</em>' containment reference list.
+   * @see de.sebastianbenz.xgherkin.gherkin.GherkinPackage#getScenarioWithOutline_Elements()
+   * @model containment="true"
+   * @generated
+   */
+  EList<NarrativeElement> getElements();
+
   /**
    * Returns the value of the '<em><b>Heading</b></em>' containment reference.
    * <!-- begin-user-doc -->

@@ -13,11 +13,17 @@
 */
 package de.sebastianbenz.xgherkin.ui.labeling;
 
+import static com.google.common.collect.Iterables.transform;
+
 import org.eclipse.emf.edit.ui.provider.AdapterFactoryLabelProvider;
 import org.eclipse.xtext.ui.label.DefaultEObjectLabelProvider;
 
+import com.google.common.base.Function;
+import com.google.common.base.Joiner;
 import com.google.inject.Inject;
 
+import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
+import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.Step;
 
 /**
@@ -38,6 +44,20 @@ public class GherkinLabelProvider extends DefaultEObjectLabelProvider {
 		}else{
 			return step.getDesc().get(0);
 		}
+	}
+	
+	String text(ExampleCell cell){
+		return cell.getValue();
+	}
+	
+	String text(ExampleRow row){
+		return "| " + Joiner.on(" |Ê").join(transform(row.getCells(), new Function<ExampleCell, String>() {
+
+			@Override
+			public String apply(ExampleCell from) {
+				return from.getValue();
+			}
+		})) + " |";
 	}
 
 /*

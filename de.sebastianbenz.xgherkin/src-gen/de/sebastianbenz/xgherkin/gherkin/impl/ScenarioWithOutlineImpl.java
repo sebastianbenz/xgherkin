@@ -2,12 +2,12 @@
  * <copyright>
  * </copyright>
  *
-
  */
 package de.sebastianbenz.xgherkin.gherkin.impl;
 
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.GherkinPackage;
+import de.sebastianbenz.xgherkin.gherkin.NarrativeElement;
 import de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline;
 
 import java.util.Collection;
@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl#getElements <em>Elements</em>}</li>
  *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl#getHeading <em>Heading</em>}</li>
  *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl#getRows <em>Rows</em>}</li>
  * </ul>
@@ -41,6 +42,16 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements ScenarioWithOutline
 {
+  /**
+   * The cached value of the '{@link #getElements() <em>Elements</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getElements()
+   * @generated
+   * @ordered
+   */
+  protected EList<NarrativeElement> elements;
+
   /**
    * The cached value of the '{@link #getHeading() <em>Heading</em>}' containment reference.
    * <!-- begin-user-doc -->
@@ -80,6 +91,20 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
   protected EClass eStaticClass()
   {
     return GherkinPackage.Literals.SCENARIO_WITH_OUTLINE;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<NarrativeElement> getElements()
+  {
+    if (elements == null)
+    {
+      elements = new EObjectContainmentEList<NarrativeElement>(NarrativeElement.class, this, GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS);
+    }
+    return elements;
   }
 
   /**
@@ -154,6 +179,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
   {
     switch (featureID)
     {
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
+        return ((InternalEList<?>)getElements()).basicRemove(otherEnd, msgs);
       case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
         return basicSetHeading(null, msgs);
       case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:
@@ -172,6 +199,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
   {
     switch (featureID)
     {
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
+        return getElements();
       case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
         return getHeading();
       case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:
@@ -191,6 +220,10 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
   {
     switch (featureID)
     {
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
+        getElements().clear();
+        getElements().addAll((Collection<? extends NarrativeElement>)newValue);
+        return;
       case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
         setHeading((ExampleRow)newValue);
         return;
@@ -212,6 +245,9 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
   {
     switch (featureID)
     {
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
+        getElements().clear();
+        return;
       case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
         setHeading((ExampleRow)null);
         return;
@@ -232,6 +268,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
   {
     switch (featureID)
     {
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
+        return elements != null && !elements.isEmpty();
       case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
         return heading != null;
       case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:

@@ -29,8 +29,15 @@
         eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Step"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Scenario" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Scenario" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"
+        containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ScenarioWithOutline" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="heading" eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleRow"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rows" upperBound="-1" eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleRow"

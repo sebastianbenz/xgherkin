@@ -2,7 +2,6 @@
  * <copyright>
  * </copyright>
  *
-
  */
 package de.sebastianbenz.xgherkin.gherkin;
 
@@ -339,13 +338,22 @@ public interface GherkinPackage extends EPackage
   int SCENARIO__STEPS = ABSTRACT_SCENARIO__STEPS;
 
   /**
+   * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCENARIO__ELEMENTS = ABSTRACT_SCENARIO_FEATURE_COUNT + 0;
+
+  /**
    * The number of structural features of the '<em>Scenario</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SCENARIO_FEATURE_COUNT = ABSTRACT_SCENARIO_FEATURE_COUNT + 0;
+  int SCENARIO_FEATURE_COUNT = ABSTRACT_SCENARIO_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl <em>Scenario With Outline</em>}' class.
@@ -385,13 +393,22 @@ public interface GherkinPackage extends EPackage
   int SCENARIO_WITH_OUTLINE__STEPS = ABSTRACT_SCENARIO__STEPS;
 
   /**
+   * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCENARIO_WITH_OUTLINE__ELEMENTS = ABSTRACT_SCENARIO_FEATURE_COUNT + 0;
+
+  /**
    * The feature id for the '<em><b>Heading</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SCENARIO_WITH_OUTLINE__HEADING = ABSTRACT_SCENARIO_FEATURE_COUNT + 0;
+  int SCENARIO_WITH_OUTLINE__HEADING = ABSTRACT_SCENARIO_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Rows</b></em>' containment reference list.
@@ -400,7 +417,7 @@ public interface GherkinPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCENARIO_WITH_OUTLINE__ROWS = ABSTRACT_SCENARIO_FEATURE_COUNT + 1;
+  int SCENARIO_WITH_OUTLINE__ROWS = ABSTRACT_SCENARIO_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>Scenario With Outline</em>' class.
@@ -409,7 +426,7 @@ public interface GherkinPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCENARIO_WITH_OUTLINE_FEATURE_COUNT = ABSTRACT_SCENARIO_FEATURE_COUNT + 2;
+  int SCENARIO_WITH_OUTLINE_FEATURE_COUNT = ABSTRACT_SCENARIO_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleRowImpl <em>Example Row</em>}' class.
@@ -850,6 +867,17 @@ public interface GherkinPackage extends EPackage
   EClass getScenario();
 
   /**
+   * Returns the meta object for the containment reference list '{@link de.sebastianbenz.xgherkin.gherkin.Scenario#getElements <em>Elements</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Elements</em>'.
+   * @see de.sebastianbenz.xgherkin.gherkin.Scenario#getElements()
+   * @see #getScenario()
+   * @generated
+   */
+  EReference getScenario_Elements();
+
+  /**
    * Returns the meta object for class '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline <em>Scenario With Outline</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -858,6 +886,17 @@ public interface GherkinPackage extends EPackage
    * @generated
    */
   EClass getScenarioWithOutline();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getElements <em>Elements</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Elements</em>'.
+   * @see de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getElements()
+   * @see #getScenarioWithOutline()
+   * @generated
+   */
+  EReference getScenarioWithOutline_Elements();
 
   /**
    * Returns the meta object for the containment reference '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getHeading <em>Heading</em>}'.
@@ -1195,6 +1234,14 @@ public interface GherkinPackage extends EPackage
     EClass SCENARIO = eINSTANCE.getScenario();
 
     /**
+     * The meta object literal for the '<em><b>Elements</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SCENARIO__ELEMENTS = eINSTANCE.getScenario_Elements();
+
+    /**
      * The meta object literal for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl <em>Scenario With Outline</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1203,6 +1250,14 @@ public interface GherkinPackage extends EPackage
      * @generated
      */
     EClass SCENARIO_WITH_OUTLINE = eINSTANCE.getScenarioWithOutline();
+
+    /**
+     * The meta object literal for the '<em><b>Elements</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SCENARIO_WITH_OUTLINE__ELEMENTS = eINSTANCE.getScenarioWithOutline_Elements();
 
     /**
      * The meta object literal for the '<em><b>Heading</b></em>' containment reference feature.

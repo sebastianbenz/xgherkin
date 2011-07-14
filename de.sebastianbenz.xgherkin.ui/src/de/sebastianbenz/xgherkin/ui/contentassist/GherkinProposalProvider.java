@@ -13,9 +13,6 @@
 */
 package de.sebastianbenz.xgherkin.ui.contentassist;
 
-import static org.eclipse.xtext.EcoreUtil2.getContainerOfType;
-
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
 import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor;
@@ -28,21 +25,37 @@ import de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline;
  */
 public class GherkinProposalProvider extends AbstractGherkinProposalProvider {
 
-	public void complete_Step(EObject model, RuleCall ruleCall, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
-		if(!context.getPrefix().trim().endsWith("<")){
-			return;
-		}
-		ScenarioWithOutline scenarioWithOutline = getContainerOfType(model, ScenarioWithOutline.class);
-		if(scenarioWithOutline == null){
-			return;
-		}
-		ExampleRow heading = scenarioWithOutline.getHeading();
+	public void complete_Step(ScenarioWithOutline model, RuleCall ruleCall, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+		ExampleRow heading = model.getHeading();
 		if(heading == null){
 			return;
 		}
+		String firstChar = calculateFirstChar(context);
 		for (ExampleCell cell : heading.getCells()) {
-			String cellValue = cell.getValue().replaceAll("\\|", "").trim();
-			acceptor.accept(createCompletionProposal(context.getPrefix() + cellValue, cellValue, null, context));
+			String cellValue = cell.getValue();
+			acceptor.accept(createCompletionProposal(context.getPrefix() + firstChar + cellValue + ">", cellValue, null, context));
 		}
+	}
+
+	@Override
+	protected boolean isValidProposal(String proposal, String prefix,
+			ContentAssistContext context) {
+		return true;
+	}
+	
+	private String calculateFirstChar(ContentAssistContext context) {
+		String prefix = context.getPrefix();
+		String start = "<";
+		for(int i = prefix.length()-1; i >= 0; i--){
+			char c = prefix.charAt(i);
+			if(c == '<'){
+				start = "";
+				break;
+			}
+			if(c == '>'){
+				break;
+			}
+		}
+		return start;
 	}
 }

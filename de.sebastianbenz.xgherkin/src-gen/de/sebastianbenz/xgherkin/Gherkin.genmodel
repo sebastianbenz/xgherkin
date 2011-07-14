@@ -27,8 +27,11 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario/steps"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Scenario"/>
+    <genClasses ecoreClass="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Scenario">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Scenario/elements"/>
+    </genClasses>
     <genClasses ecoreClass="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ScenarioWithOutline">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ScenarioWithOutline/elements"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ScenarioWithOutline/heading"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ScenarioWithOutline/rows"/>
     </genClasses>

@@ -13,9 +13,18 @@
  */
 package de.sebastianbenz.xgherkin;
 
+import org.eclipse.xtext.conversion.IValueConverterService;
+
+import de.sebastianbenz.xgherkin.conversion.GherkingValueConverter;
+
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.
  */
 public class GherkinRuntimeModule extends de.sebastianbenz.xgherkin.AbstractGherkinRuntimeModule {
 
+	@Override
+	public Class<? extends IValueConverterService> bindIValueConverterService() {
+		return GherkingValueConverter.class;
+	}
+	
 }

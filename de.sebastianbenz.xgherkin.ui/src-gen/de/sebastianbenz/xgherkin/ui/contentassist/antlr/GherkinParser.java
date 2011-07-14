@@ -60,12 +60,14 @@ public class GherkinParser extends AbstractContentAssistParser {
 					put(grammarAccess.getIWantToAccess().getNameAssignment(), "rule__IWantTo__NameAssignment");
 					put(grammarAccess.getScenarioAccess().getTagsAssignment_0(), "rule__Scenario__TagsAssignment_0");
 					put(grammarAccess.getScenarioAccess().getNameAssignment_1(), "rule__Scenario__NameAssignment_1");
-					put(grammarAccess.getScenarioAccess().getStepsAssignment_2(), "rule__Scenario__StepsAssignment_2");
+					put(grammarAccess.getScenarioAccess().getElementsAssignment_2(), "rule__Scenario__ElementsAssignment_2");
+					put(grammarAccess.getScenarioAccess().getStepsAssignment_3(), "rule__Scenario__StepsAssignment_3");
 					put(grammarAccess.getScenarioWithOutlineAccess().getTagsAssignment_0(), "rule__ScenarioWithOutline__TagsAssignment_0");
 					put(grammarAccess.getScenarioWithOutlineAccess().getNameAssignment_1(), "rule__ScenarioWithOutline__NameAssignment_1");
-					put(grammarAccess.getScenarioWithOutlineAccess().getStepsAssignment_2(), "rule__ScenarioWithOutline__StepsAssignment_2");
-					put(grammarAccess.getScenarioWithOutlineAccess().getHeadingAssignment_4(), "rule__ScenarioWithOutline__HeadingAssignment_4");
-					put(grammarAccess.getScenarioWithOutlineAccess().getRowsAssignment_5(), "rule__ScenarioWithOutline__RowsAssignment_5");
+					put(grammarAccess.getScenarioWithOutlineAccess().getElementsAssignment_2(), "rule__ScenarioWithOutline__ElementsAssignment_2");
+					put(grammarAccess.getScenarioWithOutlineAccess().getStepsAssignment_3(), "rule__ScenarioWithOutline__StepsAssignment_3");
+					put(grammarAccess.getScenarioWithOutlineAccess().getHeadingAssignment_5(), "rule__ScenarioWithOutline__HeadingAssignment_5");
+					put(grammarAccess.getScenarioWithOutlineAccess().getRowsAssignment_6(), "rule__ScenarioWithOutline__RowsAssignment_6");
 					put(grammarAccess.getExampleRowAccess().getCellsAssignment_0(), "rule__ExampleRow__CellsAssignment_0");
 					put(grammarAccess.getExampleCellAccess().getValueAssignment(), "rule__ExampleCell__ValueAssignment");
 					put(grammarAccess.getBackgroundAccess().getTagsAssignment_0(), "rule__Background__TagsAssignment_0");

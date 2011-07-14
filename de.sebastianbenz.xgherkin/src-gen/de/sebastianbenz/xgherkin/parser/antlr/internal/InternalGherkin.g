@@ -475,22 +475,40 @@ ruleScenario returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getScenarioAccess().getStepsStepParserRuleCall_2_0()); 
+	        newCompositeNode(grammarAccess.getScenarioAccess().getElementsNarrativeElementParserRuleCall_2_0()); 
 	    }
-		lv_steps_2_0=ruleStep		{
+		lv_elements_2_0=ruleNarrativeElement		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getScenarioRule());
+	        }
+       		add(
+       			$current, 
+       			"elements",
+        		lv_elements_2_0, 
+        		"NarrativeElement");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)*(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getScenarioAccess().getStepsStepParserRuleCall_3_0()); 
+	    }
+		lv_steps_3_0=ruleStep		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getScenarioRule());
 	        }
        		add(
        			$current, 
        			"steps",
-        		lv_steps_2_0, 
+        		lv_steps_3_0, 
         		"Step");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)*)
+)+)
 ;
 
 
@@ -550,38 +568,56 @@ ruleScenarioWithOutline returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getStepsStepParserRuleCall_2_0()); 
+	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getElementsNarrativeElementParserRuleCall_2_0()); 
 	    }
-		lv_steps_2_0=ruleStep		{
+		lv_elements_2_0=ruleNarrativeElement		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getScenarioWithOutlineRule());
+	        }
+       		add(
+       			$current, 
+       			"elements",
+        		lv_elements_2_0, 
+        		"NarrativeElement");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)*(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getStepsStepParserRuleCall_3_0()); 
+	    }
+		lv_steps_3_0=ruleStep		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getScenarioWithOutlineRule());
 	        }
        		add(
        			$current, 
        			"steps",
-        		lv_steps_2_0, 
+        		lv_steps_3_0, 
         		"Step");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)*this_EXAMPLE_HEADING_3=RULE_EXAMPLE_HEADING
+)+this_EXAMPLE_HEADING_4=RULE_EXAMPLE_HEADING
     { 
-    newLeafNode(this_EXAMPLE_HEADING_3, grammarAccess.getScenarioWithOutlineAccess().getEXAMPLE_HEADINGTerminalRuleCall_3()); 
+    newLeafNode(this_EXAMPLE_HEADING_4, grammarAccess.getScenarioWithOutlineAccess().getEXAMPLE_HEADINGTerminalRuleCall_4()); 
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getHeadingExampleRowParserRuleCall_4_0()); 
+	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getHeadingExampleRowParserRuleCall_5_0()); 
 	    }
-		lv_heading_4_0=ruleExampleRow		{
+		lv_heading_5_0=ruleExampleRow		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getScenarioWithOutlineRule());
 	        }
        		set(
        			$current, 
        			"heading",
-        		lv_heading_4_0, 
+        		lv_heading_5_0, 
         		"ExampleRow");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -590,16 +626,16 @@ ruleScenarioWithOutline returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getRowsExampleRowParserRuleCall_5_0()); 
+	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getRowsExampleRowParserRuleCall_6_0()); 
 	    }
-		lv_rows_5_0=ruleExampleRow		{
+		lv_rows_6_0=ruleExampleRow		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getScenarioWithOutlineRule());
 	        }
        		add(
        			$current, 
        			"rows",
-        		lv_rows_5_0, 
+        		lv_rows_6_0, 
         		"ExampleRow");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -1177,9 +1213,9 @@ RULE_GIVEN_TEXT : 'Given ' RULE_NNL* RULE_NL;
 
 RULE_AND_TEXT : 'And ' RULE_NNL* RULE_NL;
 
-RULE_EXAMPLE_CELL : '|' ~(('\r'|'\n'|'|'))+;
+RULE_EXAMPLE_ROW_END : '|' RULE_SPACES RULE_NL;
 
-RULE_EXAMPLE_ROW_END : '|' '\r'? '\n';
+RULE_EXAMPLE_CELL : '|' ~(('\r'|'\n'|'|'))+;
 
 RULE_CODE : ('"""' ( options {greedy=false;} : . )*'"""'|'\'\'\'' ( options {greedy=false;} : . )*'\'\'\'');
 

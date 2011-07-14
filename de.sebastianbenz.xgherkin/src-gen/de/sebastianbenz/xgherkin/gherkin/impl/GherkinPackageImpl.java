@@ -2,7 +2,6 @@
  * <copyright>
  * </copyright>
  *
-
  */
 package de.sebastianbenz.xgherkin.gherkin.impl;
 
@@ -388,6 +387,16 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getScenario_Elements()
+  {
+    return (EReference)scenarioEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getScenarioWithOutline()
   {
     return scenarioWithOutlineEClass;
@@ -398,7 +407,7 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getScenarioWithOutline_Heading()
+  public EReference getScenarioWithOutline_Elements()
   {
     return (EReference)scenarioWithOutlineEClass.getEStructuralFeatures().get(0);
   }
@@ -408,9 +417,19 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getScenarioWithOutline_Rows()
+  public EReference getScenarioWithOutline_Heading()
   {
     return (EReference)scenarioWithOutlineEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getScenarioWithOutline_Rows()
+  {
+    return (EReference)scenarioWithOutlineEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -606,8 +625,10 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
     createEReference(abstractScenarioEClass, ABSTRACT_SCENARIO__STEPS);
 
     scenarioEClass = createEClass(SCENARIO);
+    createEReference(scenarioEClass, SCENARIO__ELEMENTS);
 
     scenarioWithOutlineEClass = createEClass(SCENARIO_WITH_OUTLINE);
+    createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__ELEMENTS);
     createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__HEADING);
     createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__ROWS);
 
@@ -699,8 +720,10 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
     initEReference(getAbstractScenario_Steps(), this.getStep(), null, "steps", null, 0, -1, AbstractScenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(scenarioEClass, Scenario.class, "Scenario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getScenario_Elements(), this.getNarrativeElement(), null, "elements", null, 0, -1, Scenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(scenarioWithOutlineEClass, ScenarioWithOutline.class, "ScenarioWithOutline", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getScenarioWithOutline_Elements(), this.getNarrativeElement(), null, "elements", null, 0, -1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getScenarioWithOutline_Heading(), this.getExampleRow(), null, "heading", null, 0, 1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getScenarioWithOutline_Rows(), this.getExampleRow(), null, "rows", null, 0, -1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

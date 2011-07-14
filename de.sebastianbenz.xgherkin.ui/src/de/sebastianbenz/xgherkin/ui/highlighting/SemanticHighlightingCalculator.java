@@ -11,17 +11,20 @@
 package de.sebastianbenz.xgherkin.ui.highlighting;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.nodemodel.ICompositeNode;
+import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
 import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.IHighlightedPositionAcceptor;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.ISemanticHighlightingCalculator;
 
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
+import de.sebastianbenz.xgherkin.gherkin.GherkinPackage;
 import de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline;
 import de.sebastianbenz.xgherkin.gherkin.Step;
 import de.sebastianbenz.xgherkin.gherkin.util.GherkinSwitch;
@@ -65,7 +68,7 @@ public class SemanticHighlightingCalculator implements
 			Matcher matcher = PLACEHOLDER.matcher(desc);
 			while (matcher.find()) {
 				int offset = matcher.start()
-						+ NodeModelUtils.getNode(object).getOffset();
+						+ offset(object);
 				int length = matcher.end() - matcher.start();
 				acceptor.addPosition(offset, length,
 						HighlightingConfiguration.CODE_BOLD_ID);
@@ -91,7 +94,7 @@ public class SemanticHighlightingCalculator implements
 		// return Boolean.TRUE;
 		// }
 
-		private void highlightFirstWord(EObject object, String desc) {
+		private void highlightFirstWord(Step object, String desc) {
 			int begin = 0;
 			for (; isWhiteSpace(desc, begin); begin++) {
 			}
@@ -129,14 +132,14 @@ public class SemanticHighlightingCalculator implements
 		// return Boolean.TRUE;
 		// }
 		//
-		private void highlight(String string, EObject object) {
+		private void highlight(String string, Step object) {
 			acceptor.addPosition(offset(object), string.length(),
 					HighlightingConfiguration.KEYWORD_ID);
 		}
 
-		private int offset(EObject content) {
-			ICompositeNode node = NodeModelUtils.getNode(content);
-			return node.getOffset();
+		private int offset(Step content) {
+			List<INode> nodes = NodeModelUtils.findNodesForFeature(content, GherkinPackage.Literals.STEP__DESC);
+			return nodes.iterator().next().getOffset();
 		}
 	}
 
