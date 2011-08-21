@@ -2,10 +2,12 @@ package de.sebastianbenz.xgherkin.serializer;
 
 import com.google.inject.Inject;
 import de.sebastianbenz.xgherkin.services.GherkinGrammarAccess;
+import java.util.List;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.IGrammarAccess;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.nodemodel.INode;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 
@@ -20,20 +22,20 @@ public class AbstractGherkinSyntacticSequencer extends AbstractSyntacticSequence
 	}
 	
 	@Override
-	protected String getUnassignedRuleCallToken(RuleCall ruleCall, INode node) {
+	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if(ruleCall.getRule() == grammarAccess.getEXAMPLE_HEADINGRule())
-			return getEXAMPLE_HEADINGToken(ruleCall, node);
+			return getEXAMPLE_HEADINGToken(semanticObject, ruleCall, node);
 		else if(ruleCall.getRule() == grammarAccess.getEXAMPLE_ROW_ENDRule())
-			return getEXAMPLE_ROW_ENDToken(ruleCall, node);
+			return getEXAMPLE_ROW_ENDToken(semanticObject, ruleCall, node);
 		return "";
 	}
 	
-	protected String getEXAMPLE_HEADINGToken(RuleCall ruleCall, INode node) {
+	protected String getEXAMPLE_HEADINGToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);
 		return "Examples:\n";
 	}
-	protected String getEXAMPLE_ROW_ENDToken(RuleCall ruleCall, INode node) {
+	protected String getEXAMPLE_ROW_ENDToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);
 		return "|";
@@ -41,9 +43,12 @@ public class AbstractGherkinSyntacticSequencer extends AbstractSyntacticSequence
 	
 	@Override
 	protected void emitUnassignedTokens(EObject semanticObject, ISynTransition transition, INode fromNode, INode toNode) {
-		if (!transition.isSyntacticallyAmbiguous())
-			return;
-		acceptNodes(transition, fromNode, toNode);
+		if (transition.getAmbiguousSyntaxes().isEmpty()) return;
+		List<INode> transitionNodes = collectNodes(fromNode, toNode);
+		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
+			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
+			acceptNodes(getLastNavigableState(), syntaxNodes);
+		}
 	}
 
 }

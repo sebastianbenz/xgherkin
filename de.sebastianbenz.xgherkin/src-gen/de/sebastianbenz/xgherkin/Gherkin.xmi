@@ -14,7 +14,7 @@
       <elements xsi:type="xtext:Assignment" cardinality="*" feature="tags" operator="+=">
         <terminal xsi:type="xtext:RuleCall" rule="//@rules.36"/>
       </elements>
-      <elements xsi:type="xtext:Assignment" feature="name" operator="=">
+      <elements xsi:type="xtext:Assignment" cardinality="?" feature="name" operator="=">
         <terminal xsi:type="xtext:RuleCall" rule="//@rules.22"/>
       </elements>
       <elements xsi:type="xtext:Assignment" cardinality="*" feature="elements" operator="+=">

@@ -59,97 +59,97 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == GherkinPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
 			case GherkinPackage.AND_STEP:
-				if(context == grammarAccess.getStepRule() ||
-				   context == grammarAccess.getAndStepRule()) {
-					sequence_AndStep_AndStep(context, (AndStep) semanticObject); 
+				if(context == grammarAccess.getAndStepRule() ||
+				   context == grammarAccess.getStepRule()) {
+					sequence_AndStep(context, (AndStep) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.AS_A:
-				if(context == grammarAccess.getNarrativeElementRule() ||
-				   context == grammarAccess.getAsARule()) {
-					sequence_AsA_AsA(context, (AsA) semanticObject); 
+				if(context == grammarAccess.getAsARule() ||
+				   context == grammarAccess.getNarrativeElementRule()) {
+					sequence_AsA(context, (AsA) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.BACKGROUND:
 				if(context == grammarAccess.getAbstractScenarioRule() ||
 				   context == grammarAccess.getBackgroundRule()) {
-					sequence_Background_Background(context, (Background) semanticObject); 
+					sequence_Background(context, (Background) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.EXAMPLE_CELL:
 				if(context == grammarAccess.getExampleCellRule()) {
-					sequence_ExampleCell_ExampleCell(context, (ExampleCell) semanticObject); 
+					sequence_ExampleCell(context, (ExampleCell) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.EXAMPLE_ROW:
 				if(context == grammarAccess.getExampleRowRule()) {
-					sequence_ExampleRow_ExampleRow(context, (ExampleRow) semanticObject); 
+					sequence_ExampleRow(context, (ExampleRow) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.FEATURE:
 				if(context == grammarAccess.getFeatureRule()) {
-					sequence_Feature_Feature(context, (Feature) semanticObject); 
+					sequence_Feature(context, (Feature) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.FREE_TEXT:
-				if(context == grammarAccess.getNarrativeElementRule() ||
-				   context == grammarAccess.getFreeTextRule()) {
-					sequence_FreeText_FreeText(context, (FreeText) semanticObject); 
+				if(context == grammarAccess.getFreeTextRule() ||
+				   context == grammarAccess.getNarrativeElementRule()) {
+					sequence_FreeText(context, (FreeText) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.GIVEN_STEP:
-				if(context == grammarAccess.getStepRule() ||
-				   context == grammarAccess.getGivenStepRule()) {
-					sequence_GivenStep_GivenStep(context, (GivenStep) semanticObject); 
+				if(context == grammarAccess.getGivenStepRule() ||
+				   context == grammarAccess.getStepRule()) {
+					sequence_GivenStep(context, (GivenStep) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.IWANT_TO:
-				if(context == grammarAccess.getNarrativeElementRule() ||
-				   context == grammarAccess.getIWantToRule()) {
-					sequence_IWantTo_IWantTo(context, (IWantTo) semanticObject); 
+				if(context == grammarAccess.getIWantToRule() ||
+				   context == grammarAccess.getNarrativeElementRule()) {
+					sequence_IWantTo(context, (IWantTo) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.IN_ORDER_TO:
-				if(context == grammarAccess.getNarrativeElementRule() ||
-				   context == grammarAccess.getInOrderToRule()) {
-					sequence_InOrderTo_InOrderTo(context, (InOrderTo) semanticObject); 
+				if(context == grammarAccess.getInOrderToRule() ||
+				   context == grammarAccess.getNarrativeElementRule()) {
+					sequence_InOrderTo(context, (InOrderTo) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.SCENARIO:
 				if(context == grammarAccess.getAbstractScenarioRule() ||
 				   context == grammarAccess.getScenarioRule()) {
-					sequence_Scenario_Scenario(context, (Scenario) semanticObject); 
+					sequence_Scenario(context, (Scenario) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.SCENARIO_WITH_OUTLINE:
 				if(context == grammarAccess.getAbstractScenarioRule() ||
 				   context == grammarAccess.getScenarioWithOutlineRule()) {
-					sequence_ScenarioWithOutline_ScenarioWithOutline(context, (ScenarioWithOutline) semanticObject); 
+					sequence_ScenarioWithOutline(context, (ScenarioWithOutline) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.THEN_STEP:
 				if(context == grammarAccess.getStepRule() ||
 				   context == grammarAccess.getThenStepRule()) {
-					sequence_ThenStep_ThenStep(context, (ThenStep) semanticObject); 
+					sequence_ThenStep(context, (ThenStep) semanticObject); 
 					return; 
 				}
 				else break;
 			case GherkinPackage.WHEN_STEP:
 				if(context == grammarAccess.getStepRule() ||
 				   context == grammarAccess.getWhenStepRule()) {
-					sequence_WhenStep_WhenStep(context, (WhenStep) semanticObject); 
+					sequence_WhenStep(context, (WhenStep) semanticObject); 
 					return; 
 				}
 				else break;
@@ -164,7 +164,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 * Features:
 	 *    desc[1, *]
 	 */
-	protected void sequence_AndStep_AndStep(EObject context, AndStep semanticObject) {
+	protected void sequence_AndStep(EObject context, AndStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -176,7 +176,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 * Features:
 	 *    name[1, 1]
 	 */
-	protected void sequence_AsA_AsA(EObject context, AsA semanticObject) {
+	protected void sequence_AsA(EObject context, AsA semanticObject) {
 		if(errorAcceptor != null) {
 			if(transientValues.isValueTransient(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME));
@@ -197,7 +197,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 *    name[1, 1]
 	 *    steps[0, *]
 	 */
-	protected void sequence_Background_Background(EObject context, Background semanticObject) {
+	protected void sequence_Background(EObject context, Background semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -209,7 +209,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 * Features:
 	 *    value[1, 1]
 	 */
-	protected void sequence_ExampleCell_ExampleCell(EObject context, ExampleCell semanticObject) {
+	protected void sequence_ExampleCell(EObject context, ExampleCell semanticObject) {
 		if(errorAcceptor != null) {
 			if(transientValues.isValueTransient(semanticObject, GherkinPackage.Literals.EXAMPLE_CELL__VALUE) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, GherkinPackage.Literals.EXAMPLE_CELL__VALUE));
@@ -228,22 +228,22 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 * Features:
 	 *    cells[1, *]
 	 */
-	protected void sequence_ExampleRow_ExampleRow(EObject context, ExampleRow semanticObject) {
+	protected void sequence_ExampleRow(EObject context, ExampleRow semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* name=FEATURE_TEXT elements+=NarrativeElement* scenarios+=AbstractScenario*)
+	 *     (tags+=TAG* name=FEATURE_TEXT? elements+=NarrativeElement* scenarios+=AbstractScenario*)
 	 *
 	 * Features:
 	 *    tags[0, *]
-	 *    name[1, 1]
+	 *    name[0, 1]
 	 *    elements[0, *]
 	 *    scenarios[0, *]
 	 */
-	protected void sequence_Feature_Feature(EObject context, Feature semanticObject) {
+	protected void sequence_Feature(EObject context, Feature semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -255,7 +255,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 * Features:
 	 *    name[1, 1]
 	 */
-	protected void sequence_FreeText_FreeText(EObject context, FreeText semanticObject) {
+	protected void sequence_FreeText(EObject context, FreeText semanticObject) {
 		if(errorAcceptor != null) {
 			if(transientValues.isValueTransient(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME));
@@ -275,7 +275,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 *    desc[1, *]
 	 *    tags[0, *]
 	 */
-	protected void sequence_GivenStep_GivenStep(EObject context, GivenStep semanticObject) {
+	protected void sequence_GivenStep(EObject context, GivenStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -287,7 +287,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 * Features:
 	 *    name[1, 1]
 	 */
-	protected void sequence_IWantTo_IWantTo(EObject context, IWantTo semanticObject) {
+	protected void sequence_IWantTo(EObject context, IWantTo semanticObject) {
 		if(errorAcceptor != null) {
 			if(transientValues.isValueTransient(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME));
@@ -306,7 +306,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 * Features:
 	 *    name[1, 1]
 	 */
-	protected void sequence_InOrderTo_InOrderTo(EObject context, InOrderTo semanticObject) {
+	protected void sequence_InOrderTo(EObject context, InOrderTo semanticObject) {
 		if(errorAcceptor != null) {
 			if(transientValues.isValueTransient(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, GherkinPackage.Literals.NARRATIVE_ELEMENT__NAME));
@@ -337,7 +337,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 *    heading[1, 1]
 	 *    rows[0, *]
 	 */
-	protected void sequence_ScenarioWithOutline_ScenarioWithOutline(EObject context, ScenarioWithOutline semanticObject) {
+	protected void sequence_ScenarioWithOutline(EObject context, ScenarioWithOutline semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -352,7 +352,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 *    steps[1, *]
 	 *    elements[0, *]
 	 */
-	protected void sequence_Scenario_Scenario(EObject context, Scenario semanticObject) {
+	protected void sequence_Scenario(EObject context, Scenario semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -365,7 +365,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 *    desc[1, *]
 	 *    tags[0, *]
 	 */
-	protected void sequence_ThenStep_ThenStep(EObject context, ThenStep semanticObject) {
+	protected void sequence_ThenStep(EObject context, ThenStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -378,7 +378,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 *    desc[1, *]
 	 *    tags[0, *]
 	 */
-	protected void sequence_WhenStep_WhenStep(EObject context, WhenStep semanticObject) {
+	protected void sequence_WhenStep(EObject context, WhenStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 }

@@ -9,15 +9,21 @@
  *     Sebastian Benz - initial API and implementation
  ******************************************************************************/
 package de.sebastianbenz.xgherkin.validation;
+
+import org.eclipse.xtext.util.Strings;
+import org.eclipse.xtext.validation.Check;
+
+import de.sebastianbenz.xgherkin.gherkin.Feature;
+import de.sebastianbenz.xgherkin.gherkin.GherkinPackage;
  
 
 public class GherkinJavaValidator extends AbstractGherkinJavaValidator {
 
-//	@Check
-//	public void checkGreetingStartsWithCapital(Greeting greeting) {
-//		if (!Character.isUpperCase(greeting.getName().charAt(0))) {
-//			warning("Name should start with a capital", MyDslPackage.Literals.GREETING__NAME);
-//		}
-//	}
+	@Check
+	public void checkFeatureHasAName(Feature feature) {
+		if(Strings.isEmpty(feature.getName())){
+			error("No feature specified", GherkinPackage.Literals.FEATURE__NAME);
+		}
+	}
 
 }

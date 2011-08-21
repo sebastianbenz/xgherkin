@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Xgherkin UI
 Bundle-Vendor: Sebastian Benz
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.1.qualifier
 Bundle-SymbolicName: de.sebastianbenz.xgherkin.ui; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: de.sebastianbenz.xgherkin;visibility:=reexport,

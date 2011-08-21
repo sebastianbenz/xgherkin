@@ -60,4 +60,6 @@ public class GherkinUiModule extends de.sebastianbenz.xgherkin.ui.AbstractGherki
 	public Class<? extends XtextSourceViewerConfiguration> bindXtextSourceViewerConfiguration() {
 		return SourceViewerConfiguration.class;
 	}
+	
+	
 }

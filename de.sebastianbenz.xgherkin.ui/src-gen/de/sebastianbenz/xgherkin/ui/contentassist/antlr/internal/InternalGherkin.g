@@ -23,7 +23,6 @@ import java.io.InputStream;
 import org.eclipse.xtext.*;
 import org.eclipse.xtext.parser.*;
 import org.eclipse.xtext.parser.impl.*;
-import org.eclipse.xtext.parsetree.*;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.parser.antlr.XtextTokenStream;
@@ -730,7 +729,7 @@ rule__Feature__Group__1__Impl
 :
 (
 { before(grammarAccess.getFeatureAccess().getNameAssignment_1()); }
-(rule__Feature__NameAssignment_1)
+(rule__Feature__NameAssignment_1)?
 { after(grammarAccess.getFeatureAccess().getNameAssignment_1()); }
 )
 

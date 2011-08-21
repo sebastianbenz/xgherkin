@@ -29,10 +29,10 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cScenariosAbstractScenarioParserRuleCall_3_0 = (RuleCall)cScenariosAssignment_3.eContents().get(0);
 		
 		//Feature:
-		//	tags+=TAG* name=FEATURE_TEXT elements+=NarrativeElement* scenarios+=AbstractScenario*;
+		//	tags+=TAG* name=FEATURE_TEXT? elements+=NarrativeElement* scenarios+=AbstractScenario*;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* name=FEATURE_TEXT elements+=NarrativeElement* scenarios+=AbstractScenario*
+		//tags+=TAG* name=FEATURE_TEXT? elements+=NarrativeElement* scenarios+=AbstractScenario*
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -41,7 +41,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		//TAG
 		public RuleCall getTagsTAGTerminalRuleCall_0_0() { return cTagsTAGTerminalRuleCall_0_0; }
 
-		//name=FEATURE_TEXT
+		//name=FEATURE_TEXT?
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
 		//FEATURE_TEXT
@@ -602,7 +602,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Feature:
-	//	tags+=TAG* name=FEATURE_TEXT elements+=NarrativeElement* scenarios+=AbstractScenario*;
+	//	tags+=TAG* name=FEATURE_TEXT? elements+=NarrativeElement* scenarios+=AbstractScenario*;
 	public FeatureElements getFeatureAccess() {
 		return (pFeature != null) ? pFeature : (pFeature = new FeatureElements());
 	}
