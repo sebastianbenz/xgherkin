@@ -76,14 +76,18 @@ public class GherkinParser extends AbstractContentAssistParser {
 					put(grammarAccess.getWhenStepAccess().getTagsAssignment_0(), "rule__WhenStep__TagsAssignment_0");
 					put(grammarAccess.getWhenStepAccess().getDescAssignment_1(), "rule__WhenStep__DescAssignment_1");
 					put(grammarAccess.getWhenStepAccess().getDescAssignment_2(), "rule__WhenStep__DescAssignment_2");
+					put(grammarAccess.getWhenStepAccess().getRowsAssignment_3(), "rule__WhenStep__RowsAssignment_3");
 					put(grammarAccess.getThenStepAccess().getTagsAssignment_0(), "rule__ThenStep__TagsAssignment_0");
 					put(grammarAccess.getThenStepAccess().getDescAssignment_1(), "rule__ThenStep__DescAssignment_1");
 					put(grammarAccess.getThenStepAccess().getDescAssignment_2(), "rule__ThenStep__DescAssignment_2");
+					put(grammarAccess.getThenStepAccess().getRowsAssignment_3(), "rule__ThenStep__RowsAssignment_3");
 					put(grammarAccess.getGivenStepAccess().getTagsAssignment_0(), "rule__GivenStep__TagsAssignment_0");
 					put(grammarAccess.getGivenStepAccess().getDescAssignment_1(), "rule__GivenStep__DescAssignment_1");
 					put(grammarAccess.getGivenStepAccess().getDescAssignment_2(), "rule__GivenStep__DescAssignment_2");
+					put(grammarAccess.getGivenStepAccess().getRowsAssignment_3(), "rule__GivenStep__RowsAssignment_3");
 					put(grammarAccess.getAndStepAccess().getDescAssignment_0(), "rule__AndStep__DescAssignment_0");
 					put(grammarAccess.getAndStepAccess().getDescAssignment_1(), "rule__AndStep__DescAssignment_1");
+					put(grammarAccess.getAndStepAccess().getRowsAssignment_2(), "rule__AndStep__RowsAssignment_2");
 				}
 			};
 		}

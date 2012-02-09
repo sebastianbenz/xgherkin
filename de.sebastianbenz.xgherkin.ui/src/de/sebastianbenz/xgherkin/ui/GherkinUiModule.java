@@ -47,10 +47,6 @@ public class GherkinUiModule extends de.sebastianbenz.xgherkin.ui.AbstractGherki
 		return TokenHighlightingConfiguration.class;
 	}
 	
-	@Override
-	public Class<? extends IXtextEditorCallback> bindIXtextEditorCallback() {
-		return ValidatingEditorCallback.class;
-	}
 	
 	@Override
 	public Class<? extends AbstractEditStrategyProvider> bindAbstractEditStrategyProvider() {

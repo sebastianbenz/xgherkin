@@ -47,6 +47,5 @@ public class GherkinStandaloneSetupGenerated implements ISetup {
 
 
 
-
 	}
 }

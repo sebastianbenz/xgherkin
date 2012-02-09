@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Xgherkin UI
 Bundle-Vendor: Sebastian Benz
-Bundle-Version: 1.0.1.qualifier
+Bundle-Version: 1.0.2.qualifier
 Bundle-SymbolicName: de.sebastianbenz.xgherkin.ui; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: de.sebastianbenz.xgherkin;visibility:=reexport,
@@ -20,5 +20,6 @@ Import-Package: org.apache.log4j,
  org.apache.commons.logging
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: de.sebastianbenz.xgherkin.ui.contentassist.antlr,
- de.sebastianbenz.xgherkin.ui.internal
+ de.sebastianbenz.xgherkin.ui.internal,
+ de.sebastianbenz.xgherkin.ui.contentassist
 Bundle-Activator: de.sebastianbenz.xgherkin.ui.internal.GherkinActivator

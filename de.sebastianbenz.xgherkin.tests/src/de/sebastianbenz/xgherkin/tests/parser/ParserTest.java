@@ -22,6 +22,12 @@ public class ParserTest {
 		Resource resource = load("Example.feature");
 		assertTrue(resource.getErrors().isEmpty());
 	}
+	
+	@Test
+	public void shouldSupportMultilineTableArguments() {
+		Resource resource = load("manage_lorries.feature");
+		assertTrue(resource.getErrors().isEmpty());
+	}
 
 	private Resource load(String name) {
 		URI uri = URI.createPlatformPluginURI("de.sebastianbenz.xgherkin.tests/res/" + name, true);

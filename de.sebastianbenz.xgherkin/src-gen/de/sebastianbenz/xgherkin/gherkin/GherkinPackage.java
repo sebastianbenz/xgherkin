@@ -550,13 +550,22 @@ public interface GherkinPackage extends EPackage
   int STEP__DESC = 0;
 
   /**
+   * The feature id for the '<em><b>Rows</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int STEP__ROWS = 1;
+
+  /**
    * The number of structural features of the '<em>Step</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int STEP_FEATURE_COUNT = 1;
+  int STEP_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.WhenStepImpl <em>When Step</em>}' class.
@@ -576,6 +585,15 @@ public interface GherkinPackage extends EPackage
    * @ordered
    */
   int WHEN_STEP__DESC = STEP__DESC;
+
+  /**
+   * The feature id for the '<em><b>Rows</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int WHEN_STEP__ROWS = STEP__ROWS;
 
   /**
    * The feature id for the '<em><b>Tags</b></em>' attribute list.
@@ -615,6 +633,15 @@ public interface GherkinPackage extends EPackage
   int THEN_STEP__DESC = STEP__DESC;
 
   /**
+   * The feature id for the '<em><b>Rows</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int THEN_STEP__ROWS = STEP__ROWS;
+
+  /**
    * The feature id for the '<em><b>Tags</b></em>' attribute list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -652,6 +679,15 @@ public interface GherkinPackage extends EPackage
   int GIVEN_STEP__DESC = STEP__DESC;
 
   /**
+   * The feature id for the '<em><b>Rows</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GIVEN_STEP__ROWS = STEP__ROWS;
+
+  /**
    * The feature id for the '<em><b>Tags</b></em>' attribute list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -687,6 +723,15 @@ public interface GherkinPackage extends EPackage
    * @ordered
    */
   int AND_STEP__DESC = STEP__DESC;
+
+  /**
+   * The feature id for the '<em><b>Rows</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int AND_STEP__ROWS = STEP__ROWS;
 
   /**
    * The number of structural features of the '<em>And Step</em>' class.
@@ -992,6 +1037,17 @@ public interface GherkinPackage extends EPackage
    * @generated
    */
   EAttribute getStep_Desc();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link de.sebastianbenz.xgherkin.gherkin.Step#getRows <em>Rows</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Rows</em>'.
+   * @see de.sebastianbenz.xgherkin.gherkin.Step#getRows()
+   * @see #getStep()
+   * @generated
+   */
+  EReference getStep_Rows();
 
   /**
    * Returns the meta object for class '{@link de.sebastianbenz.xgherkin.gherkin.WhenStep <em>When Step</em>}'.
@@ -1338,6 +1394,14 @@ public interface GherkinPackage extends EPackage
      * @generated
      */
     EAttribute STEP__DESC = eINSTANCE.getStep_Desc();
+
+    /**
+     * The meta object literal for the '<em><b>Rows</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference STEP__ROWS = eINSTANCE.getStep_Rows();
 
     /**
      * The meta object literal for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.WhenStepImpl <em>When Step</em>}' class.

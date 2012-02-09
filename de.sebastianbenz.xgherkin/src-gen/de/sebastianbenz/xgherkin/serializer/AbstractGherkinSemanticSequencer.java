@@ -159,10 +159,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (desc+=AND_TEXT desc+=OptionalText*)
-	 *
-	 * Features:
-	 *    desc[1, *]
+	 *     (desc+=AND_TEXT desc+=OptionalText* rows+=ExampleRow*)
 	 */
 	protected void sequence_AndStep(EObject context, AndStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -172,9 +169,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     name=AS_A
-	 *
-	 * Features:
-	 *    name[1, 1]
 	 */
 	protected void sequence_AsA(EObject context, AsA semanticObject) {
 		if(errorAcceptor != null) {
@@ -191,11 +185,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     (tags+=TAG* name=BACKGROUND_TEXT steps+=Step*)
-	 *
-	 * Features:
-	 *    tags[0, *]
-	 *    name[1, 1]
-	 *    steps[0, *]
 	 */
 	protected void sequence_Background(EObject context, Background semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -205,9 +194,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     value=EXAMPLE_CELL
-	 *
-	 * Features:
-	 *    value[1, 1]
 	 */
 	protected void sequence_ExampleCell(EObject context, ExampleCell semanticObject) {
 		if(errorAcceptor != null) {
@@ -224,9 +210,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     cells+=ExampleCell+
-	 *
-	 * Features:
-	 *    cells[1, *]
 	 */
 	protected void sequence_ExampleRow(EObject context, ExampleRow semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -236,12 +219,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     (tags+=TAG* name=FEATURE_TEXT? elements+=NarrativeElement* scenarios+=AbstractScenario*)
-	 *
-	 * Features:
-	 *    tags[0, *]
-	 *    name[0, 1]
-	 *    elements[0, *]
-	 *    scenarios[0, *]
 	 */
 	protected void sequence_Feature(EObject context, Feature semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -251,9 +228,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     name=TEXT
-	 *
-	 * Features:
-	 *    name[1, 1]
 	 */
 	protected void sequence_FreeText(EObject context, FreeText semanticObject) {
 		if(errorAcceptor != null) {
@@ -269,11 +243,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*)
-	 *
-	 * Features:
-	 *    desc[1, *]
-	 *    tags[0, *]
+	 *     (tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText* rows+=ExampleRow*)
 	 */
 	protected void sequence_GivenStep(EObject context, GivenStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -283,9 +253,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     name=I_WANT_TO
-	 *
-	 * Features:
-	 *    name[1, 1]
 	 */
 	protected void sequence_IWantTo(EObject context, IWantTo semanticObject) {
 		if(errorAcceptor != null) {
@@ -302,9 +269,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     name=IN_ORDER_TO
-	 *
-	 * Features:
-	 *    name[1, 1]
 	 */
 	protected void sequence_InOrderTo(EObject context, InOrderTo semanticObject) {
 		if(errorAcceptor != null) {
@@ -328,14 +292,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	 *         heading=ExampleRow 
 	 *         rows+=ExampleRow*
 	 *     )
-	 *
-	 * Features:
-	 *    tags[0, *]
-	 *    name[1, 1]
-	 *    steps[1, *]
-	 *    elements[0, *]
-	 *    heading[1, 1]
-	 *    rows[0, *]
 	 */
 	protected void sequence_ScenarioWithOutline(EObject context, ScenarioWithOutline semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -345,12 +301,6 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	/**
 	 * Constraint:
 	 *     (tags+=TAG* name=SCENARIO_TEXT elements+=NarrativeElement* steps+=Step+)
-	 *
-	 * Features:
-	 *    tags[0, *]
-	 *    name[1, 1]
-	 *    steps[1, *]
-	 *    elements[0, *]
 	 */
 	protected void sequence_Scenario(EObject context, Scenario semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -359,11 +309,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*)
-	 *
-	 * Features:
-	 *    desc[1, *]
-	 *    tags[0, *]
+	 *     (tags+=TAG* desc+=THEN_TEXT desc+=OptionalText* rows+=ExampleRow*)
 	 */
 	protected void sequence_ThenStep(EObject context, ThenStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -372,11 +318,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*)
-	 *
-	 * Features:
-	 *    desc[1, *]
-	 *    tags[0, *]
+	 *     (tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText* rows+=ExampleRow*)
 	 */
 	protected void sequence_WhenStep(EObject context, WhenStep semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

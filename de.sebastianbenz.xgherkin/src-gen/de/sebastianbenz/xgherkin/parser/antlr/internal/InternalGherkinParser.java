@@ -2204,7 +2204,7 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleWhenStep"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:878:1: ruleWhenStep returns [EObject current=null] : ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ) ;
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:878:1: ruleWhenStep returns [EObject current=null] : ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* ) ;
     public final EObject ruleWhenStep() throws RecognitionException {
         EObject current = null;
 
@@ -2212,15 +2212,17 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
         Token lv_desc_1_0=null;
         AntlrDatatypeRuleToken lv_desc_2_0 = null;
 
+        EObject lv_rows_3_0 = null;
+
 
          enterRule(); 
             
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:881:28: ( ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:882:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:881:28: ( ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:882:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* )
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:882:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:882:2: ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:882:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:882:2: ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_WHEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )*
             {
             // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:882:2: ( (lv_tags_0_0= RULE_TAG ) )*
             loop18:
@@ -2341,6 +2343,55 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:936:3: ( (lv_rows_3_0= ruleExampleRow ) )*
+            loop20:
+            do {
+                int alt20=2;
+                int LA20_0 = input.LA(1);
+
+                if ( (LA20_0==RULE_EXAMPLE_CELL) ) {
+                    alt20=1;
+                }
+
+
+                switch (alt20) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:937:1: (lv_rows_3_0= ruleExampleRow )
+            	    {
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:937:1: (lv_rows_3_0= ruleExampleRow )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:938:3: lv_rows_3_0= ruleExampleRow
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getWhenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleExampleRow_in_ruleWhenStep1920);
+            	    lv_rows_3_0=ruleExampleRow();
+
+            	    state._fsp--;
+
+
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getWhenStepRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"rows",
+            	            		lv_rows_3_0, 
+            	            		"ExampleRow");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop20;
+                }
+            } while (true);
+
 
             }
 
@@ -2362,7 +2413,7 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleThenStep"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:944:1: entryRuleThenStep returns [EObject current=null] : iv_ruleThenStep= ruleThenStep EOF ;
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:962:1: entryRuleThenStep returns [EObject current=null] : iv_ruleThenStep= ruleThenStep EOF ;
     public final EObject entryRuleThenStep() throws RecognitionException {
         EObject current = null;
 
@@ -2370,17 +2421,17 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:945:2: (iv_ruleThenStep= ruleThenStep EOF )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:946:2: iv_ruleThenStep= ruleThenStep EOF
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:963:2: (iv_ruleThenStep= ruleThenStep EOF )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:964:2: iv_ruleThenStep= ruleThenStep EOF
             {
              newCompositeNode(grammarAccess.getThenStepRule()); 
-            pushFollow(FOLLOW_ruleThenStep_in_entryRuleThenStep1935);
+            pushFollow(FOLLOW_ruleThenStep_in_entryRuleThenStep1957);
             iv_ruleThenStep=ruleThenStep();
 
             state._fsp--;
 
              current =iv_ruleThenStep; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleThenStep1945); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleThenStep1967); 
 
             }
 
@@ -2398,7 +2449,7 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleThenStep"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:953:1: ruleThenStep returns [EObject current=null] : ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ) ;
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:971:1: ruleThenStep returns [EObject current=null] : ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* ) ;
     public final EObject ruleThenStep() throws RecognitionException {
         EObject current = null;
 
@@ -2406,35 +2457,37 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
         Token lv_desc_1_0=null;
         AntlrDatatypeRuleToken lv_desc_2_0 = null;
 
+        EObject lv_rows_3_0 = null;
+
 
          enterRule(); 
             
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:956:28: ( ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:957:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:974:28: ( ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:975:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* )
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:957:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:957:2: ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:975:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:975:2: ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_THEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )*
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:957:2: ( (lv_tags_0_0= RULE_TAG ) )*
-            loop20:
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:975:2: ( (lv_tags_0_0= RULE_TAG ) )*
+            loop21:
             do {
-                int alt20=2;
-                int LA20_0 = input.LA(1);
+                int alt21=2;
+                int LA21_0 = input.LA(1);
 
-                if ( (LA20_0==RULE_TAG) ) {
-                    alt20=1;
+                if ( (LA21_0==RULE_TAG) ) {
+                    alt21=1;
                 }
 
 
-                switch (alt20) {
+                switch (alt21) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:958:1: (lv_tags_0_0= RULE_TAG )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:976:1: (lv_tags_0_0= RULE_TAG )
             	    {
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:958:1: (lv_tags_0_0= RULE_TAG )
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:959:3: lv_tags_0_0= RULE_TAG
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:976:1: (lv_tags_0_0= RULE_TAG )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:977:3: lv_tags_0_0= RULE_TAG
             	    {
-            	    lv_tags_0_0=(Token)match(input,RULE_TAG,FOLLOW_RULE_TAG_in_ruleThenStep1987); 
+            	    lv_tags_0_0=(Token)match(input,RULE_TAG,FOLLOW_RULE_TAG_in_ruleThenStep2009); 
 
             	    			newLeafNode(lv_tags_0_0, grammarAccess.getThenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
             	    		
@@ -2456,17 +2509,17 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop20;
+            	    break loop21;
                 }
             } while (true);
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:975:3: ( (lv_desc_1_0= RULE_THEN_TEXT ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:976:1: (lv_desc_1_0= RULE_THEN_TEXT )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:993:3: ( (lv_desc_1_0= RULE_THEN_TEXT ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:994:1: (lv_desc_1_0= RULE_THEN_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:976:1: (lv_desc_1_0= RULE_THEN_TEXT )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:977:3: lv_desc_1_0= RULE_THEN_TEXT
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:994:1: (lv_desc_1_0= RULE_THEN_TEXT )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:995:3: lv_desc_1_0= RULE_THEN_TEXT
             {
-            lv_desc_1_0=(Token)match(input,RULE_THEN_TEXT,FOLLOW_RULE_THEN_TEXT_in_ruleThenStep2010); 
+            lv_desc_1_0=(Token)match(input,RULE_THEN_TEXT,FOLLOW_RULE_THEN_TEXT_in_ruleThenStep2032); 
 
             			newLeafNode(lv_desc_1_0, grammarAccess.getThenStepAccess().getDescTHEN_TEXTTerminalRuleCall_1_0()); 
             		
@@ -2486,28 +2539,28 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:993:2: ( (lv_desc_2_0= ruleOptionalText ) )*
-            loop21:
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1011:2: ( (lv_desc_2_0= ruleOptionalText ) )*
+            loop22:
             do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
+                int alt22=2;
+                int LA22_0 = input.LA(1);
 
-                if ( (LA21_0==RULE_TEXT||LA21_0==RULE_CODE) ) {
-                    alt21=1;
+                if ( (LA22_0==RULE_TEXT||LA22_0==RULE_CODE) ) {
+                    alt22=1;
                 }
 
 
-                switch (alt21) {
+                switch (alt22) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:994:1: (lv_desc_2_0= ruleOptionalText )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1012:1: (lv_desc_2_0= ruleOptionalText )
             	    {
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:994:1: (lv_desc_2_0= ruleOptionalText )
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:995:3: lv_desc_2_0= ruleOptionalText
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1012:1: (lv_desc_2_0= ruleOptionalText )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1013:3: lv_desc_2_0= ruleOptionalText
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getThenStepAccess().getDescOptionalTextParserRuleCall_2_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleOptionalText_in_ruleThenStep2036);
+            	    pushFollow(FOLLOW_ruleOptionalText_in_ruleThenStep2058);
             	    lv_desc_2_0=ruleOptionalText();
 
             	    state._fsp--;
@@ -2531,190 +2584,45 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop21;
-                }
-            } while (true);
-
-
-            }
-
-
-            }
-
-             leaveRule(); 
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleThenStep"
-
-
-    // $ANTLR start "entryRuleGivenStep"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1019:1: entryRuleGivenStep returns [EObject current=null] : iv_ruleGivenStep= ruleGivenStep EOF ;
-    public final EObject entryRuleGivenStep() throws RecognitionException {
-        EObject current = null;
-
-        EObject iv_ruleGivenStep = null;
-
-
-        try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1020:2: (iv_ruleGivenStep= ruleGivenStep EOF )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1021:2: iv_ruleGivenStep= ruleGivenStep EOF
-            {
-             newCompositeNode(grammarAccess.getGivenStepRule()); 
-            pushFollow(FOLLOW_ruleGivenStep_in_entryRuleGivenStep2073);
-            iv_ruleGivenStep=ruleGivenStep();
-
-            state._fsp--;
-
-             current =iv_ruleGivenStep; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleGivenStep2083); 
-
-            }
-
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleGivenStep"
-
-
-    // $ANTLR start "ruleGivenStep"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1028:1: ruleGivenStep returns [EObject current=null] : ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ) ;
-    public final EObject ruleGivenStep() throws RecognitionException {
-        EObject current = null;
-
-        Token lv_tags_0_0=null;
-        Token lv_desc_1_0=null;
-        AntlrDatatypeRuleToken lv_desc_2_0 = null;
-
-
-         enterRule(); 
-            
-        try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1031:28: ( ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1032:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* )
-            {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1032:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1032:2: ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )*
-            {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1032:2: ( (lv_tags_0_0= RULE_TAG ) )*
-            loop22:
-            do {
-                int alt22=2;
-                int LA22_0 = input.LA(1);
-
-                if ( (LA22_0==RULE_TAG) ) {
-                    alt22=1;
-                }
-
-
-                switch (alt22) {
-            	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1033:1: (lv_tags_0_0= RULE_TAG )
-            	    {
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1033:1: (lv_tags_0_0= RULE_TAG )
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1034:3: lv_tags_0_0= RULE_TAG
-            	    {
-            	    lv_tags_0_0=(Token)match(input,RULE_TAG,FOLLOW_RULE_TAG_in_ruleGivenStep2125); 
-
-            	    			newLeafNode(lv_tags_0_0, grammarAccess.getGivenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            	    		
-
-            	    	        if (current==null) {
-            	    	            current = createModelElement(grammarAccess.getGivenStepRule());
-            	    	        }
-            	           		addWithLastConsumed(
-            	           			current, 
-            	           			"tags",
-            	            		lv_tags_0_0, 
-            	            		"TAG");
-            	    	    
-
-            	    }
-
-
-            	    }
-            	    break;
-
-            	default :
             	    break loop22;
                 }
             } while (true);
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1050:3: ( (lv_desc_1_0= RULE_GIVEN_TEXT ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1051:1: (lv_desc_1_0= RULE_GIVEN_TEXT )
-            {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1051:1: (lv_desc_1_0= RULE_GIVEN_TEXT )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1052:3: lv_desc_1_0= RULE_GIVEN_TEXT
-            {
-            lv_desc_1_0=(Token)match(input,RULE_GIVEN_TEXT,FOLLOW_RULE_GIVEN_TEXT_in_ruleGivenStep2148); 
-
-            			newLeafNode(lv_desc_1_0, grammarAccess.getGivenStepAccess().getDescGIVEN_TEXTTerminalRuleCall_1_0()); 
-            		
-
-            	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getGivenStepRule());
-            	        }
-                   		addWithLastConsumed(
-                   			current, 
-                   			"desc",
-                    		lv_desc_1_0, 
-                    		"GIVEN_TEXT");
-            	    
-
-            }
-
-
-            }
-
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1068:2: ( (lv_desc_2_0= ruleOptionalText ) )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1029:3: ( (lv_rows_3_0= ruleExampleRow ) )*
             loop23:
             do {
                 int alt23=2;
                 int LA23_0 = input.LA(1);
 
-                if ( (LA23_0==RULE_TEXT||LA23_0==RULE_CODE) ) {
+                if ( (LA23_0==RULE_EXAMPLE_CELL) ) {
                     alt23=1;
                 }
 
 
                 switch (alt23) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1069:1: (lv_desc_2_0= ruleOptionalText )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1030:1: (lv_rows_3_0= ruleExampleRow )
             	    {
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1069:1: (lv_desc_2_0= ruleOptionalText )
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1070:3: lv_desc_2_0= ruleOptionalText
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1030:1: (lv_rows_3_0= ruleExampleRow )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1031:3: lv_rows_3_0= ruleExampleRow
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getGivenStepAccess().getDescOptionalTextParserRuleCall_2_0()); 
+            	    	        newCompositeNode(grammarAccess.getThenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleOptionalText_in_ruleGivenStep2174);
-            	    lv_desc_2_0=ruleOptionalText();
+            	    pushFollow(FOLLOW_ruleExampleRow_in_ruleThenStep2080);
+            	    lv_rows_3_0=ruleExampleRow();
 
             	    state._fsp--;
 
 
             	    	        if (current==null) {
-            	    	            current = createModelElementForParent(grammarAccess.getGivenStepRule());
+            	    	            current = createModelElementForParent(grammarAccess.getThenStepRule());
             	    	        }
             	           		add(
             	           			current, 
-            	           			"desc",
-            	            		lv_desc_2_0, 
-            	            		"OptionalText");
+            	           			"rows",
+            	            		lv_rows_3_0, 
+            	            		"ExampleRow");
             	    	        afterParserOrEnumRuleCall();
             	    	    
 
@@ -2746,11 +2654,256 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
         }
         return current;
     }
+    // $ANTLR end "ruleThenStep"
+
+
+    // $ANTLR start "entryRuleGivenStep"
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1055:1: entryRuleGivenStep returns [EObject current=null] : iv_ruleGivenStep= ruleGivenStep EOF ;
+    public final EObject entryRuleGivenStep() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleGivenStep = null;
+
+
+        try {
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1056:2: (iv_ruleGivenStep= ruleGivenStep EOF )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1057:2: iv_ruleGivenStep= ruleGivenStep EOF
+            {
+             newCompositeNode(grammarAccess.getGivenStepRule()); 
+            pushFollow(FOLLOW_ruleGivenStep_in_entryRuleGivenStep2117);
+            iv_ruleGivenStep=ruleGivenStep();
+
+            state._fsp--;
+
+             current =iv_ruleGivenStep; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleGivenStep2127); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleGivenStep"
+
+
+    // $ANTLR start "ruleGivenStep"
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1064:1: ruleGivenStep returns [EObject current=null] : ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* ) ;
+    public final EObject ruleGivenStep() throws RecognitionException {
+        EObject current = null;
+
+        Token lv_tags_0_0=null;
+        Token lv_desc_1_0=null;
+        AntlrDatatypeRuleToken lv_desc_2_0 = null;
+
+        EObject lv_rows_3_0 = null;
+
+
+         enterRule(); 
+            
+        try {
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1067:28: ( ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1068:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* )
+            {
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1068:1: ( ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1068:2: ( (lv_tags_0_0= RULE_TAG ) )* ( (lv_desc_1_0= RULE_GIVEN_TEXT ) ) ( (lv_desc_2_0= ruleOptionalText ) )* ( (lv_rows_3_0= ruleExampleRow ) )*
+            {
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1068:2: ( (lv_tags_0_0= RULE_TAG ) )*
+            loop24:
+            do {
+                int alt24=2;
+                int LA24_0 = input.LA(1);
+
+                if ( (LA24_0==RULE_TAG) ) {
+                    alt24=1;
+                }
+
+
+                switch (alt24) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1069:1: (lv_tags_0_0= RULE_TAG )
+            	    {
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1069:1: (lv_tags_0_0= RULE_TAG )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1070:3: lv_tags_0_0= RULE_TAG
+            	    {
+            	    lv_tags_0_0=(Token)match(input,RULE_TAG,FOLLOW_RULE_TAG_in_ruleGivenStep2169); 
+
+            	    			newLeafNode(lv_tags_0_0, grammarAccess.getGivenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
+            	    		
+
+            	    	        if (current==null) {
+            	    	            current = createModelElement(grammarAccess.getGivenStepRule());
+            	    	        }
+            	           		addWithLastConsumed(
+            	           			current, 
+            	           			"tags",
+            	            		lv_tags_0_0, 
+            	            		"TAG");
+            	    	    
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop24;
+                }
+            } while (true);
+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1086:3: ( (lv_desc_1_0= RULE_GIVEN_TEXT ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1087:1: (lv_desc_1_0= RULE_GIVEN_TEXT )
+            {
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1087:1: (lv_desc_1_0= RULE_GIVEN_TEXT )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1088:3: lv_desc_1_0= RULE_GIVEN_TEXT
+            {
+            lv_desc_1_0=(Token)match(input,RULE_GIVEN_TEXT,FOLLOW_RULE_GIVEN_TEXT_in_ruleGivenStep2192); 
+
+            			newLeafNode(lv_desc_1_0, grammarAccess.getGivenStepAccess().getDescGIVEN_TEXTTerminalRuleCall_1_0()); 
+            		
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getGivenStepRule());
+            	        }
+                   		addWithLastConsumed(
+                   			current, 
+                   			"desc",
+                    		lv_desc_1_0, 
+                    		"GIVEN_TEXT");
+            	    
+
+            }
+
+
+            }
+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1104:2: ( (lv_desc_2_0= ruleOptionalText ) )*
+            loop25:
+            do {
+                int alt25=2;
+                int LA25_0 = input.LA(1);
+
+                if ( (LA25_0==RULE_TEXT||LA25_0==RULE_CODE) ) {
+                    alt25=1;
+                }
+
+
+                switch (alt25) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1105:1: (lv_desc_2_0= ruleOptionalText )
+            	    {
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1105:1: (lv_desc_2_0= ruleOptionalText )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1106:3: lv_desc_2_0= ruleOptionalText
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getGivenStepAccess().getDescOptionalTextParserRuleCall_2_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleOptionalText_in_ruleGivenStep2218);
+            	    lv_desc_2_0=ruleOptionalText();
+
+            	    state._fsp--;
+
+
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getGivenStepRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"desc",
+            	            		lv_desc_2_0, 
+            	            		"OptionalText");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop25;
+                }
+            } while (true);
+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1122:3: ( (lv_rows_3_0= ruleExampleRow ) )*
+            loop26:
+            do {
+                int alt26=2;
+                int LA26_0 = input.LA(1);
+
+                if ( (LA26_0==RULE_EXAMPLE_CELL) ) {
+                    alt26=1;
+                }
+
+
+                switch (alt26) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1123:1: (lv_rows_3_0= ruleExampleRow )
+            	    {
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1123:1: (lv_rows_3_0= ruleExampleRow )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1124:3: lv_rows_3_0= ruleExampleRow
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getGivenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleExampleRow_in_ruleGivenStep2240);
+            	    lv_rows_3_0=ruleExampleRow();
+
+            	    state._fsp--;
+
+
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getGivenStepRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"rows",
+            	            		lv_rows_3_0, 
+            	            		"ExampleRow");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop26;
+                }
+            } while (true);
+
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
     // $ANTLR end "ruleGivenStep"
 
 
     // $ANTLR start "entryRuleAndStep"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1094:1: entryRuleAndStep returns [EObject current=null] : iv_ruleAndStep= ruleAndStep EOF ;
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1148:1: entryRuleAndStep returns [EObject current=null] : iv_ruleAndStep= ruleAndStep EOF ;
     public final EObject entryRuleAndStep() throws RecognitionException {
         EObject current = null;
 
@@ -2758,17 +2911,17 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1095:2: (iv_ruleAndStep= ruleAndStep EOF )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1096:2: iv_ruleAndStep= ruleAndStep EOF
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1149:2: (iv_ruleAndStep= ruleAndStep EOF )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1150:2: iv_ruleAndStep= ruleAndStep EOF
             {
              newCompositeNode(grammarAccess.getAndStepRule()); 
-            pushFollow(FOLLOW_ruleAndStep_in_entryRuleAndStep2211);
+            pushFollow(FOLLOW_ruleAndStep_in_entryRuleAndStep2277);
             iv_ruleAndStep=ruleAndStep();
 
             state._fsp--;
 
              current =iv_ruleAndStep; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAndStep2221); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAndStep2287); 
 
             }
 
@@ -2786,30 +2939,32 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAndStep"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1103:1: ruleAndStep returns [EObject current=null] : ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* ) ;
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1157:1: ruleAndStep returns [EObject current=null] : ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* ( (lv_rows_2_0= ruleExampleRow ) )* ) ;
     public final EObject ruleAndStep() throws RecognitionException {
         EObject current = null;
 
         Token lv_desc_0_0=null;
         AntlrDatatypeRuleToken lv_desc_1_0 = null;
 
+        EObject lv_rows_2_0 = null;
+
 
          enterRule(); 
             
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1106:28: ( ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1107:1: ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1160:28: ( ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* ( (lv_rows_2_0= ruleExampleRow ) )* ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1161:1: ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* ( (lv_rows_2_0= ruleExampleRow ) )* )
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1107:1: ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1107:2: ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1161:1: ( ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* ( (lv_rows_2_0= ruleExampleRow ) )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1161:2: ( (lv_desc_0_0= RULE_AND_TEXT ) ) ( (lv_desc_1_0= ruleOptionalText ) )* ( (lv_rows_2_0= ruleExampleRow ) )*
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1107:2: ( (lv_desc_0_0= RULE_AND_TEXT ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1108:1: (lv_desc_0_0= RULE_AND_TEXT )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1161:2: ( (lv_desc_0_0= RULE_AND_TEXT ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1162:1: (lv_desc_0_0= RULE_AND_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1108:1: (lv_desc_0_0= RULE_AND_TEXT )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1109:3: lv_desc_0_0= RULE_AND_TEXT
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1162:1: (lv_desc_0_0= RULE_AND_TEXT )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1163:3: lv_desc_0_0= RULE_AND_TEXT
             {
-            lv_desc_0_0=(Token)match(input,RULE_AND_TEXT,FOLLOW_RULE_AND_TEXT_in_ruleAndStep2263); 
+            lv_desc_0_0=(Token)match(input,RULE_AND_TEXT,FOLLOW_RULE_AND_TEXT_in_ruleAndStep2329); 
 
             			newLeafNode(lv_desc_0_0, grammarAccess.getAndStepAccess().getDescAND_TEXTTerminalRuleCall_0_0()); 
             		
@@ -2829,28 +2984,28 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1125:2: ( (lv_desc_1_0= ruleOptionalText ) )*
-            loop24:
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1179:2: ( (lv_desc_1_0= ruleOptionalText ) )*
+            loop27:
             do {
-                int alt24=2;
-                int LA24_0 = input.LA(1);
+                int alt27=2;
+                int LA27_0 = input.LA(1);
 
-                if ( (LA24_0==RULE_TEXT||LA24_0==RULE_CODE) ) {
-                    alt24=1;
+                if ( (LA27_0==RULE_TEXT||LA27_0==RULE_CODE) ) {
+                    alt27=1;
                 }
 
 
-                switch (alt24) {
+                switch (alt27) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1126:1: (lv_desc_1_0= ruleOptionalText )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1180:1: (lv_desc_1_0= ruleOptionalText )
             	    {
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1126:1: (lv_desc_1_0= ruleOptionalText )
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1127:3: lv_desc_1_0= ruleOptionalText
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1180:1: (lv_desc_1_0= ruleOptionalText )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1181:3: lv_desc_1_0= ruleOptionalText
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getAndStepAccess().getDescOptionalTextParserRuleCall_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleOptionalText_in_ruleAndStep2289);
+            	    pushFollow(FOLLOW_ruleOptionalText_in_ruleAndStep2355);
             	    lv_desc_1_0=ruleOptionalText();
 
             	    state._fsp--;
@@ -2874,7 +3029,56 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop24;
+            	    break loop27;
+                }
+            } while (true);
+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1197:3: ( (lv_rows_2_0= ruleExampleRow ) )*
+            loop28:
+            do {
+                int alt28=2;
+                int LA28_0 = input.LA(1);
+
+                if ( (LA28_0==RULE_EXAMPLE_CELL) ) {
+                    alt28=1;
+                }
+
+
+                switch (alt28) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1198:1: (lv_rows_2_0= ruleExampleRow )
+            	    {
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1198:1: (lv_rows_2_0= ruleExampleRow )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1199:3: lv_rows_2_0= ruleExampleRow
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getAndStepAccess().getRowsExampleRowParserRuleCall_2_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleExampleRow_in_ruleAndStep2377);
+            	    lv_rows_2_0=ruleExampleRow();
+
+            	    state._fsp--;
+
+
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getAndStepRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"rows",
+            	            		lv_rows_2_0, 
+            	            		"ExampleRow");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop28;
                 }
             } while (true);
 
@@ -2899,7 +3103,7 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleOptionalText"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1151:1: entryRuleOptionalText returns [String current=null] : iv_ruleOptionalText= ruleOptionalText EOF ;
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1223:1: entryRuleOptionalText returns [String current=null] : iv_ruleOptionalText= ruleOptionalText EOF ;
     public final String entryRuleOptionalText() throws RecognitionException {
         String current = null;
 
@@ -2907,17 +3111,17 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1152:2: (iv_ruleOptionalText= ruleOptionalText EOF )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1153:2: iv_ruleOptionalText= ruleOptionalText EOF
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1224:2: (iv_ruleOptionalText= ruleOptionalText EOF )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1225:2: iv_ruleOptionalText= ruleOptionalText EOF
             {
              newCompositeNode(grammarAccess.getOptionalTextRule()); 
-            pushFollow(FOLLOW_ruleOptionalText_in_entryRuleOptionalText2327);
+            pushFollow(FOLLOW_ruleOptionalText_in_entryRuleOptionalText2415);
             iv_ruleOptionalText=ruleOptionalText();
 
             state._fsp--;
 
              current =iv_ruleOptionalText.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleOptionalText2338); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleOptionalText2426); 
 
             }
 
@@ -2935,7 +3139,7 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOptionalText"
-    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1160:1: ruleOptionalText returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE ) ;
+    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1232:1: ruleOptionalText returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE ) ;
     public final AntlrDatatypeRuleToken ruleOptionalText() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -2945,30 +3149,30 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1163:28: ( (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1164:1: (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1235:28: ( (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1236:1: (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE )
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1164:1: (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE )
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1236:1: (this_TEXT_0= RULE_TEXT | this_CODE_1= RULE_CODE )
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA25_0==RULE_TEXT) ) {
-                alt25=1;
+            if ( (LA29_0==RULE_TEXT) ) {
+                alt29=1;
             }
-            else if ( (LA25_0==RULE_CODE) ) {
-                alt25=2;
+            else if ( (LA29_0==RULE_CODE) ) {
+                alt29=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 25, 0, input);
+                    new NoViableAltException("", 29, 0, input);
 
                 throw nvae;
             }
-            switch (alt25) {
+            switch (alt29) {
                 case 1 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1164:6: this_TEXT_0= RULE_TEXT
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1236:6: this_TEXT_0= RULE_TEXT
                     {
-                    this_TEXT_0=(Token)match(input,RULE_TEXT,FOLLOW_RULE_TEXT_in_ruleOptionalText2378); 
+                    this_TEXT_0=(Token)match(input,RULE_TEXT,FOLLOW_RULE_TEXT_in_ruleOptionalText2466); 
 
                     		current.merge(this_TEXT_0);
                         
@@ -2979,9 +3183,9 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1172:10: this_CODE_1= RULE_CODE
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1244:10: this_CODE_1= RULE_CODE
                     {
-                    this_CODE_1=(Token)match(input,RULE_CODE,FOLLOW_RULE_CODE_in_ruleOptionalText2404); 
+                    this_CODE_1=(Token)match(input,RULE_CODE,FOLLOW_RULE_CODE_in_ruleOptionalText2492); 
 
                     		current.merge(this_CODE_1);
                         
@@ -3295,25 +3499,29 @@ public class InternalGherkinParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleWhenStep_in_entryRuleWhenStep1797 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleWhenStep1807 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_TAG_in_ruleWhenStep1849 = new BitSet(new long[]{0x0000000000010010L});
-    public static final BitSet FOLLOW_RULE_WHEN_TEXT_in_ruleWhenStep1872 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_ruleWhenStep1898 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleThenStep_in_entryRuleThenStep1935 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleThenStep1945 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_ruleThenStep1987 = new BitSet(new long[]{0x0000000000020010L});
-    public static final BitSet FOLLOW_RULE_THEN_TEXT_in_ruleThenStep2010 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_ruleThenStep2036 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleGivenStep_in_entryRuleGivenStep2073 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleGivenStep2083 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_ruleGivenStep2125 = new BitSet(new long[]{0x0000000000040010L});
-    public static final BitSet FOLLOW_RULE_GIVEN_TEXT_in_ruleGivenStep2148 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_ruleGivenStep2174 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleAndStep_in_entryRuleAndStep2211 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAndStep2221 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_AND_TEXT_in_ruleAndStep2263 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_ruleAndStep2289 = new BitSet(new long[]{0x0000000000100042L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_entryRuleOptionalText2327 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleOptionalText2338 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TEXT_in_ruleOptionalText2378 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_CODE_in_ruleOptionalText2404 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_WHEN_TEXT_in_ruleWhenStep1872 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_ruleWhenStep1898 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_ruleWhenStep1920 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_ruleThenStep_in_entryRuleThenStep1957 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleThenStep1967 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_ruleThenStep2009 = new BitSet(new long[]{0x0000000000020010L});
+    public static final BitSet FOLLOW_RULE_THEN_TEXT_in_ruleThenStep2032 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_ruleThenStep2058 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_ruleThenStep2080 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_ruleGivenStep_in_entryRuleGivenStep2117 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleGivenStep2127 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_ruleGivenStep2169 = new BitSet(new long[]{0x0000000000040010L});
+    public static final BitSet FOLLOW_RULE_GIVEN_TEXT_in_ruleGivenStep2192 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_ruleGivenStep2218 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_ruleGivenStep2240 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_ruleAndStep_in_entryRuleAndStep2277 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAndStep2287 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_AND_TEXT_in_ruleAndStep2329 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_ruleAndStep2355 = new BitSet(new long[]{0x0000000000104042L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_ruleAndStep2377 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_entryRuleOptionalText2415 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleOptionalText2426 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TEXT_in_ruleOptionalText2466 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_CODE_in_ruleOptionalText2492 = new BitSet(new long[]{0x0000000000000002L});
 
 }

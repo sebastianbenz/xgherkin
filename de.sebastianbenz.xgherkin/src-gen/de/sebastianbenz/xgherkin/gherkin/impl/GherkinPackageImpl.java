@@ -507,6 +507,16 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getStep_Rows()
+  {
+    return (EReference)stepEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getWhenStep()
   {
     return whenStepEClass;
@@ -642,6 +652,7 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
 
     stepEClass = createEClass(STEP);
     createEAttribute(stepEClass, STEP__DESC);
+    createEReference(stepEClass, STEP__ROWS);
 
     whenStepEClass = createEClass(WHEN_STEP);
     createEAttribute(whenStepEClass, WHEN_STEP__TAGS);
@@ -737,6 +748,7 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
 
     initEClass(stepEClass, Step.class, "Step", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getStep_Desc(), ecorePackage.getEString(), "desc", null, 0, -1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getStep_Rows(), this.getExampleRow(), null, "rows", null, 0, -1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(whenStepEClass, WhenStep.class, "WhenStep", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getWhenStep_Tags(), ecorePackage.getEString(), "tags", null, 0, -1, WhenStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -399,12 +399,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cDescWHEN_TEXTTerminalRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
 		private final Assignment cDescAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cDescOptionalTextParserRuleCall_2_0 = (RuleCall)cDescAssignment_2.eContents().get(0);
+		private final Assignment cRowsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cRowsExampleRowParserRuleCall_3_0 = (RuleCall)cRowsAssignment_3.eContents().get(0);
 		
 		//WhenStep:
-		//	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*;
+		//	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText* rows+=ExampleRow*;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*
+		//tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText* rows+=ExampleRow*
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -424,6 +426,12 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 
 		//OptionalText
 		public RuleCall getDescOptionalTextParserRuleCall_2_0() { return cDescOptionalTextParserRuleCall_2_0; }
+
+		//rows+=ExampleRow*
+		public Assignment getRowsAssignment_3() { return cRowsAssignment_3; }
+
+		//ExampleRow
+		public RuleCall getRowsExampleRowParserRuleCall_3_0() { return cRowsExampleRowParserRuleCall_3_0; }
 	}
 
 	public class ThenStepElements extends AbstractParserRuleElementFinder {
@@ -435,12 +443,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cDescTHEN_TEXTTerminalRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
 		private final Assignment cDescAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cDescOptionalTextParserRuleCall_2_0 = (RuleCall)cDescAssignment_2.eContents().get(0);
+		private final Assignment cRowsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cRowsExampleRowParserRuleCall_3_0 = (RuleCall)cRowsAssignment_3.eContents().get(0);
 		
 		//ThenStep:
-		//	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*;
+		//	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText* rows+=ExampleRow*;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*
+		//tags+=TAG* desc+=THEN_TEXT desc+=OptionalText* rows+=ExampleRow*
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -460,6 +470,12 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 
 		//OptionalText
 		public RuleCall getDescOptionalTextParserRuleCall_2_0() { return cDescOptionalTextParserRuleCall_2_0; }
+
+		//rows+=ExampleRow*
+		public Assignment getRowsAssignment_3() { return cRowsAssignment_3; }
+
+		//ExampleRow
+		public RuleCall getRowsExampleRowParserRuleCall_3_0() { return cRowsExampleRowParserRuleCall_3_0; }
 	}
 
 	public class GivenStepElements extends AbstractParserRuleElementFinder {
@@ -471,12 +487,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cDescGIVEN_TEXTTerminalRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
 		private final Assignment cDescAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cDescOptionalTextParserRuleCall_2_0 = (RuleCall)cDescAssignment_2.eContents().get(0);
+		private final Assignment cRowsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cRowsExampleRowParserRuleCall_3_0 = (RuleCall)cRowsAssignment_3.eContents().get(0);
 		
 		//GivenStep:
-		//	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*;
+		//	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText* rows+=ExampleRow*;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*
+		//tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText* rows+=ExampleRow*
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -496,6 +514,12 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 
 		//OptionalText
 		public RuleCall getDescOptionalTextParserRuleCall_2_0() { return cDescOptionalTextParserRuleCall_2_0; }
+
+		//rows+=ExampleRow*
+		public Assignment getRowsAssignment_3() { return cRowsAssignment_3; }
+
+		//ExampleRow
+		public RuleCall getRowsExampleRowParserRuleCall_3_0() { return cRowsExampleRowParserRuleCall_3_0; }
 	}
 
 	public class AndStepElements extends AbstractParserRuleElementFinder {
@@ -505,12 +529,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cDescAND_TEXTTerminalRuleCall_0_0 = (RuleCall)cDescAssignment_0.eContents().get(0);
 		private final Assignment cDescAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cDescOptionalTextParserRuleCall_1_0 = (RuleCall)cDescAssignment_1.eContents().get(0);
+		private final Assignment cRowsAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cRowsExampleRowParserRuleCall_2_0 = (RuleCall)cRowsAssignment_2.eContents().get(0);
 		
 		//AndStep:
-		//	desc+=AND_TEXT desc+=OptionalText*;
+		//	desc+=AND_TEXT desc+=OptionalText* rows+=ExampleRow*;
 		public ParserRule getRule() { return rule; }
 
-		//desc+=AND_TEXT desc+=OptionalText*
+		//desc+=AND_TEXT desc+=OptionalText* rows+=ExampleRow*
 		public Group getGroup() { return cGroup; }
 
 		//desc+=AND_TEXT
@@ -524,6 +550,12 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 
 		//OptionalText
 		public RuleCall getDescOptionalTextParserRuleCall_1_0() { return cDescOptionalTextParserRuleCall_1_0; }
+
+		//rows+=ExampleRow*
+		public Assignment getRowsAssignment_2() { return cRowsAssignment_2; }
+
+		//ExampleRow
+		public RuleCall getRowsExampleRowParserRuleCall_2_0() { return cRowsExampleRowParserRuleCall_2_0; }
 	}
 
 	public class OptionalTextElements extends AbstractParserRuleElementFinder {
@@ -733,7 +765,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//WhenStep:
-	//	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*;
+	//	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText* rows+=ExampleRow*;
 	public WhenStepElements getWhenStepAccess() {
 		return (pWhenStep != null) ? pWhenStep : (pWhenStep = new WhenStepElements());
 	}
@@ -743,7 +775,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ThenStep:
-	//	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*;
+	//	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText* rows+=ExampleRow*;
 	public ThenStepElements getThenStepAccess() {
 		return (pThenStep != null) ? pThenStep : (pThenStep = new ThenStepElements());
 	}
@@ -753,7 +785,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//GivenStep:
-	//	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*;
+	//	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText* rows+=ExampleRow*;
 	public GivenStepElements getGivenStepAccess() {
 		return (pGivenStep != null) ? pGivenStep : (pGivenStep = new GivenStepElements());
 	}
@@ -763,7 +795,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//AndStep:
-	//	desc+=AND_TEXT desc+=OptionalText*;
+	//	desc+=AND_TEXT desc+=OptionalText* rows+=ExampleRow*;
 	public AndStepElements getAndStepAccess() {
 		return (pAndStep != null) ? pAndStep : (pAndStep = new AndStepElements());
 	}

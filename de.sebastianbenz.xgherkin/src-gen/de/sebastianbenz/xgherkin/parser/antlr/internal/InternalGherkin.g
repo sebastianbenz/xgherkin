@@ -933,6 +933,24 @@ ruleWhenStep returns [EObject current=null]
 	    }
 
 )
+)*(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getWhenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+	    }
+		lv_rows_3_0=ruleExampleRow		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getWhenStepRule());
+	        }
+       		add(
+       			$current, 
+       			"rows",
+        		lv_rows_3_0, 
+        		"ExampleRow");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
 )*)
 ;
 
@@ -1004,6 +1022,24 @@ ruleThenStep returns [EObject current=null]
        			"desc",
         		lv_desc_2_0, 
         		"OptionalText");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)*(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getThenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+	    }
+		lv_rows_3_0=ruleExampleRow		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getThenStepRule());
+	        }
+       		add(
+       			$current, 
+       			"rows",
+        		lv_rows_3_0, 
+        		"ExampleRow");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -1083,6 +1119,24 @@ ruleGivenStep returns [EObject current=null]
 	    }
 
 )
+)*(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getGivenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+	    }
+		lv_rows_3_0=ruleExampleRow		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getGivenStepRule());
+	        }
+       		add(
+       			$current, 
+       			"rows",
+        		lv_rows_3_0, 
+        		"ExampleRow");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
 )*)
 ;
 
@@ -1136,6 +1190,24 @@ ruleAndStep returns [EObject current=null]
        			"desc",
         		lv_desc_1_0, 
         		"OptionalText");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)*(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getAndStepAccess().getRowsExampleRowParserRuleCall_2_0()); 
+	    }
+		lv_rows_2_0=ruleExampleRow		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getAndStepRule());
+	        }
+       		add(
+       			$current, 
+       			"rows",
+        		lv_rows_2_0, 
+        		"ExampleRow");
 	        afterParserOrEnumRuleCall();
 	    }
 

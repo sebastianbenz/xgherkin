@@ -4014,17 +4014,22 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__WhenStep__Group__2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1378:1: rule__WhenStep__Group__2 : rule__WhenStep__Group__2__Impl ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1378:1: rule__WhenStep__Group__2 : rule__WhenStep__Group__2__Impl rule__WhenStep__Group__3 ;
     public final void rule__WhenStep__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1382:1: ( rule__WhenStep__Group__2__Impl )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1383:2: rule__WhenStep__Group__2__Impl
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1382:1: ( rule__WhenStep__Group__2__Impl rule__WhenStep__Group__3 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1383:2: rule__WhenStep__Group__2__Impl rule__WhenStep__Group__3
             {
             pushFollow(FOLLOW_rule__WhenStep__Group__2__Impl_in_rule__WhenStep__Group__22835);
             rule__WhenStep__Group__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__WhenStep__Group__3_in_rule__WhenStep__Group__22838);
+            rule__WhenStep__Group__3();
 
             state._fsp--;
 
@@ -4047,20 +4052,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__WhenStep__Group__2__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1389:1: rule__WhenStep__Group__2__Impl : ( ( rule__WhenStep__DescAssignment_2 )* ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1390:1: rule__WhenStep__Group__2__Impl : ( ( rule__WhenStep__DescAssignment_2 )* ) ;
     public final void rule__WhenStep__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1393:1: ( ( ( rule__WhenStep__DescAssignment_2 )* ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1394:1: ( ( rule__WhenStep__DescAssignment_2 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1394:1: ( ( ( rule__WhenStep__DescAssignment_2 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1395:1: ( ( rule__WhenStep__DescAssignment_2 )* )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1394:1: ( ( rule__WhenStep__DescAssignment_2 )* )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1395:1: ( rule__WhenStep__DescAssignment_2 )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1395:1: ( ( rule__WhenStep__DescAssignment_2 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1396:1: ( rule__WhenStep__DescAssignment_2 )*
             {
              before(grammarAccess.getWhenStepAccess().getDescAssignment_2()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1396:1: ( rule__WhenStep__DescAssignment_2 )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1397:1: ( rule__WhenStep__DescAssignment_2 )*
             loop20:
             do {
                 int alt20=2;
@@ -4073,9 +4078,9 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
                 switch (alt20) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1396:2: rule__WhenStep__DescAssignment_2
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1397:2: rule__WhenStep__DescAssignment_2
             	    {
-            	    pushFollow(FOLLOW_rule__WhenStep__DescAssignment_2_in_rule__WhenStep__Group__2__Impl2862);
+            	    pushFollow(FOLLOW_rule__WhenStep__DescAssignment_2_in_rule__WhenStep__Group__2__Impl2865);
             	    rule__WhenStep__DescAssignment_2();
 
             	    state._fsp--;
@@ -4111,22 +4116,120 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__WhenStep__Group__2__Impl"
 
 
+    // $ANTLR start "rule__WhenStep__Group__3"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1407:1: rule__WhenStep__Group__3 : rule__WhenStep__Group__3__Impl ;
+    public final void rule__WhenStep__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1411:1: ( rule__WhenStep__Group__3__Impl )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1412:2: rule__WhenStep__Group__3__Impl
+            {
+            pushFollow(FOLLOW_rule__WhenStep__Group__3__Impl_in_rule__WhenStep__Group__32896);
+            rule__WhenStep__Group__3__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__WhenStep__Group__3"
+
+
+    // $ANTLR start "rule__WhenStep__Group__3__Impl"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1418:1: rule__WhenStep__Group__3__Impl : ( ( rule__WhenStep__RowsAssignment_3 )* ) ;
+    public final void rule__WhenStep__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1422:1: ( ( ( rule__WhenStep__RowsAssignment_3 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1423:1: ( ( rule__WhenStep__RowsAssignment_3 )* )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1423:1: ( ( rule__WhenStep__RowsAssignment_3 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1424:1: ( rule__WhenStep__RowsAssignment_3 )*
+            {
+             before(grammarAccess.getWhenStepAccess().getRowsAssignment_3()); 
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1425:1: ( rule__WhenStep__RowsAssignment_3 )*
+            loop21:
+            do {
+                int alt21=2;
+                int LA21_0 = input.LA(1);
+
+                if ( (LA21_0==RULE_EXAMPLE_CELL) ) {
+                    alt21=1;
+                }
+
+
+                switch (alt21) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1425:2: rule__WhenStep__RowsAssignment_3
+            	    {
+            	    pushFollow(FOLLOW_rule__WhenStep__RowsAssignment_3_in_rule__WhenStep__Group__3__Impl2923);
+            	    rule__WhenStep__RowsAssignment_3();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop21;
+                }
+            } while (true);
+
+             after(grammarAccess.getWhenStepAccess().getRowsAssignment_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__WhenStep__Group__3__Impl"
+
+
     // $ANTLR start "rule__ThenStep__Group__0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1412:1: rule__ThenStep__Group__0 : rule__ThenStep__Group__0__Impl rule__ThenStep__Group__1 ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1443:1: rule__ThenStep__Group__0 : rule__ThenStep__Group__0__Impl rule__ThenStep__Group__1 ;
     public final void rule__ThenStep__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1416:1: ( rule__ThenStep__Group__0__Impl rule__ThenStep__Group__1 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1417:2: rule__ThenStep__Group__0__Impl rule__ThenStep__Group__1
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1447:1: ( rule__ThenStep__Group__0__Impl rule__ThenStep__Group__1 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1448:2: rule__ThenStep__Group__0__Impl rule__ThenStep__Group__1
             {
-            pushFollow(FOLLOW_rule__ThenStep__Group__0__Impl_in_rule__ThenStep__Group__02899);
+            pushFollow(FOLLOW_rule__ThenStep__Group__0__Impl_in_rule__ThenStep__Group__02962);
             rule__ThenStep__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ThenStep__Group__1_in_rule__ThenStep__Group__02902);
+            pushFollow(FOLLOW_rule__ThenStep__Group__1_in_rule__ThenStep__Group__02965);
             rule__ThenStep__Group__1();
 
             state._fsp--;
@@ -4150,35 +4253,35 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ThenStep__Group__0__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1424:1: rule__ThenStep__Group__0__Impl : ( ( rule__ThenStep__TagsAssignment_0 )* ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1455:1: rule__ThenStep__Group__0__Impl : ( ( rule__ThenStep__TagsAssignment_0 )* ) ;
     public final void rule__ThenStep__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1428:1: ( ( ( rule__ThenStep__TagsAssignment_0 )* ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1429:1: ( ( rule__ThenStep__TagsAssignment_0 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1459:1: ( ( ( rule__ThenStep__TagsAssignment_0 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1460:1: ( ( rule__ThenStep__TagsAssignment_0 )* )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1429:1: ( ( rule__ThenStep__TagsAssignment_0 )* )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1430:1: ( rule__ThenStep__TagsAssignment_0 )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1460:1: ( ( rule__ThenStep__TagsAssignment_0 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1461:1: ( rule__ThenStep__TagsAssignment_0 )*
             {
              before(grammarAccess.getThenStepAccess().getTagsAssignment_0()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1431:1: ( rule__ThenStep__TagsAssignment_0 )*
-            loop21:
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1462:1: ( rule__ThenStep__TagsAssignment_0 )*
+            loop22:
             do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
+                int alt22=2;
+                int LA22_0 = input.LA(1);
 
-                if ( (LA21_0==RULE_TAG) ) {
-                    alt21=1;
+                if ( (LA22_0==RULE_TAG) ) {
+                    alt22=1;
                 }
 
 
-                switch (alt21) {
+                switch (alt22) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1431:2: rule__ThenStep__TagsAssignment_0
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1462:2: rule__ThenStep__TagsAssignment_0
             	    {
-            	    pushFollow(FOLLOW_rule__ThenStep__TagsAssignment_0_in_rule__ThenStep__Group__0__Impl2929);
+            	    pushFollow(FOLLOW_rule__ThenStep__TagsAssignment_0_in_rule__ThenStep__Group__0__Impl2992);
             	    rule__ThenStep__TagsAssignment_0();
 
             	    state._fsp--;
@@ -4188,7 +4291,7 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop21;
+            	    break loop22;
                 }
             } while (true);
 
@@ -4215,21 +4318,21 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ThenStep__Group__1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1441:1: rule__ThenStep__Group__1 : rule__ThenStep__Group__1__Impl rule__ThenStep__Group__2 ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1472:1: rule__ThenStep__Group__1 : rule__ThenStep__Group__1__Impl rule__ThenStep__Group__2 ;
     public final void rule__ThenStep__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1445:1: ( rule__ThenStep__Group__1__Impl rule__ThenStep__Group__2 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1446:2: rule__ThenStep__Group__1__Impl rule__ThenStep__Group__2
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1476:1: ( rule__ThenStep__Group__1__Impl rule__ThenStep__Group__2 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1477:2: rule__ThenStep__Group__1__Impl rule__ThenStep__Group__2
             {
-            pushFollow(FOLLOW_rule__ThenStep__Group__1__Impl_in_rule__ThenStep__Group__12960);
+            pushFollow(FOLLOW_rule__ThenStep__Group__1__Impl_in_rule__ThenStep__Group__13023);
             rule__ThenStep__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ThenStep__Group__2_in_rule__ThenStep__Group__12963);
+            pushFollow(FOLLOW_rule__ThenStep__Group__2_in_rule__ThenStep__Group__13026);
             rule__ThenStep__Group__2();
 
             state._fsp--;
@@ -4253,23 +4356,23 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ThenStep__Group__1__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1453:1: rule__ThenStep__Group__1__Impl : ( ( rule__ThenStep__DescAssignment_1 ) ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1484:1: rule__ThenStep__Group__1__Impl : ( ( rule__ThenStep__DescAssignment_1 ) ) ;
     public final void rule__ThenStep__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1457:1: ( ( ( rule__ThenStep__DescAssignment_1 ) ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1458:1: ( ( rule__ThenStep__DescAssignment_1 ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1488:1: ( ( ( rule__ThenStep__DescAssignment_1 ) ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1489:1: ( ( rule__ThenStep__DescAssignment_1 ) )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1458:1: ( ( rule__ThenStep__DescAssignment_1 ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1459:1: ( rule__ThenStep__DescAssignment_1 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1489:1: ( ( rule__ThenStep__DescAssignment_1 ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1490:1: ( rule__ThenStep__DescAssignment_1 )
             {
              before(grammarAccess.getThenStepAccess().getDescAssignment_1()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1460:1: ( rule__ThenStep__DescAssignment_1 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1460:2: rule__ThenStep__DescAssignment_1
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1491:1: ( rule__ThenStep__DescAssignment_1 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1491:2: rule__ThenStep__DescAssignment_1
             {
-            pushFollow(FOLLOW_rule__ThenStep__DescAssignment_1_in_rule__ThenStep__Group__1__Impl2990);
+            pushFollow(FOLLOW_rule__ThenStep__DescAssignment_1_in_rule__ThenStep__Group__1__Impl3053);
             rule__ThenStep__DescAssignment_1();
 
             state._fsp--;
@@ -4300,17 +4403,22 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ThenStep__Group__2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1470:1: rule__ThenStep__Group__2 : rule__ThenStep__Group__2__Impl ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1501:1: rule__ThenStep__Group__2 : rule__ThenStep__Group__2__Impl rule__ThenStep__Group__3 ;
     public final void rule__ThenStep__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1474:1: ( rule__ThenStep__Group__2__Impl )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1475:2: rule__ThenStep__Group__2__Impl
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1505:1: ( rule__ThenStep__Group__2__Impl rule__ThenStep__Group__3 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1506:2: rule__ThenStep__Group__2__Impl rule__ThenStep__Group__3
             {
-            pushFollow(FOLLOW_rule__ThenStep__Group__2__Impl_in_rule__ThenStep__Group__23020);
+            pushFollow(FOLLOW_rule__ThenStep__Group__2__Impl_in_rule__ThenStep__Group__23083);
             rule__ThenStep__Group__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__ThenStep__Group__3_in_rule__ThenStep__Group__23086);
+            rule__ThenStep__Group__3();
 
             state._fsp--;
 
@@ -4333,35 +4441,35 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ThenStep__Group__2__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1481:1: rule__ThenStep__Group__2__Impl : ( ( rule__ThenStep__DescAssignment_2 )* ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1513:1: rule__ThenStep__Group__2__Impl : ( ( rule__ThenStep__DescAssignment_2 )* ) ;
     public final void rule__ThenStep__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1485:1: ( ( ( rule__ThenStep__DescAssignment_2 )* ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1486:1: ( ( rule__ThenStep__DescAssignment_2 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1517:1: ( ( ( rule__ThenStep__DescAssignment_2 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1518:1: ( ( rule__ThenStep__DescAssignment_2 )* )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1486:1: ( ( rule__ThenStep__DescAssignment_2 )* )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1487:1: ( rule__ThenStep__DescAssignment_2 )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1518:1: ( ( rule__ThenStep__DescAssignment_2 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1519:1: ( rule__ThenStep__DescAssignment_2 )*
             {
              before(grammarAccess.getThenStepAccess().getDescAssignment_2()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1488:1: ( rule__ThenStep__DescAssignment_2 )*
-            loop22:
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1520:1: ( rule__ThenStep__DescAssignment_2 )*
+            loop23:
             do {
-                int alt22=2;
-                int LA22_0 = input.LA(1);
+                int alt23=2;
+                int LA23_0 = input.LA(1);
 
-                if ( ((LA22_0>=RULE_TEXT && LA22_0<=RULE_CODE)) ) {
-                    alt22=1;
+                if ( ((LA23_0>=RULE_TEXT && LA23_0<=RULE_CODE)) ) {
+                    alt23=1;
                 }
 
 
-                switch (alt22) {
+                switch (alt23) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1488:2: rule__ThenStep__DescAssignment_2
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1520:2: rule__ThenStep__DescAssignment_2
             	    {
-            	    pushFollow(FOLLOW_rule__ThenStep__DescAssignment_2_in_rule__ThenStep__Group__2__Impl3047);
+            	    pushFollow(FOLLOW_rule__ThenStep__DescAssignment_2_in_rule__ThenStep__Group__2__Impl3113);
             	    rule__ThenStep__DescAssignment_2();
 
             	    state._fsp--;
@@ -4371,7 +4479,7 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop22;
+            	    break loop23;
                 }
             } while (true);
 
@@ -4397,22 +4505,120 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ThenStep__Group__2__Impl"
 
 
+    // $ANTLR start "rule__ThenStep__Group__3"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1530:1: rule__ThenStep__Group__3 : rule__ThenStep__Group__3__Impl ;
+    public final void rule__ThenStep__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1534:1: ( rule__ThenStep__Group__3__Impl )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1535:2: rule__ThenStep__Group__3__Impl
+            {
+            pushFollow(FOLLOW_rule__ThenStep__Group__3__Impl_in_rule__ThenStep__Group__33144);
+            rule__ThenStep__Group__3__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ThenStep__Group__3"
+
+
+    // $ANTLR start "rule__ThenStep__Group__3__Impl"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1541:1: rule__ThenStep__Group__3__Impl : ( ( rule__ThenStep__RowsAssignment_3 )* ) ;
+    public final void rule__ThenStep__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1545:1: ( ( ( rule__ThenStep__RowsAssignment_3 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1546:1: ( ( rule__ThenStep__RowsAssignment_3 )* )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1546:1: ( ( rule__ThenStep__RowsAssignment_3 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1547:1: ( rule__ThenStep__RowsAssignment_3 )*
+            {
+             before(grammarAccess.getThenStepAccess().getRowsAssignment_3()); 
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1548:1: ( rule__ThenStep__RowsAssignment_3 )*
+            loop24:
+            do {
+                int alt24=2;
+                int LA24_0 = input.LA(1);
+
+                if ( (LA24_0==RULE_EXAMPLE_CELL) ) {
+                    alt24=1;
+                }
+
+
+                switch (alt24) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1548:2: rule__ThenStep__RowsAssignment_3
+            	    {
+            	    pushFollow(FOLLOW_rule__ThenStep__RowsAssignment_3_in_rule__ThenStep__Group__3__Impl3171);
+            	    rule__ThenStep__RowsAssignment_3();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop24;
+                }
+            } while (true);
+
+             after(grammarAccess.getThenStepAccess().getRowsAssignment_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ThenStep__Group__3__Impl"
+
+
     // $ANTLR start "rule__GivenStep__Group__0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1504:1: rule__GivenStep__Group__0 : rule__GivenStep__Group__0__Impl rule__GivenStep__Group__1 ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1566:1: rule__GivenStep__Group__0 : rule__GivenStep__Group__0__Impl rule__GivenStep__Group__1 ;
     public final void rule__GivenStep__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1508:1: ( rule__GivenStep__Group__0__Impl rule__GivenStep__Group__1 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1509:2: rule__GivenStep__Group__0__Impl rule__GivenStep__Group__1
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1570:1: ( rule__GivenStep__Group__0__Impl rule__GivenStep__Group__1 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1571:2: rule__GivenStep__Group__0__Impl rule__GivenStep__Group__1
             {
-            pushFollow(FOLLOW_rule__GivenStep__Group__0__Impl_in_rule__GivenStep__Group__03084);
+            pushFollow(FOLLOW_rule__GivenStep__Group__0__Impl_in_rule__GivenStep__Group__03210);
             rule__GivenStep__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__GivenStep__Group__1_in_rule__GivenStep__Group__03087);
+            pushFollow(FOLLOW_rule__GivenStep__Group__1_in_rule__GivenStep__Group__03213);
             rule__GivenStep__Group__1();
 
             state._fsp--;
@@ -4436,35 +4642,35 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GivenStep__Group__0__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1516:1: rule__GivenStep__Group__0__Impl : ( ( rule__GivenStep__TagsAssignment_0 )* ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1578:1: rule__GivenStep__Group__0__Impl : ( ( rule__GivenStep__TagsAssignment_0 )* ) ;
     public final void rule__GivenStep__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1520:1: ( ( ( rule__GivenStep__TagsAssignment_0 )* ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1521:1: ( ( rule__GivenStep__TagsAssignment_0 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1582:1: ( ( ( rule__GivenStep__TagsAssignment_0 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1583:1: ( ( rule__GivenStep__TagsAssignment_0 )* )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1521:1: ( ( rule__GivenStep__TagsAssignment_0 )* )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1522:1: ( rule__GivenStep__TagsAssignment_0 )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1583:1: ( ( rule__GivenStep__TagsAssignment_0 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1584:1: ( rule__GivenStep__TagsAssignment_0 )*
             {
              before(grammarAccess.getGivenStepAccess().getTagsAssignment_0()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1523:1: ( rule__GivenStep__TagsAssignment_0 )*
-            loop23:
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1585:1: ( rule__GivenStep__TagsAssignment_0 )*
+            loop25:
             do {
-                int alt23=2;
-                int LA23_0 = input.LA(1);
+                int alt25=2;
+                int LA25_0 = input.LA(1);
 
-                if ( (LA23_0==RULE_TAG) ) {
-                    alt23=1;
+                if ( (LA25_0==RULE_TAG) ) {
+                    alt25=1;
                 }
 
 
-                switch (alt23) {
+                switch (alt25) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1523:2: rule__GivenStep__TagsAssignment_0
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1585:2: rule__GivenStep__TagsAssignment_0
             	    {
-            	    pushFollow(FOLLOW_rule__GivenStep__TagsAssignment_0_in_rule__GivenStep__Group__0__Impl3114);
+            	    pushFollow(FOLLOW_rule__GivenStep__TagsAssignment_0_in_rule__GivenStep__Group__0__Impl3240);
             	    rule__GivenStep__TagsAssignment_0();
 
             	    state._fsp--;
@@ -4474,7 +4680,7 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop23;
+            	    break loop25;
                 }
             } while (true);
 
@@ -4501,21 +4707,21 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GivenStep__Group__1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1533:1: rule__GivenStep__Group__1 : rule__GivenStep__Group__1__Impl rule__GivenStep__Group__2 ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1595:1: rule__GivenStep__Group__1 : rule__GivenStep__Group__1__Impl rule__GivenStep__Group__2 ;
     public final void rule__GivenStep__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1537:1: ( rule__GivenStep__Group__1__Impl rule__GivenStep__Group__2 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1538:2: rule__GivenStep__Group__1__Impl rule__GivenStep__Group__2
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1599:1: ( rule__GivenStep__Group__1__Impl rule__GivenStep__Group__2 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1600:2: rule__GivenStep__Group__1__Impl rule__GivenStep__Group__2
             {
-            pushFollow(FOLLOW_rule__GivenStep__Group__1__Impl_in_rule__GivenStep__Group__13145);
+            pushFollow(FOLLOW_rule__GivenStep__Group__1__Impl_in_rule__GivenStep__Group__13271);
             rule__GivenStep__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__GivenStep__Group__2_in_rule__GivenStep__Group__13148);
+            pushFollow(FOLLOW_rule__GivenStep__Group__2_in_rule__GivenStep__Group__13274);
             rule__GivenStep__Group__2();
 
             state._fsp--;
@@ -4539,23 +4745,23 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GivenStep__Group__1__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1545:1: rule__GivenStep__Group__1__Impl : ( ( rule__GivenStep__DescAssignment_1 ) ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1607:1: rule__GivenStep__Group__1__Impl : ( ( rule__GivenStep__DescAssignment_1 ) ) ;
     public final void rule__GivenStep__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1549:1: ( ( ( rule__GivenStep__DescAssignment_1 ) ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1550:1: ( ( rule__GivenStep__DescAssignment_1 ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1611:1: ( ( ( rule__GivenStep__DescAssignment_1 ) ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1612:1: ( ( rule__GivenStep__DescAssignment_1 ) )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1550:1: ( ( rule__GivenStep__DescAssignment_1 ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1551:1: ( rule__GivenStep__DescAssignment_1 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1612:1: ( ( rule__GivenStep__DescAssignment_1 ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1613:1: ( rule__GivenStep__DescAssignment_1 )
             {
              before(grammarAccess.getGivenStepAccess().getDescAssignment_1()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1552:1: ( rule__GivenStep__DescAssignment_1 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1552:2: rule__GivenStep__DescAssignment_1
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1614:1: ( rule__GivenStep__DescAssignment_1 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1614:2: rule__GivenStep__DescAssignment_1
             {
-            pushFollow(FOLLOW_rule__GivenStep__DescAssignment_1_in_rule__GivenStep__Group__1__Impl3175);
+            pushFollow(FOLLOW_rule__GivenStep__DescAssignment_1_in_rule__GivenStep__Group__1__Impl3301);
             rule__GivenStep__DescAssignment_1();
 
             state._fsp--;
@@ -4586,17 +4792,22 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GivenStep__Group__2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1562:1: rule__GivenStep__Group__2 : rule__GivenStep__Group__2__Impl ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1624:1: rule__GivenStep__Group__2 : rule__GivenStep__Group__2__Impl rule__GivenStep__Group__3 ;
     public final void rule__GivenStep__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1566:1: ( rule__GivenStep__Group__2__Impl )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1567:2: rule__GivenStep__Group__2__Impl
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1628:1: ( rule__GivenStep__Group__2__Impl rule__GivenStep__Group__3 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1629:2: rule__GivenStep__Group__2__Impl rule__GivenStep__Group__3
             {
-            pushFollow(FOLLOW_rule__GivenStep__Group__2__Impl_in_rule__GivenStep__Group__23205);
+            pushFollow(FOLLOW_rule__GivenStep__Group__2__Impl_in_rule__GivenStep__Group__23331);
             rule__GivenStep__Group__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__GivenStep__Group__3_in_rule__GivenStep__Group__23334);
+            rule__GivenStep__Group__3();
 
             state._fsp--;
 
@@ -4619,35 +4830,35 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GivenStep__Group__2__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1573:1: rule__GivenStep__Group__2__Impl : ( ( rule__GivenStep__DescAssignment_2 )* ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1636:1: rule__GivenStep__Group__2__Impl : ( ( rule__GivenStep__DescAssignment_2 )* ) ;
     public final void rule__GivenStep__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1577:1: ( ( ( rule__GivenStep__DescAssignment_2 )* ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1578:1: ( ( rule__GivenStep__DescAssignment_2 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1640:1: ( ( ( rule__GivenStep__DescAssignment_2 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1641:1: ( ( rule__GivenStep__DescAssignment_2 )* )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1578:1: ( ( rule__GivenStep__DescAssignment_2 )* )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1579:1: ( rule__GivenStep__DescAssignment_2 )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1641:1: ( ( rule__GivenStep__DescAssignment_2 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1642:1: ( rule__GivenStep__DescAssignment_2 )*
             {
              before(grammarAccess.getGivenStepAccess().getDescAssignment_2()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1580:1: ( rule__GivenStep__DescAssignment_2 )*
-            loop24:
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1643:1: ( rule__GivenStep__DescAssignment_2 )*
+            loop26:
             do {
-                int alt24=2;
-                int LA24_0 = input.LA(1);
+                int alt26=2;
+                int LA26_0 = input.LA(1);
 
-                if ( ((LA24_0>=RULE_TEXT && LA24_0<=RULE_CODE)) ) {
-                    alt24=1;
+                if ( ((LA26_0>=RULE_TEXT && LA26_0<=RULE_CODE)) ) {
+                    alt26=1;
                 }
 
 
-                switch (alt24) {
+                switch (alt26) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1580:2: rule__GivenStep__DescAssignment_2
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1643:2: rule__GivenStep__DescAssignment_2
             	    {
-            	    pushFollow(FOLLOW_rule__GivenStep__DescAssignment_2_in_rule__GivenStep__Group__2__Impl3232);
+            	    pushFollow(FOLLOW_rule__GivenStep__DescAssignment_2_in_rule__GivenStep__Group__2__Impl3361);
             	    rule__GivenStep__DescAssignment_2();
 
             	    state._fsp--;
@@ -4657,7 +4868,7 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop24;
+            	    break loop26;
                 }
             } while (true);
 
@@ -4683,22 +4894,120 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__GivenStep__Group__2__Impl"
 
 
+    // $ANTLR start "rule__GivenStep__Group__3"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1653:1: rule__GivenStep__Group__3 : rule__GivenStep__Group__3__Impl ;
+    public final void rule__GivenStep__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1657:1: ( rule__GivenStep__Group__3__Impl )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1658:2: rule__GivenStep__Group__3__Impl
+            {
+            pushFollow(FOLLOW_rule__GivenStep__Group__3__Impl_in_rule__GivenStep__Group__33392);
+            rule__GivenStep__Group__3__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__GivenStep__Group__3"
+
+
+    // $ANTLR start "rule__GivenStep__Group__3__Impl"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1664:1: rule__GivenStep__Group__3__Impl : ( ( rule__GivenStep__RowsAssignment_3 )* ) ;
+    public final void rule__GivenStep__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1668:1: ( ( ( rule__GivenStep__RowsAssignment_3 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1669:1: ( ( rule__GivenStep__RowsAssignment_3 )* )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1669:1: ( ( rule__GivenStep__RowsAssignment_3 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1670:1: ( rule__GivenStep__RowsAssignment_3 )*
+            {
+             before(grammarAccess.getGivenStepAccess().getRowsAssignment_3()); 
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1671:1: ( rule__GivenStep__RowsAssignment_3 )*
+            loop27:
+            do {
+                int alt27=2;
+                int LA27_0 = input.LA(1);
+
+                if ( (LA27_0==RULE_EXAMPLE_CELL) ) {
+                    alt27=1;
+                }
+
+
+                switch (alt27) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1671:2: rule__GivenStep__RowsAssignment_3
+            	    {
+            	    pushFollow(FOLLOW_rule__GivenStep__RowsAssignment_3_in_rule__GivenStep__Group__3__Impl3419);
+            	    rule__GivenStep__RowsAssignment_3();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop27;
+                }
+            } while (true);
+
+             after(grammarAccess.getGivenStepAccess().getRowsAssignment_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__GivenStep__Group__3__Impl"
+
+
     // $ANTLR start "rule__AndStep__Group__0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1596:1: rule__AndStep__Group__0 : rule__AndStep__Group__0__Impl rule__AndStep__Group__1 ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1689:1: rule__AndStep__Group__0 : rule__AndStep__Group__0__Impl rule__AndStep__Group__1 ;
     public final void rule__AndStep__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1600:1: ( rule__AndStep__Group__0__Impl rule__AndStep__Group__1 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1601:2: rule__AndStep__Group__0__Impl rule__AndStep__Group__1
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1693:1: ( rule__AndStep__Group__0__Impl rule__AndStep__Group__1 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1694:2: rule__AndStep__Group__0__Impl rule__AndStep__Group__1
             {
-            pushFollow(FOLLOW_rule__AndStep__Group__0__Impl_in_rule__AndStep__Group__03269);
+            pushFollow(FOLLOW_rule__AndStep__Group__0__Impl_in_rule__AndStep__Group__03458);
             rule__AndStep__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AndStep__Group__1_in_rule__AndStep__Group__03272);
+            pushFollow(FOLLOW_rule__AndStep__Group__1_in_rule__AndStep__Group__03461);
             rule__AndStep__Group__1();
 
             state._fsp--;
@@ -4722,23 +5031,23 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndStep__Group__0__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1608:1: rule__AndStep__Group__0__Impl : ( ( rule__AndStep__DescAssignment_0 ) ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1701:1: rule__AndStep__Group__0__Impl : ( ( rule__AndStep__DescAssignment_0 ) ) ;
     public final void rule__AndStep__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1612:1: ( ( ( rule__AndStep__DescAssignment_0 ) ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1613:1: ( ( rule__AndStep__DescAssignment_0 ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1705:1: ( ( ( rule__AndStep__DescAssignment_0 ) ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1706:1: ( ( rule__AndStep__DescAssignment_0 ) )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1613:1: ( ( rule__AndStep__DescAssignment_0 ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1614:1: ( rule__AndStep__DescAssignment_0 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1706:1: ( ( rule__AndStep__DescAssignment_0 ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1707:1: ( rule__AndStep__DescAssignment_0 )
             {
              before(grammarAccess.getAndStepAccess().getDescAssignment_0()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1615:1: ( rule__AndStep__DescAssignment_0 )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1615:2: rule__AndStep__DescAssignment_0
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1708:1: ( rule__AndStep__DescAssignment_0 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1708:2: rule__AndStep__DescAssignment_0
             {
-            pushFollow(FOLLOW_rule__AndStep__DescAssignment_0_in_rule__AndStep__Group__0__Impl3299);
+            pushFollow(FOLLOW_rule__AndStep__DescAssignment_0_in_rule__AndStep__Group__0__Impl3488);
             rule__AndStep__DescAssignment_0();
 
             state._fsp--;
@@ -4769,17 +5078,22 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndStep__Group__1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1625:1: rule__AndStep__Group__1 : rule__AndStep__Group__1__Impl ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1718:1: rule__AndStep__Group__1 : rule__AndStep__Group__1__Impl rule__AndStep__Group__2 ;
     public final void rule__AndStep__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1629:1: ( rule__AndStep__Group__1__Impl )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1630:2: rule__AndStep__Group__1__Impl
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1722:1: ( rule__AndStep__Group__1__Impl rule__AndStep__Group__2 )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1723:2: rule__AndStep__Group__1__Impl rule__AndStep__Group__2
             {
-            pushFollow(FOLLOW_rule__AndStep__Group__1__Impl_in_rule__AndStep__Group__13329);
+            pushFollow(FOLLOW_rule__AndStep__Group__1__Impl_in_rule__AndStep__Group__13518);
             rule__AndStep__Group__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__AndStep__Group__2_in_rule__AndStep__Group__13521);
+            rule__AndStep__Group__2();
 
             state._fsp--;
 
@@ -4802,35 +5116,35 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndStep__Group__1__Impl"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1636:1: rule__AndStep__Group__1__Impl : ( ( rule__AndStep__DescAssignment_1 )* ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1730:1: rule__AndStep__Group__1__Impl : ( ( rule__AndStep__DescAssignment_1 )* ) ;
     public final void rule__AndStep__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1640:1: ( ( ( rule__AndStep__DescAssignment_1 )* ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1641:1: ( ( rule__AndStep__DescAssignment_1 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1734:1: ( ( ( rule__AndStep__DescAssignment_1 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1735:1: ( ( rule__AndStep__DescAssignment_1 )* )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1641:1: ( ( rule__AndStep__DescAssignment_1 )* )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1642:1: ( rule__AndStep__DescAssignment_1 )*
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1735:1: ( ( rule__AndStep__DescAssignment_1 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1736:1: ( rule__AndStep__DescAssignment_1 )*
             {
              before(grammarAccess.getAndStepAccess().getDescAssignment_1()); 
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1643:1: ( rule__AndStep__DescAssignment_1 )*
-            loop25:
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1737:1: ( rule__AndStep__DescAssignment_1 )*
+            loop28:
             do {
-                int alt25=2;
-                int LA25_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( ((LA25_0>=RULE_TEXT && LA25_0<=RULE_CODE)) ) {
-                    alt25=1;
+                if ( ((LA28_0>=RULE_TEXT && LA28_0<=RULE_CODE)) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt25) {
+                switch (alt28) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1643:2: rule__AndStep__DescAssignment_1
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1737:2: rule__AndStep__DescAssignment_1
             	    {
-            	    pushFollow(FOLLOW_rule__AndStep__DescAssignment_1_in_rule__AndStep__Group__1__Impl3356);
+            	    pushFollow(FOLLOW_rule__AndStep__DescAssignment_1_in_rule__AndStep__Group__1__Impl3548);
             	    rule__AndStep__DescAssignment_1();
 
             	    state._fsp--;
@@ -4840,7 +5154,7 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop25;
+            	    break loop28;
                 }
             } while (true);
 
@@ -4866,21 +5180,119 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__AndStep__Group__1__Impl"
 
 
+    // $ANTLR start "rule__AndStep__Group__2"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1747:1: rule__AndStep__Group__2 : rule__AndStep__Group__2__Impl ;
+    public final void rule__AndStep__Group__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1751:1: ( rule__AndStep__Group__2__Impl )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1752:2: rule__AndStep__Group__2__Impl
+            {
+            pushFollow(FOLLOW_rule__AndStep__Group__2__Impl_in_rule__AndStep__Group__23579);
+            rule__AndStep__Group__2__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AndStep__Group__2"
+
+
+    // $ANTLR start "rule__AndStep__Group__2__Impl"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1758:1: rule__AndStep__Group__2__Impl : ( ( rule__AndStep__RowsAssignment_2 )* ) ;
+    public final void rule__AndStep__Group__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1762:1: ( ( ( rule__AndStep__RowsAssignment_2 )* ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1763:1: ( ( rule__AndStep__RowsAssignment_2 )* )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1763:1: ( ( rule__AndStep__RowsAssignment_2 )* )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1764:1: ( rule__AndStep__RowsAssignment_2 )*
+            {
+             before(grammarAccess.getAndStepAccess().getRowsAssignment_2()); 
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1765:1: ( rule__AndStep__RowsAssignment_2 )*
+            loop29:
+            do {
+                int alt29=2;
+                int LA29_0 = input.LA(1);
+
+                if ( (LA29_0==RULE_EXAMPLE_CELL) ) {
+                    alt29=1;
+                }
+
+
+                switch (alt29) {
+            	case 1 :
+            	    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1765:2: rule__AndStep__RowsAssignment_2
+            	    {
+            	    pushFollow(FOLLOW_rule__AndStep__RowsAssignment_2_in_rule__AndStep__Group__2__Impl3606);
+            	    rule__AndStep__RowsAssignment_2();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop29;
+                }
+            } while (true);
+
+             after(grammarAccess.getAndStepAccess().getRowsAssignment_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AndStep__Group__2__Impl"
+
+
     // $ANTLR start "rule__Feature__TagsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1658:1: rule__Feature__TagsAssignment_0 : ( RULE_TAG ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1782:1: rule__Feature__TagsAssignment_0 : ( RULE_TAG ) ;
     public final void rule__Feature__TagsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1662:1: ( ( RULE_TAG ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1663:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1786:1: ( ( RULE_TAG ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1787:1: ( RULE_TAG )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1663:1: ( RULE_TAG )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1664:1: RULE_TAG
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1787:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1788:1: RULE_TAG
             {
              before(grammarAccess.getFeatureAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__Feature__TagsAssignment_03396); 
+            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__Feature__TagsAssignment_03648); 
              after(grammarAccess.getFeatureAccess().getTagsTAGTerminalRuleCall_0_0()); 
 
             }
@@ -4904,20 +5316,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Feature__NameAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1673:1: rule__Feature__NameAssignment_1 : ( RULE_FEATURE_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1797:1: rule__Feature__NameAssignment_1 : ( RULE_FEATURE_TEXT ) ;
     public final void rule__Feature__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1677:1: ( ( RULE_FEATURE_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1678:1: ( RULE_FEATURE_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1801:1: ( ( RULE_FEATURE_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1802:1: ( RULE_FEATURE_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1678:1: ( RULE_FEATURE_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1679:1: RULE_FEATURE_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1802:1: ( RULE_FEATURE_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1803:1: RULE_FEATURE_TEXT
             {
              before(grammarAccess.getFeatureAccess().getNameFEATURE_TEXTTerminalRuleCall_1_0()); 
-            match(input,RULE_FEATURE_TEXT,FOLLOW_RULE_FEATURE_TEXT_in_rule__Feature__NameAssignment_13427); 
+            match(input,RULE_FEATURE_TEXT,FOLLOW_RULE_FEATURE_TEXT_in_rule__Feature__NameAssignment_13679); 
              after(grammarAccess.getFeatureAccess().getNameFEATURE_TEXTTerminalRuleCall_1_0()); 
 
             }
@@ -4941,20 +5353,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Feature__ElementsAssignment_2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1688:1: rule__Feature__ElementsAssignment_2 : ( ruleNarrativeElement ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1812:1: rule__Feature__ElementsAssignment_2 : ( ruleNarrativeElement ) ;
     public final void rule__Feature__ElementsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1692:1: ( ( ruleNarrativeElement ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1693:1: ( ruleNarrativeElement )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1816:1: ( ( ruleNarrativeElement ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1817:1: ( ruleNarrativeElement )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1693:1: ( ruleNarrativeElement )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1694:1: ruleNarrativeElement
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1817:1: ( ruleNarrativeElement )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1818:1: ruleNarrativeElement
             {
              before(grammarAccess.getFeatureAccess().getElementsNarrativeElementParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleNarrativeElement_in_rule__Feature__ElementsAssignment_23458);
+            pushFollow(FOLLOW_ruleNarrativeElement_in_rule__Feature__ElementsAssignment_23710);
             ruleNarrativeElement();
 
             state._fsp--;
@@ -4982,20 +5394,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Feature__ScenariosAssignment_3"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1703:1: rule__Feature__ScenariosAssignment_3 : ( ruleAbstractScenario ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1827:1: rule__Feature__ScenariosAssignment_3 : ( ruleAbstractScenario ) ;
     public final void rule__Feature__ScenariosAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1707:1: ( ( ruleAbstractScenario ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1708:1: ( ruleAbstractScenario )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1831:1: ( ( ruleAbstractScenario ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1832:1: ( ruleAbstractScenario )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1708:1: ( ruleAbstractScenario )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1709:1: ruleAbstractScenario
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1832:1: ( ruleAbstractScenario )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1833:1: ruleAbstractScenario
             {
              before(grammarAccess.getFeatureAccess().getScenariosAbstractScenarioParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleAbstractScenario_in_rule__Feature__ScenariosAssignment_33489);
+            pushFollow(FOLLOW_ruleAbstractScenario_in_rule__Feature__ScenariosAssignment_33741);
             ruleAbstractScenario();
 
             state._fsp--;
@@ -5023,20 +5435,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__FreeText__NameAssignment"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1718:1: rule__FreeText__NameAssignment : ( RULE_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1842:1: rule__FreeText__NameAssignment : ( RULE_TEXT ) ;
     public final void rule__FreeText__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1722:1: ( ( RULE_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1723:1: ( RULE_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1846:1: ( ( RULE_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1847:1: ( RULE_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1723:1: ( RULE_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1724:1: RULE_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1847:1: ( RULE_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1848:1: RULE_TEXT
             {
              before(grammarAccess.getFreeTextAccess().getNameTEXTTerminalRuleCall_0()); 
-            match(input,RULE_TEXT,FOLLOW_RULE_TEXT_in_rule__FreeText__NameAssignment3520); 
+            match(input,RULE_TEXT,FOLLOW_RULE_TEXT_in_rule__FreeText__NameAssignment3772); 
              after(grammarAccess.getFreeTextAccess().getNameTEXTTerminalRuleCall_0()); 
 
             }
@@ -5060,20 +5472,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsA__NameAssignment"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1733:1: rule__AsA__NameAssignment : ( RULE_AS_A ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1857:1: rule__AsA__NameAssignment : ( RULE_AS_A ) ;
     public final void rule__AsA__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1737:1: ( ( RULE_AS_A ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1738:1: ( RULE_AS_A )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1861:1: ( ( RULE_AS_A ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1862:1: ( RULE_AS_A )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1738:1: ( RULE_AS_A )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1739:1: RULE_AS_A
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1862:1: ( RULE_AS_A )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1863:1: RULE_AS_A
             {
              before(grammarAccess.getAsAAccess().getNameAS_ATerminalRuleCall_0()); 
-            match(input,RULE_AS_A,FOLLOW_RULE_AS_A_in_rule__AsA__NameAssignment3551); 
+            match(input,RULE_AS_A,FOLLOW_RULE_AS_A_in_rule__AsA__NameAssignment3803); 
              after(grammarAccess.getAsAAccess().getNameAS_ATerminalRuleCall_0()); 
 
             }
@@ -5097,20 +5509,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InOrderTo__NameAssignment"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1748:1: rule__InOrderTo__NameAssignment : ( RULE_IN_ORDER_TO ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1872:1: rule__InOrderTo__NameAssignment : ( RULE_IN_ORDER_TO ) ;
     public final void rule__InOrderTo__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1752:1: ( ( RULE_IN_ORDER_TO ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1753:1: ( RULE_IN_ORDER_TO )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1876:1: ( ( RULE_IN_ORDER_TO ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1877:1: ( RULE_IN_ORDER_TO )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1753:1: ( RULE_IN_ORDER_TO )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1754:1: RULE_IN_ORDER_TO
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1877:1: ( RULE_IN_ORDER_TO )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1878:1: RULE_IN_ORDER_TO
             {
              before(grammarAccess.getInOrderToAccess().getNameIN_ORDER_TOTerminalRuleCall_0()); 
-            match(input,RULE_IN_ORDER_TO,FOLLOW_RULE_IN_ORDER_TO_in_rule__InOrderTo__NameAssignment3582); 
+            match(input,RULE_IN_ORDER_TO,FOLLOW_RULE_IN_ORDER_TO_in_rule__InOrderTo__NameAssignment3834); 
              after(grammarAccess.getInOrderToAccess().getNameIN_ORDER_TOTerminalRuleCall_0()); 
 
             }
@@ -5134,20 +5546,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__IWantTo__NameAssignment"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1763:1: rule__IWantTo__NameAssignment : ( RULE_I_WANT_TO ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1887:1: rule__IWantTo__NameAssignment : ( RULE_I_WANT_TO ) ;
     public final void rule__IWantTo__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1767:1: ( ( RULE_I_WANT_TO ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1768:1: ( RULE_I_WANT_TO )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1891:1: ( ( RULE_I_WANT_TO ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1892:1: ( RULE_I_WANT_TO )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1768:1: ( RULE_I_WANT_TO )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1769:1: RULE_I_WANT_TO
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1892:1: ( RULE_I_WANT_TO )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1893:1: RULE_I_WANT_TO
             {
              before(grammarAccess.getIWantToAccess().getNameI_WANT_TOTerminalRuleCall_0()); 
-            match(input,RULE_I_WANT_TO,FOLLOW_RULE_I_WANT_TO_in_rule__IWantTo__NameAssignment3613); 
+            match(input,RULE_I_WANT_TO,FOLLOW_RULE_I_WANT_TO_in_rule__IWantTo__NameAssignment3865); 
              after(grammarAccess.getIWantToAccess().getNameI_WANT_TOTerminalRuleCall_0()); 
 
             }
@@ -5171,20 +5583,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Scenario__TagsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1778:1: rule__Scenario__TagsAssignment_0 : ( RULE_TAG ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1902:1: rule__Scenario__TagsAssignment_0 : ( RULE_TAG ) ;
     public final void rule__Scenario__TagsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1782:1: ( ( RULE_TAG ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1783:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1906:1: ( ( RULE_TAG ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1907:1: ( RULE_TAG )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1783:1: ( RULE_TAG )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1784:1: RULE_TAG
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1907:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1908:1: RULE_TAG
             {
              before(grammarAccess.getScenarioAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__Scenario__TagsAssignment_03644); 
+            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__Scenario__TagsAssignment_03896); 
              after(grammarAccess.getScenarioAccess().getTagsTAGTerminalRuleCall_0_0()); 
 
             }
@@ -5208,20 +5620,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Scenario__NameAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1793:1: rule__Scenario__NameAssignment_1 : ( RULE_SCENARIO_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1917:1: rule__Scenario__NameAssignment_1 : ( RULE_SCENARIO_TEXT ) ;
     public final void rule__Scenario__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1797:1: ( ( RULE_SCENARIO_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1798:1: ( RULE_SCENARIO_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1921:1: ( ( RULE_SCENARIO_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1922:1: ( RULE_SCENARIO_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1798:1: ( RULE_SCENARIO_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1799:1: RULE_SCENARIO_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1922:1: ( RULE_SCENARIO_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1923:1: RULE_SCENARIO_TEXT
             {
              before(grammarAccess.getScenarioAccess().getNameSCENARIO_TEXTTerminalRuleCall_1_0()); 
-            match(input,RULE_SCENARIO_TEXT,FOLLOW_RULE_SCENARIO_TEXT_in_rule__Scenario__NameAssignment_13675); 
+            match(input,RULE_SCENARIO_TEXT,FOLLOW_RULE_SCENARIO_TEXT_in_rule__Scenario__NameAssignment_13927); 
              after(grammarAccess.getScenarioAccess().getNameSCENARIO_TEXTTerminalRuleCall_1_0()); 
 
             }
@@ -5245,20 +5657,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Scenario__ElementsAssignment_2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1808:1: rule__Scenario__ElementsAssignment_2 : ( ruleNarrativeElement ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1932:1: rule__Scenario__ElementsAssignment_2 : ( ruleNarrativeElement ) ;
     public final void rule__Scenario__ElementsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1812:1: ( ( ruleNarrativeElement ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1813:1: ( ruleNarrativeElement )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1936:1: ( ( ruleNarrativeElement ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1937:1: ( ruleNarrativeElement )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1813:1: ( ruleNarrativeElement )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1814:1: ruleNarrativeElement
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1937:1: ( ruleNarrativeElement )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1938:1: ruleNarrativeElement
             {
              before(grammarAccess.getScenarioAccess().getElementsNarrativeElementParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleNarrativeElement_in_rule__Scenario__ElementsAssignment_23706);
+            pushFollow(FOLLOW_ruleNarrativeElement_in_rule__Scenario__ElementsAssignment_23958);
             ruleNarrativeElement();
 
             state._fsp--;
@@ -5286,20 +5698,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Scenario__StepsAssignment_3"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1823:1: rule__Scenario__StepsAssignment_3 : ( ruleStep ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1947:1: rule__Scenario__StepsAssignment_3 : ( ruleStep ) ;
     public final void rule__Scenario__StepsAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1827:1: ( ( ruleStep ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1828:1: ( ruleStep )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1951:1: ( ( ruleStep ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1952:1: ( ruleStep )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1828:1: ( ruleStep )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1829:1: ruleStep
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1952:1: ( ruleStep )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1953:1: ruleStep
             {
              before(grammarAccess.getScenarioAccess().getStepsStepParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleStep_in_rule__Scenario__StepsAssignment_33737);
+            pushFollow(FOLLOW_ruleStep_in_rule__Scenario__StepsAssignment_33989);
             ruleStep();
 
             state._fsp--;
@@ -5327,20 +5739,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScenarioWithOutline__TagsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1838:1: rule__ScenarioWithOutline__TagsAssignment_0 : ( RULE_TAG ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1962:1: rule__ScenarioWithOutline__TagsAssignment_0 : ( RULE_TAG ) ;
     public final void rule__ScenarioWithOutline__TagsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1842:1: ( ( RULE_TAG ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1843:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1966:1: ( ( RULE_TAG ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1967:1: ( RULE_TAG )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1843:1: ( RULE_TAG )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1844:1: RULE_TAG
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1967:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1968:1: RULE_TAG
             {
              before(grammarAccess.getScenarioWithOutlineAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__ScenarioWithOutline__TagsAssignment_03768); 
+            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__ScenarioWithOutline__TagsAssignment_04020); 
              after(grammarAccess.getScenarioWithOutlineAccess().getTagsTAGTerminalRuleCall_0_0()); 
 
             }
@@ -5364,20 +5776,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScenarioWithOutline__NameAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1853:1: rule__ScenarioWithOutline__NameAssignment_1 : ( RULE_SCENARIO_OUTLINE_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1977:1: rule__ScenarioWithOutline__NameAssignment_1 : ( RULE_SCENARIO_OUTLINE_TEXT ) ;
     public final void rule__ScenarioWithOutline__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1857:1: ( ( RULE_SCENARIO_OUTLINE_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1858:1: ( RULE_SCENARIO_OUTLINE_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1981:1: ( ( RULE_SCENARIO_OUTLINE_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1982:1: ( RULE_SCENARIO_OUTLINE_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1858:1: ( RULE_SCENARIO_OUTLINE_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1859:1: RULE_SCENARIO_OUTLINE_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1982:1: ( RULE_SCENARIO_OUTLINE_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1983:1: RULE_SCENARIO_OUTLINE_TEXT
             {
              before(grammarAccess.getScenarioWithOutlineAccess().getNameSCENARIO_OUTLINE_TEXTTerminalRuleCall_1_0()); 
-            match(input,RULE_SCENARIO_OUTLINE_TEXT,FOLLOW_RULE_SCENARIO_OUTLINE_TEXT_in_rule__ScenarioWithOutline__NameAssignment_13799); 
+            match(input,RULE_SCENARIO_OUTLINE_TEXT,FOLLOW_RULE_SCENARIO_OUTLINE_TEXT_in_rule__ScenarioWithOutline__NameAssignment_14051); 
              after(grammarAccess.getScenarioWithOutlineAccess().getNameSCENARIO_OUTLINE_TEXTTerminalRuleCall_1_0()); 
 
             }
@@ -5401,20 +5813,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScenarioWithOutline__ElementsAssignment_2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1868:1: rule__ScenarioWithOutline__ElementsAssignment_2 : ( ruleNarrativeElement ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1992:1: rule__ScenarioWithOutline__ElementsAssignment_2 : ( ruleNarrativeElement ) ;
     public final void rule__ScenarioWithOutline__ElementsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1872:1: ( ( ruleNarrativeElement ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1873:1: ( ruleNarrativeElement )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1996:1: ( ( ruleNarrativeElement ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1997:1: ( ruleNarrativeElement )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1873:1: ( ruleNarrativeElement )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1874:1: ruleNarrativeElement
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1997:1: ( ruleNarrativeElement )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1998:1: ruleNarrativeElement
             {
              before(grammarAccess.getScenarioWithOutlineAccess().getElementsNarrativeElementParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleNarrativeElement_in_rule__ScenarioWithOutline__ElementsAssignment_23830);
+            pushFollow(FOLLOW_ruleNarrativeElement_in_rule__ScenarioWithOutline__ElementsAssignment_24082);
             ruleNarrativeElement();
 
             state._fsp--;
@@ -5442,20 +5854,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScenarioWithOutline__StepsAssignment_3"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1883:1: rule__ScenarioWithOutline__StepsAssignment_3 : ( ruleStep ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2007:1: rule__ScenarioWithOutline__StepsAssignment_3 : ( ruleStep ) ;
     public final void rule__ScenarioWithOutline__StepsAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1887:1: ( ( ruleStep ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1888:1: ( ruleStep )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2011:1: ( ( ruleStep ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2012:1: ( ruleStep )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1888:1: ( ruleStep )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1889:1: ruleStep
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2012:1: ( ruleStep )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2013:1: ruleStep
             {
              before(grammarAccess.getScenarioWithOutlineAccess().getStepsStepParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleStep_in_rule__ScenarioWithOutline__StepsAssignment_33861);
+            pushFollow(FOLLOW_ruleStep_in_rule__ScenarioWithOutline__StepsAssignment_34113);
             ruleStep();
 
             state._fsp--;
@@ -5483,20 +5895,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScenarioWithOutline__HeadingAssignment_5"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1898:1: rule__ScenarioWithOutline__HeadingAssignment_5 : ( ruleExampleRow ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2022:1: rule__ScenarioWithOutline__HeadingAssignment_5 : ( ruleExampleRow ) ;
     public final void rule__ScenarioWithOutline__HeadingAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1902:1: ( ( ruleExampleRow ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1903:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2026:1: ( ( ruleExampleRow ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2027:1: ( ruleExampleRow )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1903:1: ( ruleExampleRow )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1904:1: ruleExampleRow
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2027:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2028:1: ruleExampleRow
             {
              before(grammarAccess.getScenarioWithOutlineAccess().getHeadingExampleRowParserRuleCall_5_0()); 
-            pushFollow(FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__HeadingAssignment_53892);
+            pushFollow(FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__HeadingAssignment_54144);
             ruleExampleRow();
 
             state._fsp--;
@@ -5524,20 +5936,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ScenarioWithOutline__RowsAssignment_6"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1913:1: rule__ScenarioWithOutline__RowsAssignment_6 : ( ruleExampleRow ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2037:1: rule__ScenarioWithOutline__RowsAssignment_6 : ( ruleExampleRow ) ;
     public final void rule__ScenarioWithOutline__RowsAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1917:1: ( ( ruleExampleRow ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1918:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2041:1: ( ( ruleExampleRow ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2042:1: ( ruleExampleRow )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1918:1: ( ruleExampleRow )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1919:1: ruleExampleRow
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2042:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2043:1: ruleExampleRow
             {
              before(grammarAccess.getScenarioWithOutlineAccess().getRowsExampleRowParserRuleCall_6_0()); 
-            pushFollow(FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__RowsAssignment_63923);
+            pushFollow(FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__RowsAssignment_64175);
             ruleExampleRow();
 
             state._fsp--;
@@ -5565,20 +5977,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ExampleRow__CellsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1928:1: rule__ExampleRow__CellsAssignment_0 : ( ruleExampleCell ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2052:1: rule__ExampleRow__CellsAssignment_0 : ( ruleExampleCell ) ;
     public final void rule__ExampleRow__CellsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1932:1: ( ( ruleExampleCell ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1933:1: ( ruleExampleCell )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2056:1: ( ( ruleExampleCell ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2057:1: ( ruleExampleCell )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1933:1: ( ruleExampleCell )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1934:1: ruleExampleCell
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2057:1: ( ruleExampleCell )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2058:1: ruleExampleCell
             {
              before(grammarAccess.getExampleRowAccess().getCellsExampleCellParserRuleCall_0_0()); 
-            pushFollow(FOLLOW_ruleExampleCell_in_rule__ExampleRow__CellsAssignment_03954);
+            pushFollow(FOLLOW_ruleExampleCell_in_rule__ExampleRow__CellsAssignment_04206);
             ruleExampleCell();
 
             state._fsp--;
@@ -5606,20 +6018,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ExampleCell__ValueAssignment"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1943:1: rule__ExampleCell__ValueAssignment : ( RULE_EXAMPLE_CELL ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2067:1: rule__ExampleCell__ValueAssignment : ( RULE_EXAMPLE_CELL ) ;
     public final void rule__ExampleCell__ValueAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1947:1: ( ( RULE_EXAMPLE_CELL ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1948:1: ( RULE_EXAMPLE_CELL )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2071:1: ( ( RULE_EXAMPLE_CELL ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2072:1: ( RULE_EXAMPLE_CELL )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1948:1: ( RULE_EXAMPLE_CELL )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1949:1: RULE_EXAMPLE_CELL
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2072:1: ( RULE_EXAMPLE_CELL )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2073:1: RULE_EXAMPLE_CELL
             {
              before(grammarAccess.getExampleCellAccess().getValueEXAMPLE_CELLTerminalRuleCall_0()); 
-            match(input,RULE_EXAMPLE_CELL,FOLLOW_RULE_EXAMPLE_CELL_in_rule__ExampleCell__ValueAssignment3985); 
+            match(input,RULE_EXAMPLE_CELL,FOLLOW_RULE_EXAMPLE_CELL_in_rule__ExampleCell__ValueAssignment4237); 
              after(grammarAccess.getExampleCellAccess().getValueEXAMPLE_CELLTerminalRuleCall_0()); 
 
             }
@@ -5643,20 +6055,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Background__TagsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1958:1: rule__Background__TagsAssignment_0 : ( RULE_TAG ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2082:1: rule__Background__TagsAssignment_0 : ( RULE_TAG ) ;
     public final void rule__Background__TagsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1962:1: ( ( RULE_TAG ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1963:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2086:1: ( ( RULE_TAG ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2087:1: ( RULE_TAG )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1963:1: ( RULE_TAG )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1964:1: RULE_TAG
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2087:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2088:1: RULE_TAG
             {
              before(grammarAccess.getBackgroundAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__Background__TagsAssignment_04016); 
+            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__Background__TagsAssignment_04268); 
              after(grammarAccess.getBackgroundAccess().getTagsTAGTerminalRuleCall_0_0()); 
 
             }
@@ -5680,20 +6092,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Background__NameAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1973:1: rule__Background__NameAssignment_1 : ( RULE_BACKGROUND_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2097:1: rule__Background__NameAssignment_1 : ( RULE_BACKGROUND_TEXT ) ;
     public final void rule__Background__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1977:1: ( ( RULE_BACKGROUND_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1978:1: ( RULE_BACKGROUND_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2101:1: ( ( RULE_BACKGROUND_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2102:1: ( RULE_BACKGROUND_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1978:1: ( RULE_BACKGROUND_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1979:1: RULE_BACKGROUND_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2102:1: ( RULE_BACKGROUND_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2103:1: RULE_BACKGROUND_TEXT
             {
              before(grammarAccess.getBackgroundAccess().getNameBACKGROUND_TEXTTerminalRuleCall_1_0()); 
-            match(input,RULE_BACKGROUND_TEXT,FOLLOW_RULE_BACKGROUND_TEXT_in_rule__Background__NameAssignment_14047); 
+            match(input,RULE_BACKGROUND_TEXT,FOLLOW_RULE_BACKGROUND_TEXT_in_rule__Background__NameAssignment_14299); 
              after(grammarAccess.getBackgroundAccess().getNameBACKGROUND_TEXTTerminalRuleCall_1_0()); 
 
             }
@@ -5717,20 +6129,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Background__StepsAssignment_2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1988:1: rule__Background__StepsAssignment_2 : ( ruleStep ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2112:1: rule__Background__StepsAssignment_2 : ( ruleStep ) ;
     public final void rule__Background__StepsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1992:1: ( ( ruleStep ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1993:1: ( ruleStep )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2116:1: ( ( ruleStep ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2117:1: ( ruleStep )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1993:1: ( ruleStep )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:1994:1: ruleStep
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2117:1: ( ruleStep )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2118:1: ruleStep
             {
              before(grammarAccess.getBackgroundAccess().getStepsStepParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleStep_in_rule__Background__StepsAssignment_24078);
+            pushFollow(FOLLOW_ruleStep_in_rule__Background__StepsAssignment_24330);
             ruleStep();
 
             state._fsp--;
@@ -5758,20 +6170,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__WhenStep__TagsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2003:1: rule__WhenStep__TagsAssignment_0 : ( RULE_TAG ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2127:1: rule__WhenStep__TagsAssignment_0 : ( RULE_TAG ) ;
     public final void rule__WhenStep__TagsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2007:1: ( ( RULE_TAG ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2008:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2131:1: ( ( RULE_TAG ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2132:1: ( RULE_TAG )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2008:1: ( RULE_TAG )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2009:1: RULE_TAG
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2132:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2133:1: RULE_TAG
             {
              before(grammarAccess.getWhenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__WhenStep__TagsAssignment_04109); 
+            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__WhenStep__TagsAssignment_04361); 
              after(grammarAccess.getWhenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
 
             }
@@ -5795,20 +6207,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__WhenStep__DescAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2018:1: rule__WhenStep__DescAssignment_1 : ( RULE_WHEN_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2142:1: rule__WhenStep__DescAssignment_1 : ( RULE_WHEN_TEXT ) ;
     public final void rule__WhenStep__DescAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2022:1: ( ( RULE_WHEN_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2023:1: ( RULE_WHEN_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2146:1: ( ( RULE_WHEN_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2147:1: ( RULE_WHEN_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2023:1: ( RULE_WHEN_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2024:1: RULE_WHEN_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2147:1: ( RULE_WHEN_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2148:1: RULE_WHEN_TEXT
             {
              before(grammarAccess.getWhenStepAccess().getDescWHEN_TEXTTerminalRuleCall_1_0()); 
-            match(input,RULE_WHEN_TEXT,FOLLOW_RULE_WHEN_TEXT_in_rule__WhenStep__DescAssignment_14140); 
+            match(input,RULE_WHEN_TEXT,FOLLOW_RULE_WHEN_TEXT_in_rule__WhenStep__DescAssignment_14392); 
              after(grammarAccess.getWhenStepAccess().getDescWHEN_TEXTTerminalRuleCall_1_0()); 
 
             }
@@ -5832,20 +6244,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__WhenStep__DescAssignment_2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2033:1: rule__WhenStep__DescAssignment_2 : ( ruleOptionalText ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2157:1: rule__WhenStep__DescAssignment_2 : ( ruleOptionalText ) ;
     public final void rule__WhenStep__DescAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2037:1: ( ( ruleOptionalText ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2038:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2161:1: ( ( ruleOptionalText ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2162:1: ( ruleOptionalText )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2038:1: ( ruleOptionalText )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2039:1: ruleOptionalText
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2162:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2163:1: ruleOptionalText
             {
              before(grammarAccess.getWhenStepAccess().getDescOptionalTextParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleOptionalText_in_rule__WhenStep__DescAssignment_24171);
+            pushFollow(FOLLOW_ruleOptionalText_in_rule__WhenStep__DescAssignment_24423);
             ruleOptionalText();
 
             state._fsp--;
@@ -5872,21 +6284,62 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__WhenStep__DescAssignment_2"
 
 
+    // $ANTLR start "rule__WhenStep__RowsAssignment_3"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2172:1: rule__WhenStep__RowsAssignment_3 : ( ruleExampleRow ) ;
+    public final void rule__WhenStep__RowsAssignment_3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2176:1: ( ( ruleExampleRow ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2177:1: ( ruleExampleRow )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2177:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2178:1: ruleExampleRow
+            {
+             before(grammarAccess.getWhenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+            pushFollow(FOLLOW_ruleExampleRow_in_rule__WhenStep__RowsAssignment_34454);
+            ruleExampleRow();
+
+            state._fsp--;
+
+             after(grammarAccess.getWhenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__WhenStep__RowsAssignment_3"
+
+
     // $ANTLR start "rule__ThenStep__TagsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2048:1: rule__ThenStep__TagsAssignment_0 : ( RULE_TAG ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2187:1: rule__ThenStep__TagsAssignment_0 : ( RULE_TAG ) ;
     public final void rule__ThenStep__TagsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2052:1: ( ( RULE_TAG ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2053:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2191:1: ( ( RULE_TAG ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2192:1: ( RULE_TAG )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2053:1: ( RULE_TAG )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2054:1: RULE_TAG
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2192:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2193:1: RULE_TAG
             {
              before(grammarAccess.getThenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__ThenStep__TagsAssignment_04202); 
+            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__ThenStep__TagsAssignment_04485); 
              after(grammarAccess.getThenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
 
             }
@@ -5910,20 +6363,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ThenStep__DescAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2063:1: rule__ThenStep__DescAssignment_1 : ( RULE_THEN_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2202:1: rule__ThenStep__DescAssignment_1 : ( RULE_THEN_TEXT ) ;
     public final void rule__ThenStep__DescAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2067:1: ( ( RULE_THEN_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2068:1: ( RULE_THEN_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2206:1: ( ( RULE_THEN_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2207:1: ( RULE_THEN_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2068:1: ( RULE_THEN_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2069:1: RULE_THEN_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2207:1: ( RULE_THEN_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2208:1: RULE_THEN_TEXT
             {
              before(grammarAccess.getThenStepAccess().getDescTHEN_TEXTTerminalRuleCall_1_0()); 
-            match(input,RULE_THEN_TEXT,FOLLOW_RULE_THEN_TEXT_in_rule__ThenStep__DescAssignment_14233); 
+            match(input,RULE_THEN_TEXT,FOLLOW_RULE_THEN_TEXT_in_rule__ThenStep__DescAssignment_14516); 
              after(grammarAccess.getThenStepAccess().getDescTHEN_TEXTTerminalRuleCall_1_0()); 
 
             }
@@ -5947,20 +6400,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ThenStep__DescAssignment_2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2078:1: rule__ThenStep__DescAssignment_2 : ( ruleOptionalText ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2217:1: rule__ThenStep__DescAssignment_2 : ( ruleOptionalText ) ;
     public final void rule__ThenStep__DescAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2082:1: ( ( ruleOptionalText ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2083:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2221:1: ( ( ruleOptionalText ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2222:1: ( ruleOptionalText )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2083:1: ( ruleOptionalText )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2084:1: ruleOptionalText
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2222:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2223:1: ruleOptionalText
             {
              before(grammarAccess.getThenStepAccess().getDescOptionalTextParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleOptionalText_in_rule__ThenStep__DescAssignment_24264);
+            pushFollow(FOLLOW_ruleOptionalText_in_rule__ThenStep__DescAssignment_24547);
             ruleOptionalText();
 
             state._fsp--;
@@ -5987,21 +6440,62 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ThenStep__DescAssignment_2"
 
 
+    // $ANTLR start "rule__ThenStep__RowsAssignment_3"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2232:1: rule__ThenStep__RowsAssignment_3 : ( ruleExampleRow ) ;
+    public final void rule__ThenStep__RowsAssignment_3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2236:1: ( ( ruleExampleRow ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2237:1: ( ruleExampleRow )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2237:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2238:1: ruleExampleRow
+            {
+             before(grammarAccess.getThenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+            pushFollow(FOLLOW_ruleExampleRow_in_rule__ThenStep__RowsAssignment_34578);
+            ruleExampleRow();
+
+            state._fsp--;
+
+             after(grammarAccess.getThenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ThenStep__RowsAssignment_3"
+
+
     // $ANTLR start "rule__GivenStep__TagsAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2093:1: rule__GivenStep__TagsAssignment_0 : ( RULE_TAG ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2247:1: rule__GivenStep__TagsAssignment_0 : ( RULE_TAG ) ;
     public final void rule__GivenStep__TagsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2097:1: ( ( RULE_TAG ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2098:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2251:1: ( ( RULE_TAG ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2252:1: ( RULE_TAG )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2098:1: ( RULE_TAG )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2099:1: RULE_TAG
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2252:1: ( RULE_TAG )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2253:1: RULE_TAG
             {
              before(grammarAccess.getGivenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
-            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__GivenStep__TagsAssignment_04295); 
+            match(input,RULE_TAG,FOLLOW_RULE_TAG_in_rule__GivenStep__TagsAssignment_04609); 
              after(grammarAccess.getGivenStepAccess().getTagsTAGTerminalRuleCall_0_0()); 
 
             }
@@ -6025,20 +6519,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GivenStep__DescAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2108:1: rule__GivenStep__DescAssignment_1 : ( RULE_GIVEN_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2262:1: rule__GivenStep__DescAssignment_1 : ( RULE_GIVEN_TEXT ) ;
     public final void rule__GivenStep__DescAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2112:1: ( ( RULE_GIVEN_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2113:1: ( RULE_GIVEN_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2266:1: ( ( RULE_GIVEN_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2267:1: ( RULE_GIVEN_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2113:1: ( RULE_GIVEN_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2114:1: RULE_GIVEN_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2267:1: ( RULE_GIVEN_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2268:1: RULE_GIVEN_TEXT
             {
              before(grammarAccess.getGivenStepAccess().getDescGIVEN_TEXTTerminalRuleCall_1_0()); 
-            match(input,RULE_GIVEN_TEXT,FOLLOW_RULE_GIVEN_TEXT_in_rule__GivenStep__DescAssignment_14326); 
+            match(input,RULE_GIVEN_TEXT,FOLLOW_RULE_GIVEN_TEXT_in_rule__GivenStep__DescAssignment_14640); 
              after(grammarAccess.getGivenStepAccess().getDescGIVEN_TEXTTerminalRuleCall_1_0()); 
 
             }
@@ -6062,20 +6556,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GivenStep__DescAssignment_2"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2123:1: rule__GivenStep__DescAssignment_2 : ( ruleOptionalText ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2277:1: rule__GivenStep__DescAssignment_2 : ( ruleOptionalText ) ;
     public final void rule__GivenStep__DescAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2127:1: ( ( ruleOptionalText ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2128:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2281:1: ( ( ruleOptionalText ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2282:1: ( ruleOptionalText )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2128:1: ( ruleOptionalText )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2129:1: ruleOptionalText
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2282:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2283:1: ruleOptionalText
             {
              before(grammarAccess.getGivenStepAccess().getDescOptionalTextParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleOptionalText_in_rule__GivenStep__DescAssignment_24357);
+            pushFollow(FOLLOW_ruleOptionalText_in_rule__GivenStep__DescAssignment_24671);
             ruleOptionalText();
 
             state._fsp--;
@@ -6102,21 +6596,62 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__GivenStep__DescAssignment_2"
 
 
+    // $ANTLR start "rule__GivenStep__RowsAssignment_3"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2292:1: rule__GivenStep__RowsAssignment_3 : ( ruleExampleRow ) ;
+    public final void rule__GivenStep__RowsAssignment_3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2296:1: ( ( ruleExampleRow ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2297:1: ( ruleExampleRow )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2297:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2298:1: ruleExampleRow
+            {
+             before(grammarAccess.getGivenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+            pushFollow(FOLLOW_ruleExampleRow_in_rule__GivenStep__RowsAssignment_34702);
+            ruleExampleRow();
+
+            state._fsp--;
+
+             after(grammarAccess.getGivenStepAccess().getRowsExampleRowParserRuleCall_3_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__GivenStep__RowsAssignment_3"
+
+
     // $ANTLR start "rule__AndStep__DescAssignment_0"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2138:1: rule__AndStep__DescAssignment_0 : ( RULE_AND_TEXT ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2307:1: rule__AndStep__DescAssignment_0 : ( RULE_AND_TEXT ) ;
     public final void rule__AndStep__DescAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2142:1: ( ( RULE_AND_TEXT ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:1: ( RULE_AND_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2311:1: ( ( RULE_AND_TEXT ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2312:1: ( RULE_AND_TEXT )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2143:1: ( RULE_AND_TEXT )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2144:1: RULE_AND_TEXT
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2312:1: ( RULE_AND_TEXT )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2313:1: RULE_AND_TEXT
             {
              before(grammarAccess.getAndStepAccess().getDescAND_TEXTTerminalRuleCall_0_0()); 
-            match(input,RULE_AND_TEXT,FOLLOW_RULE_AND_TEXT_in_rule__AndStep__DescAssignment_04388); 
+            match(input,RULE_AND_TEXT,FOLLOW_RULE_AND_TEXT_in_rule__AndStep__DescAssignment_04733); 
              after(grammarAccess.getAndStepAccess().getDescAND_TEXTTerminalRuleCall_0_0()); 
 
             }
@@ -6140,20 +6675,20 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AndStep__DescAssignment_1"
-    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2153:1: rule__AndStep__DescAssignment_1 : ( ruleOptionalText ) ;
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2322:1: rule__AndStep__DescAssignment_1 : ( ruleOptionalText ) ;
     public final void rule__AndStep__DescAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2157:1: ( ( ruleOptionalText ) )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2158:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2326:1: ( ( ruleOptionalText ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2327:1: ( ruleOptionalText )
             {
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2158:1: ( ruleOptionalText )
-            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2159:1: ruleOptionalText
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2327:1: ( ruleOptionalText )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2328:1: ruleOptionalText
             {
              before(grammarAccess.getAndStepAccess().getDescOptionalTextParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleOptionalText_in_rule__AndStep__DescAssignment_14419);
+            pushFollow(FOLLOW_ruleOptionalText_in_rule__AndStep__DescAssignment_14764);
             ruleOptionalText();
 
             state._fsp--;
@@ -6178,6 +6713,47 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
         return ;
     }
     // $ANTLR end "rule__AndStep__DescAssignment_1"
+
+
+    // $ANTLR start "rule__AndStep__RowsAssignment_2"
+    // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2337:1: rule__AndStep__RowsAssignment_2 : ( ruleExampleRow ) ;
+    public final void rule__AndStep__RowsAssignment_2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2341:1: ( ( ruleExampleRow ) )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2342:1: ( ruleExampleRow )
+            {
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2342:1: ( ruleExampleRow )
+            // ../de.sebastianbenz.xgherkin.ui/src-gen/de/sebastianbenz/xgherkin/ui/contentassist/antlr/internal/InternalGherkin.g:2343:1: ruleExampleRow
+            {
+             before(grammarAccess.getAndStepAccess().getRowsExampleRowParserRuleCall_2_0()); 
+            pushFollow(FOLLOW_ruleExampleRow_in_rule__AndStep__RowsAssignment_24795);
+            ruleExampleRow();
+
+            state._fsp--;
+
+             after(grammarAccess.getAndStepAccess().getRowsExampleRowParserRuleCall_2_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__AndStep__RowsAssignment_2"
 
     // Delegated rules
 
@@ -6527,65 +7103,81 @@ public class InternalGherkinParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__WhenStep__Group__0__Impl_in_rule__WhenStep__Group__02714 = new BitSet(new long[]{0x0000000000020100L});
     public static final BitSet FOLLOW_rule__WhenStep__Group__1_in_rule__WhenStep__Group__02717 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__WhenStep__TagsAssignment_0_in_rule__WhenStep__Group__0__Impl2744 = new BitSet(new long[]{0x0000000000000102L});
-    public static final BitSet FOLLOW_rule__WhenStep__Group__1__Impl_in_rule__WhenStep__Group__12775 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_rule__WhenStep__Group__1__Impl_in_rule__WhenStep__Group__12775 = new BitSet(new long[]{0x0000000000008030L});
     public static final BitSet FOLLOW_rule__WhenStep__Group__2_in_rule__WhenStep__Group__12778 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__WhenStep__DescAssignment_1_in_rule__WhenStep__Group__1__Impl2805 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__WhenStep__Group__2__Impl_in_rule__WhenStep__Group__22835 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__WhenStep__DescAssignment_2_in_rule__WhenStep__Group__2__Impl2862 = new BitSet(new long[]{0x0000000000000032L});
-    public static final BitSet FOLLOW_rule__ThenStep__Group__0__Impl_in_rule__ThenStep__Group__02899 = new BitSet(new long[]{0x0000000000040100L});
-    public static final BitSet FOLLOW_rule__ThenStep__Group__1_in_rule__ThenStep__Group__02902 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ThenStep__TagsAssignment_0_in_rule__ThenStep__Group__0__Impl2929 = new BitSet(new long[]{0x0000000000000102L});
-    public static final BitSet FOLLOW_rule__ThenStep__Group__1__Impl_in_rule__ThenStep__Group__12960 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_rule__ThenStep__Group__2_in_rule__ThenStep__Group__12963 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ThenStep__DescAssignment_1_in_rule__ThenStep__Group__1__Impl2990 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ThenStep__Group__2__Impl_in_rule__ThenStep__Group__23020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ThenStep__DescAssignment_2_in_rule__ThenStep__Group__2__Impl3047 = new BitSet(new long[]{0x0000000000000032L});
-    public static final BitSet FOLLOW_rule__GivenStep__Group__0__Impl_in_rule__GivenStep__Group__03084 = new BitSet(new long[]{0x0000000000080100L});
-    public static final BitSet FOLLOW_rule__GivenStep__Group__1_in_rule__GivenStep__Group__03087 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GivenStep__TagsAssignment_0_in_rule__GivenStep__Group__0__Impl3114 = new BitSet(new long[]{0x0000000000000102L});
-    public static final BitSet FOLLOW_rule__GivenStep__Group__1__Impl_in_rule__GivenStep__Group__13145 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_rule__GivenStep__Group__2_in_rule__GivenStep__Group__13148 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GivenStep__DescAssignment_1_in_rule__GivenStep__Group__1__Impl3175 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GivenStep__Group__2__Impl_in_rule__GivenStep__Group__23205 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GivenStep__DescAssignment_2_in_rule__GivenStep__Group__2__Impl3232 = new BitSet(new long[]{0x0000000000000032L});
-    public static final BitSet FOLLOW_rule__AndStep__Group__0__Impl_in_rule__AndStep__Group__03269 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_rule__AndStep__Group__1_in_rule__AndStep__Group__03272 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AndStep__DescAssignment_0_in_rule__AndStep__Group__0__Impl3299 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AndStep__Group__1__Impl_in_rule__AndStep__Group__13329 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AndStep__DescAssignment_1_in_rule__AndStep__Group__1__Impl3356 = new BitSet(new long[]{0x0000000000000032L});
-    public static final BitSet FOLLOW_RULE_TAG_in_rule__Feature__TagsAssignment_03396 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_FEATURE_TEXT_in_rule__Feature__NameAssignment_13427 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNarrativeElement_in_rule__Feature__ElementsAssignment_23458 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAbstractScenario_in_rule__Feature__ScenariosAssignment_33489 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TEXT_in_rule__FreeText__NameAssignment3520 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_AS_A_in_rule__AsA__NameAssignment3551 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_IN_ORDER_TO_in_rule__InOrderTo__NameAssignment3582 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_I_WANT_TO_in_rule__IWantTo__NameAssignment3613 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_rule__Scenario__TagsAssignment_03644 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_SCENARIO_TEXT_in_rule__Scenario__NameAssignment_13675 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNarrativeElement_in_rule__Scenario__ElementsAssignment_23706 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStep_in_rule__Scenario__StepsAssignment_33737 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_rule__ScenarioWithOutline__TagsAssignment_03768 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_SCENARIO_OUTLINE_TEXT_in_rule__ScenarioWithOutline__NameAssignment_13799 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNarrativeElement_in_rule__ScenarioWithOutline__ElementsAssignment_23830 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStep_in_rule__ScenarioWithOutline__StepsAssignment_33861 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__HeadingAssignment_53892 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__RowsAssignment_63923 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExampleCell_in_rule__ExampleRow__CellsAssignment_03954 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_EXAMPLE_CELL_in_rule__ExampleCell__ValueAssignment3985 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_rule__Background__TagsAssignment_04016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_BACKGROUND_TEXT_in_rule__Background__NameAssignment_14047 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStep_in_rule__Background__StepsAssignment_24078 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_rule__WhenStep__TagsAssignment_04109 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_WHEN_TEXT_in_rule__WhenStep__DescAssignment_14140 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_rule__WhenStep__DescAssignment_24171 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_rule__ThenStep__TagsAssignment_04202 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_THEN_TEXT_in_rule__ThenStep__DescAssignment_14233 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_rule__ThenStep__DescAssignment_24264 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_TAG_in_rule__GivenStep__TagsAssignment_04295 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_GIVEN_TEXT_in_rule__GivenStep__DescAssignment_14326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_rule__GivenStep__DescAssignment_24357 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_AND_TEXT_in_rule__AndStep__DescAssignment_04388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOptionalText_in_rule__AndStep__DescAssignment_14419 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__WhenStep__Group__2__Impl_in_rule__WhenStep__Group__22835 = new BitSet(new long[]{0x0000000000008030L});
+    public static final BitSet FOLLOW_rule__WhenStep__Group__3_in_rule__WhenStep__Group__22838 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__WhenStep__DescAssignment_2_in_rule__WhenStep__Group__2__Impl2865 = new BitSet(new long[]{0x0000000000000032L});
+    public static final BitSet FOLLOW_rule__WhenStep__Group__3__Impl_in_rule__WhenStep__Group__32896 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__WhenStep__RowsAssignment_3_in_rule__WhenStep__Group__3__Impl2923 = new BitSet(new long[]{0x0000000000008002L});
+    public static final BitSet FOLLOW_rule__ThenStep__Group__0__Impl_in_rule__ThenStep__Group__02962 = new BitSet(new long[]{0x0000000000040100L});
+    public static final BitSet FOLLOW_rule__ThenStep__Group__1_in_rule__ThenStep__Group__02965 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ThenStep__TagsAssignment_0_in_rule__ThenStep__Group__0__Impl2992 = new BitSet(new long[]{0x0000000000000102L});
+    public static final BitSet FOLLOW_rule__ThenStep__Group__1__Impl_in_rule__ThenStep__Group__13023 = new BitSet(new long[]{0x0000000000008030L});
+    public static final BitSet FOLLOW_rule__ThenStep__Group__2_in_rule__ThenStep__Group__13026 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ThenStep__DescAssignment_1_in_rule__ThenStep__Group__1__Impl3053 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ThenStep__Group__2__Impl_in_rule__ThenStep__Group__23083 = new BitSet(new long[]{0x0000000000008030L});
+    public static final BitSet FOLLOW_rule__ThenStep__Group__3_in_rule__ThenStep__Group__23086 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ThenStep__DescAssignment_2_in_rule__ThenStep__Group__2__Impl3113 = new BitSet(new long[]{0x0000000000000032L});
+    public static final BitSet FOLLOW_rule__ThenStep__Group__3__Impl_in_rule__ThenStep__Group__33144 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ThenStep__RowsAssignment_3_in_rule__ThenStep__Group__3__Impl3171 = new BitSet(new long[]{0x0000000000008002L});
+    public static final BitSet FOLLOW_rule__GivenStep__Group__0__Impl_in_rule__GivenStep__Group__03210 = new BitSet(new long[]{0x0000000000080100L});
+    public static final BitSet FOLLOW_rule__GivenStep__Group__1_in_rule__GivenStep__Group__03213 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GivenStep__TagsAssignment_0_in_rule__GivenStep__Group__0__Impl3240 = new BitSet(new long[]{0x0000000000000102L});
+    public static final BitSet FOLLOW_rule__GivenStep__Group__1__Impl_in_rule__GivenStep__Group__13271 = new BitSet(new long[]{0x0000000000008030L});
+    public static final BitSet FOLLOW_rule__GivenStep__Group__2_in_rule__GivenStep__Group__13274 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GivenStep__DescAssignment_1_in_rule__GivenStep__Group__1__Impl3301 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GivenStep__Group__2__Impl_in_rule__GivenStep__Group__23331 = new BitSet(new long[]{0x0000000000008030L});
+    public static final BitSet FOLLOW_rule__GivenStep__Group__3_in_rule__GivenStep__Group__23334 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GivenStep__DescAssignment_2_in_rule__GivenStep__Group__2__Impl3361 = new BitSet(new long[]{0x0000000000000032L});
+    public static final BitSet FOLLOW_rule__GivenStep__Group__3__Impl_in_rule__GivenStep__Group__33392 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GivenStep__RowsAssignment_3_in_rule__GivenStep__Group__3__Impl3419 = new BitSet(new long[]{0x0000000000008002L});
+    public static final BitSet FOLLOW_rule__AndStep__Group__0__Impl_in_rule__AndStep__Group__03458 = new BitSet(new long[]{0x0000000000008030L});
+    public static final BitSet FOLLOW_rule__AndStep__Group__1_in_rule__AndStep__Group__03461 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AndStep__DescAssignment_0_in_rule__AndStep__Group__0__Impl3488 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AndStep__Group__1__Impl_in_rule__AndStep__Group__13518 = new BitSet(new long[]{0x0000000000008030L});
+    public static final BitSet FOLLOW_rule__AndStep__Group__2_in_rule__AndStep__Group__13521 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AndStep__DescAssignment_1_in_rule__AndStep__Group__1__Impl3548 = new BitSet(new long[]{0x0000000000000032L});
+    public static final BitSet FOLLOW_rule__AndStep__Group__2__Impl_in_rule__AndStep__Group__23579 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AndStep__RowsAssignment_2_in_rule__AndStep__Group__2__Impl3606 = new BitSet(new long[]{0x0000000000008002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_rule__Feature__TagsAssignment_03648 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_FEATURE_TEXT_in_rule__Feature__NameAssignment_13679 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNarrativeElement_in_rule__Feature__ElementsAssignment_23710 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAbstractScenario_in_rule__Feature__ScenariosAssignment_33741 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TEXT_in_rule__FreeText__NameAssignment3772 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_AS_A_in_rule__AsA__NameAssignment3803 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_IN_ORDER_TO_in_rule__InOrderTo__NameAssignment3834 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_I_WANT_TO_in_rule__IWantTo__NameAssignment3865 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_rule__Scenario__TagsAssignment_03896 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_SCENARIO_TEXT_in_rule__Scenario__NameAssignment_13927 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNarrativeElement_in_rule__Scenario__ElementsAssignment_23958 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStep_in_rule__Scenario__StepsAssignment_33989 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_rule__ScenarioWithOutline__TagsAssignment_04020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_SCENARIO_OUTLINE_TEXT_in_rule__ScenarioWithOutline__NameAssignment_14051 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNarrativeElement_in_rule__ScenarioWithOutline__ElementsAssignment_24082 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStep_in_rule__ScenarioWithOutline__StepsAssignment_34113 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__HeadingAssignment_54144 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_rule__ScenarioWithOutline__RowsAssignment_64175 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExampleCell_in_rule__ExampleRow__CellsAssignment_04206 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_EXAMPLE_CELL_in_rule__ExampleCell__ValueAssignment4237 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_rule__Background__TagsAssignment_04268 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_BACKGROUND_TEXT_in_rule__Background__NameAssignment_14299 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStep_in_rule__Background__StepsAssignment_24330 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_rule__WhenStep__TagsAssignment_04361 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_WHEN_TEXT_in_rule__WhenStep__DescAssignment_14392 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_rule__WhenStep__DescAssignment_24423 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_rule__WhenStep__RowsAssignment_34454 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_rule__ThenStep__TagsAssignment_04485 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_THEN_TEXT_in_rule__ThenStep__DescAssignment_14516 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_rule__ThenStep__DescAssignment_24547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_rule__ThenStep__RowsAssignment_34578 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_TAG_in_rule__GivenStep__TagsAssignment_04609 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_GIVEN_TEXT_in_rule__GivenStep__DescAssignment_14640 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_rule__GivenStep__DescAssignment_24671 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_rule__GivenStep__RowsAssignment_34702 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_AND_TEXT_in_rule__AndStep__DescAssignment_04733 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOptionalText_in_rule__AndStep__DescAssignment_14764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExampleRow_in_rule__AndStep__RowsAssignment_24795 = new BitSet(new long[]{0x0000000000000002L});
 
 }

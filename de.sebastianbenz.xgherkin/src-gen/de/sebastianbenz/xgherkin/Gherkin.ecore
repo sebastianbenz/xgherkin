@@ -8,65 +8,61 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
-        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"
-        containment="true"/>
+        eType="#//NarrativeElement" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="scenarios" upperBound="-1"
-        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario"
-        containment="true"/>
+        eType="#//AbstractScenario" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NarrativeElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FreeText" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="AsA" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="InOrderTo" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="IWantTo" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FreeText" eSuperTypes="#//NarrativeElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AsA" eSuperTypes="#//NarrativeElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="InOrderTo" eSuperTypes="#//NarrativeElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IWantTo" eSuperTypes="#//NarrativeElement"/>
   <eClassifiers xsi:type="ecore:EClass" name="AbstractScenario">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1"
-        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Step"
-        containment="true"/>
+        eType="#//Step" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Scenario" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario">
+  <eClassifiers xsi:type="ecore:EClass" name="Scenario" eSuperTypes="#//AbstractScenario">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
-        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"
-        containment="true"/>
+        eType="#//NarrativeElement" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ScenarioWithOutline" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario">
+  <eClassifiers xsi:type="ecore:EClass" name="ScenarioWithOutline" eSuperTypes="#//AbstractScenario">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
-        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//NarrativeElement"
+        eType="#//NarrativeElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="heading" eType="#//ExampleRow"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="heading" eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleRow"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rows" upperBound="-1" eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleRow"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rows" upperBound="-1" eType="#//ExampleRow"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExampleRow">
     <eStructuralFeatures xsi:type="ecore:EReference" name="cells" upperBound="-1"
-        eType="ecore:EClass platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//ExampleCell"
-        containment="true"/>
+        eType="#//ExampleCell" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExampleCell">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Background" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//AbstractScenario"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Background" eSuperTypes="#//AbstractScenario"/>
   <eClassifiers xsi:type="ecore:EClass" name="Step">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="desc" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rows" upperBound="-1" eType="#//ExampleRow"
+        containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="WhenStep" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Step">
+  <eClassifiers xsi:type="ecore:EClass" name="WhenStep" eSuperTypes="#//Step">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ThenStep" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Step">
+  <eClassifiers xsi:type="ecore:EClass" name="ThenStep" eSuperTypes="#//Step">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GivenStep" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Step">
+  <eClassifiers xsi:type="ecore:EClass" name="GivenStep" eSuperTypes="#//Step">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tags" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AndStep" eSuperTypes="platform:/resource/de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/Gherkin.ecore#//Step"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AndStep" eSuperTypes="#//Step"/>
 </ecore:EPackage>

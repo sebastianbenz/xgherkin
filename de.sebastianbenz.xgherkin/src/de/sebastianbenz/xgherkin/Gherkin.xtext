@@ -11,7 +11,6 @@ Feature:
 	scenarios+=AbstractScenario*
 ;
 
-
 NarrativeElement:
 	InOrderTo | AsA | IWantTo | FreeText
 ;
@@ -72,19 +71,19 @@ Step:
 ;
 
 WhenStep:
-	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText*
+	tags+=TAG* desc+=WHEN_TEXT desc+=OptionalText* (rows += ExampleRow)*
 ;
 
 ThenStep:
-	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText*
+	tags+=TAG* desc+=THEN_TEXT desc+=OptionalText* (rows += ExampleRow)*
 ;
 
 GivenStep:
-	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText*
+	tags+=TAG* desc+=GIVEN_TEXT desc+=OptionalText* (rows += ExampleRow)*
 ;
 
 AndStep:
-	desc+=AND_TEXT desc+=OptionalText*
+	desc+=AND_TEXT desc+=OptionalText* (rows += ExampleRow)*
 ;
 
 OptionalText returns ecore::EString:

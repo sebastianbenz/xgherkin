@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Xgherkin Runtime
 Bundle-Vendor: Sebastian Benz
-Bundle-Version: 1.0.1.qualifier
+Bundle-Version: 1.0.2.qualifier
 Bundle-SymbolicName: de.sebastianbenz.xgherkin; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext;bundle-version="2.0.0";visibility:=reexport,
@@ -20,7 +20,8 @@ Require-Bundle: org.eclipse.xtext;bundle-version="2.0.0";visibility:=reexport,
 Import-Package: org.apache.log4j,
  org.apache.commons.logging,
  org.eclipse.xtext.xbase.lib,
- org.eclipse.xtext.xtend2.lib
+ org.eclipse.xtext.xtend2.lib,
+ org.eclipse.xtend2.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: de.sebastianbenz.xgherkin,
  de.sebastianbenz.xgherkin.services,
@@ -30,4 +31,6 @@ Export-Package: de.sebastianbenz.xgherkin,
  de.sebastianbenz.xgherkin.serializer,
  de.sebastianbenz.xgherkin.parser.antlr,
  de.sebastianbenz.xgherkin.parser.antlr.internal,
- de.sebastianbenz.xgherkin.validation
+ de.sebastianbenz.xgherkin.validation,
+ de.sebastianbenz.xgherkin.generator,
+ de.sebastianbenz.xgherkin.formatting
