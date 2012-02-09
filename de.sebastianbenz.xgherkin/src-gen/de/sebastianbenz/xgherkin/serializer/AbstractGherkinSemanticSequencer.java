@@ -5,6 +5,7 @@ import com.google.inject.Provider;
 import de.sebastianbenz.xgherkin.gherkin.AndStep;
 import de.sebastianbenz.xgherkin.gherkin.AsA;
 import de.sebastianbenz.xgherkin.gherkin.Background;
+import de.sebastianbenz.xgherkin.gherkin.Example;
 import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.Feature;
@@ -76,6 +77,12 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 				if(context == grammarAccess.getAbstractScenarioRule() ||
 				   context == grammarAccess.getBackgroundRule()) {
 					sequence_Background(context, (Background) semanticObject); 
+					return; 
+				}
+				else break;
+			case GherkinPackage.EXAMPLE:
+				if(context == grammarAccess.getExampleRule()) {
+					sequence_Example(context, (Example) semanticObject); 
 					return; 
 				}
 				else break;
@@ -218,6 +225,15 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
+	 *     (heading=ExampleRow rows+=ExampleRow*)
+	 */
+	protected void sequence_Example(EObject context, Example semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
 	 *     (tags+=TAG* name=FEATURE_TEXT? elements+=NarrativeElement* scenarios+=AbstractScenario*)
 	 */
 	protected void sequence_Feature(EObject context, Feature semanticObject) {
@@ -284,14 +300,7 @@ public class AbstractGherkinSemanticSequencer extends AbstractSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (
-	 *         tags+=TAG* 
-	 *         name=SCENARIO_OUTLINE_TEXT 
-	 *         elements+=NarrativeElement* 
-	 *         steps+=Step+ 
-	 *         heading=ExampleRow 
-	 *         rows+=ExampleRow*
-	 *     )
+	 *     (tags+=TAG* name=SCENARIO_OUTLINE_TEXT elements+=NarrativeElement* steps+=Step+ example=Example)
 	 */
 	protected void sequence_ScenarioWithOutline(EObject context, ScenarioWithOutline semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

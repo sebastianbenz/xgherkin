@@ -14,14 +14,14 @@
 package de.sebastianbenz.xgherkin.ui;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
-import org.eclipse.xtext.ui.editor.IXtextEditorCallback;
 import org.eclipse.xtext.ui.editor.XtextSourceViewerConfiguration;
 import org.eclipse.xtext.ui.editor.autoedit.AbstractEditStrategyProvider;
+import org.eclipse.xtext.ui.editor.folding.IFoldingRegionProvider;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.AbstractAntlrTokenToAttributeIdMapper;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.IHighlightingConfiguration;
-import org.eclipse.xtext.ui.editor.validation.ValidatingEditorCallback;
 
 import de.sebastianbenz.xgherkin.ui.autoedit.AutoEditStrategyProvider;
+import de.sebastianbenz.xgherkin.ui.editor.FoldingRegionProvider;
 import de.sebastianbenz.xgherkin.ui.editor.SourceViewerConfiguration;
 import de.sebastianbenz.xgherkin.ui.highlighting.HighlightingConfiguration;
 import de.sebastianbenz.xgherkin.ui.highlighting.SemanticHighlightingCalculator;
@@ -57,5 +57,8 @@ public class GherkinUiModule extends de.sebastianbenz.xgherkin.ui.AbstractGherki
 		return SourceViewerConfiguration.class;
 	}
 	
+	public Class<? extends IFoldingRegionProvider> bindIFoldingRegionProvider(){
+		return FoldingRegionProvider.class;
+	}
 	
 }

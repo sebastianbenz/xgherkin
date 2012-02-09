@@ -47,6 +47,10 @@ ScenarioWithOutline:
 	name=SCENARIO_OUTLINE_TEXT
 	elements+=NarrativeElement*
 	(steps += Step)+
+	example=Example
+;
+
+Example:
 	EXAMPLE_HEADING
 	heading = ExampleRow
 	(rows += ExampleRow)*

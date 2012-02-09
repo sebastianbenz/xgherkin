@@ -32,8 +32,11 @@
     </genClasses>
     <genClasses ecoreClass="Gherkin.ecore#//ScenarioWithOutline">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ScenarioWithOutline/elements"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ScenarioWithOutline/heading"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ScenarioWithOutline/rows"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ScenarioWithOutline/example"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//Example">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Example/heading"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Example/rows"/>
     </genClasses>
     <genClasses ecoreClass="Gherkin.ecore#//ExampleRow">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ExampleRow/cells"/>

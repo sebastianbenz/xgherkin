@@ -33,6 +33,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="ScenarioWithOutline" eSuperTypes="#//AbstractScenario">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
         eType="#//NarrativeElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="example" eType="#//Example"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Example">
     <eStructuralFeatures xsi:type="ecore:EReference" name="heading" eType="#//ExampleRow"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rows" upperBound="-1" eType="#//ExampleRow"

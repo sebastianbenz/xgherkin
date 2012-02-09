@@ -144,6 +144,13 @@ public class GherkinSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case GherkinPackage.EXAMPLE:
+      {
+        Example example = (Example)theEObject;
+        T result = caseExample(example);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case GherkinPackage.EXAMPLE_ROW:
       {
         ExampleRow exampleRow = (ExampleRow)theEObject;
@@ -349,6 +356,22 @@ public class GherkinSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseScenarioWithOutline(ScenarioWithOutline object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Example</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Example</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseExample(Example object)
   {
     return null;
   }

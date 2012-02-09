@@ -5,7 +5,7 @@
  */
 package de.sebastianbenz.xgherkin.gherkin.impl;
 
-import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
+import de.sebastianbenz.xgherkin.gherkin.Example;
 import de.sebastianbenz.xgherkin.gherkin.GherkinPackage;
 import de.sebastianbenz.xgherkin.gherkin.NarrativeElement;
 import de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline;
@@ -33,8 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl#getElements <em>Elements</em>}</li>
- *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl#getHeading <em>Heading</em>}</li>
- *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl#getRows <em>Rows</em>}</li>
+ *   <li>{@link de.sebastianbenz.xgherkin.gherkin.impl.ScenarioWithOutlineImpl#getExample <em>Example</em>}</li>
  * </ul>
  * </p>
  *
@@ -53,24 +52,14 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
   protected EList<NarrativeElement> elements;
 
   /**
-   * The cached value of the '{@link #getHeading() <em>Heading</em>}' containment reference.
+   * The cached value of the '{@link #getExample() <em>Example</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getHeading()
+   * @see #getExample()
    * @generated
    * @ordered
    */
-  protected ExampleRow heading;
-
-  /**
-   * The cached value of the '{@link #getRows() <em>Rows</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getRows()
-   * @generated
-   * @ordered
-   */
-  protected EList<ExampleRow> rows;
+  protected Example example;
 
   /**
    * <!-- begin-user-doc -->
@@ -112,9 +101,9 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
    * <!-- end-user-doc -->
    * @generated
    */
-  public ExampleRow getHeading()
+  public Example getExample()
   {
-    return heading;
+    return example;
   }
 
   /**
@@ -122,13 +111,13 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetHeading(ExampleRow newHeading, NotificationChain msgs)
+  public NotificationChain basicSetExample(Example newExample, NotificationChain msgs)
   {
-    ExampleRow oldHeading = heading;
-    heading = newHeading;
+    Example oldExample = example;
+    example = newExample;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING, oldHeading, newHeading);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE, oldExample, newExample);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -139,34 +128,20 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setHeading(ExampleRow newHeading)
+  public void setExample(Example newExample)
   {
-    if (newHeading != heading)
+    if (newExample != example)
     {
       NotificationChain msgs = null;
-      if (heading != null)
-        msgs = ((InternalEObject)heading).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING, null, msgs);
-      if (newHeading != null)
-        msgs = ((InternalEObject)newHeading).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING, null, msgs);
-      msgs = basicSetHeading(newHeading, msgs);
+      if (example != null)
+        msgs = ((InternalEObject)example).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE, null, msgs);
+      if (newExample != null)
+        msgs = ((InternalEObject)newExample).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE, null, msgs);
+      msgs = basicSetExample(newExample, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING, newHeading, newHeading));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<ExampleRow> getRows()
-  {
-    if (rows == null)
-    {
-      rows = new EObjectContainmentEList<ExampleRow>(ExampleRow.class, this, GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS);
-    }
-    return rows;
+      eNotify(new ENotificationImpl(this, Notification.SET, GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE, newExample, newExample));
   }
 
   /**
@@ -181,10 +156,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
     {
       case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
         return ((InternalEList<?>)getElements()).basicRemove(otherEnd, msgs);
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
-        return basicSetHeading(null, msgs);
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:
-        return ((InternalEList<?>)getRows()).basicRemove(otherEnd, msgs);
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE:
+        return basicSetExample(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -201,10 +174,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
     {
       case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
         return getElements();
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
-        return getHeading();
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:
-        return getRows();
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE:
+        return getExample();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -224,12 +195,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
         getElements().clear();
         getElements().addAll((Collection<? extends NarrativeElement>)newValue);
         return;
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
-        setHeading((ExampleRow)newValue);
-        return;
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:
-        getRows().clear();
-        getRows().addAll((Collection<? extends ExampleRow>)newValue);
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE:
+        setExample((Example)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -248,11 +215,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
       case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
         getElements().clear();
         return;
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
-        setHeading((ExampleRow)null);
-        return;
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:
-        getRows().clear();
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE:
+        setExample((Example)null);
         return;
     }
     super.eUnset(featureID);
@@ -270,10 +234,8 @@ public class ScenarioWithOutlineImpl extends AbstractScenarioImpl implements Sce
     {
       case GherkinPackage.SCENARIO_WITH_OUTLINE__ELEMENTS:
         return elements != null && !elements.isEmpty();
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__HEADING:
-        return heading != null;
-      case GherkinPackage.SCENARIO_WITH_OUTLINE__ROWS:
-        return rows != null && !rows.isEmpty();
+      case GherkinPackage.SCENARIO_WITH_OUTLINE__EXAMPLE:
+        return example != null;
     }
     return super.eIsSet(featureID);
   }

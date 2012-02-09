@@ -107,6 +107,15 @@ public interface GherkinFactory extends EFactory
   ScenarioWithOutline createScenarioWithOutline();
 
   /**
+   * Returns a new object of class '<em>Example</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Example</em>'.
+   * @generated
+   */
+  Example createExample();
+
+  /**
    * Returns a new object of class '<em>Example Row</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

@@ -44,6 +44,7 @@ public class GherkinParser extends AbstractContentAssistParser {
 					put(grammarAccess.getFeatureAccess().getGroup(), "rule__Feature__Group__0");
 					put(grammarAccess.getScenarioAccess().getGroup(), "rule__Scenario__Group__0");
 					put(grammarAccess.getScenarioWithOutlineAccess().getGroup(), "rule__ScenarioWithOutline__Group__0");
+					put(grammarAccess.getExampleAccess().getGroup(), "rule__Example__Group__0");
 					put(grammarAccess.getExampleRowAccess().getGroup(), "rule__ExampleRow__Group__0");
 					put(grammarAccess.getBackgroundAccess().getGroup(), "rule__Background__Group__0");
 					put(grammarAccess.getWhenStepAccess().getGroup(), "rule__WhenStep__Group__0");
@@ -66,8 +67,9 @@ public class GherkinParser extends AbstractContentAssistParser {
 					put(grammarAccess.getScenarioWithOutlineAccess().getNameAssignment_1(), "rule__ScenarioWithOutline__NameAssignment_1");
 					put(grammarAccess.getScenarioWithOutlineAccess().getElementsAssignment_2(), "rule__ScenarioWithOutline__ElementsAssignment_2");
 					put(grammarAccess.getScenarioWithOutlineAccess().getStepsAssignment_3(), "rule__ScenarioWithOutline__StepsAssignment_3");
-					put(grammarAccess.getScenarioWithOutlineAccess().getHeadingAssignment_5(), "rule__ScenarioWithOutline__HeadingAssignment_5");
-					put(grammarAccess.getScenarioWithOutlineAccess().getRowsAssignment_6(), "rule__ScenarioWithOutline__RowsAssignment_6");
+					put(grammarAccess.getScenarioWithOutlineAccess().getExampleAssignment_4(), "rule__ScenarioWithOutline__ExampleAssignment_4");
+					put(grammarAccess.getExampleAccess().getHeadingAssignment_1(), "rule__Example__HeadingAssignment_1");
+					put(grammarAccess.getExampleAccess().getRowsAssignment_2(), "rule__Example__RowsAssignment_2");
 					put(grammarAccess.getExampleRowAccess().getCellsAssignment_0(), "rule__ExampleRow__CellsAssignment_0");
 					put(grammarAccess.getExampleCellAccess().getValueAssignment(), "rule__ExampleCell__ValueAssignment");
 					put(grammarAccess.getBackgroundAccess().getTagsAssignment_0(), "rule__Background__TagsAssignment_0");

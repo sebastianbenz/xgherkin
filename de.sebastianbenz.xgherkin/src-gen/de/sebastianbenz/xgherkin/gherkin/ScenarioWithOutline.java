@@ -16,8 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * <ul>
  *   <li>{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getElements <em>Elements</em>}</li>
- *   <li>{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getHeading <em>Heading</em>}</li>
- *   <li>{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getRows <em>Rows</em>}</li>
+ *   <li>{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getExample <em>Example</em>}</li>
  * </ul>
  * </p>
  *
@@ -44,45 +43,29 @@ public interface ScenarioWithOutline extends AbstractScenario
   EList<NarrativeElement> getElements();
 
   /**
-   * Returns the value of the '<em><b>Heading</b></em>' containment reference.
+   * Returns the value of the '<em><b>Example</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Heading</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Example</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Heading</em>' containment reference.
-   * @see #setHeading(ExampleRow)
-   * @see de.sebastianbenz.xgherkin.gherkin.GherkinPackage#getScenarioWithOutline_Heading()
+   * @return the value of the '<em>Example</em>' containment reference.
+   * @see #setExample(Example)
+   * @see de.sebastianbenz.xgherkin.gherkin.GherkinPackage#getScenarioWithOutline_Example()
    * @model containment="true"
    * @generated
    */
-  ExampleRow getHeading();
+  Example getExample();
 
   /**
-   * Sets the value of the '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getHeading <em>Heading</em>}' containment reference.
+   * Sets the value of the '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getExample <em>Example</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Heading</em>' containment reference.
-   * @see #getHeading()
+   * @param value the new value of the '<em>Example</em>' containment reference.
+   * @see #getExample()
    * @generated
    */
-  void setHeading(ExampleRow value);
-
-  /**
-   * Returns the value of the '<em><b>Rows</b></em>' containment reference list.
-   * The list contents are of type {@link de.sebastianbenz.xgherkin.gherkin.ExampleRow}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Rows</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Rows</em>' containment reference list.
-   * @see de.sebastianbenz.xgherkin.gherkin.GherkinPackage#getScenarioWithOutline_Rows()
-   * @model containment="true"
-   * @generated
-   */
-  EList<ExampleRow> getRows();
+  void setExample(Example value);
 
 } // ScenarioWithOutline

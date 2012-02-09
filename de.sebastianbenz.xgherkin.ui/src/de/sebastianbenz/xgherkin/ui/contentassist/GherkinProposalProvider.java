@@ -19,6 +19,7 @@ import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
 import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor;
 
+import de.sebastianbenz.xgherkin.gherkin.Example;
 import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline;
@@ -81,7 +82,11 @@ public class GherkinProposalProvider extends AbstractGherkinProposalProvider {
 
 	public void complete_Step(ScenarioWithOutline model, RuleCall ruleCall,
 			ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
-		ExampleRow heading = model.getHeading();
+		Example example = model.getExample();
+		if (example == null) {
+			return;
+		}
+		ExampleRow heading = example.getHeading();
 		if (heading == null) {
 			return;
 		}

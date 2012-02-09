@@ -402,22 +402,13 @@ public interface GherkinPackage extends EPackage
   int SCENARIO_WITH_OUTLINE__ELEMENTS = ABSTRACT_SCENARIO_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Heading</b></em>' containment reference.
+   * The feature id for the '<em><b>Example</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SCENARIO_WITH_OUTLINE__HEADING = ABSTRACT_SCENARIO_FEATURE_COUNT + 1;
-
-  /**
-   * The feature id for the '<em><b>Rows</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int SCENARIO_WITH_OUTLINE__ROWS = ABSTRACT_SCENARIO_FEATURE_COUNT + 2;
+  int SCENARIO_WITH_OUTLINE__EXAMPLE = ABSTRACT_SCENARIO_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Scenario With Outline</em>' class.
@@ -426,7 +417,44 @@ public interface GherkinPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCENARIO_WITH_OUTLINE_FEATURE_COUNT = ABSTRACT_SCENARIO_FEATURE_COUNT + 3;
+  int SCENARIO_WITH_OUTLINE_FEATURE_COUNT = ABSTRACT_SCENARIO_FEATURE_COUNT + 2;
+
+  /**
+   * The meta object id for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleImpl <em>Example</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see de.sebastianbenz.xgherkin.gherkin.impl.ExampleImpl
+   * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getExample()
+   * @generated
+   */
+  int EXAMPLE = 9;
+
+  /**
+   * The feature id for the '<em><b>Heading</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EXAMPLE__HEADING = 0;
+
+  /**
+   * The feature id for the '<em><b>Rows</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EXAMPLE__ROWS = 1;
+
+  /**
+   * The number of structural features of the '<em>Example</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EXAMPLE_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleRowImpl <em>Example Row</em>}' class.
@@ -436,7 +464,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getExampleRow()
    * @generated
    */
-  int EXAMPLE_ROW = 9;
+  int EXAMPLE_ROW = 10;
 
   /**
    * The feature id for the '<em><b>Cells</b></em>' containment reference list.
@@ -464,7 +492,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getExampleCell()
    * @generated
    */
-  int EXAMPLE_CELL = 10;
+  int EXAMPLE_CELL = 11;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -492,7 +520,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getBackground()
    * @generated
    */
-  int BACKGROUND = 11;
+  int BACKGROUND = 12;
 
   /**
    * The feature id for the '<em><b>Tags</b></em>' attribute list.
@@ -538,7 +566,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getStep()
    * @generated
    */
-  int STEP = 12;
+  int STEP = 13;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -575,7 +603,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getWhenStep()
    * @generated
    */
-  int WHEN_STEP = 13;
+  int WHEN_STEP = 14;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -621,7 +649,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getThenStep()
    * @generated
    */
-  int THEN_STEP = 14;
+  int THEN_STEP = 15;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -667,7 +695,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getGivenStep()
    * @generated
    */
-  int GIVEN_STEP = 15;
+  int GIVEN_STEP = 16;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -713,7 +741,7 @@ public interface GherkinPackage extends EPackage
    * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getAndStep()
    * @generated
    */
-  int AND_STEP = 16;
+  int AND_STEP = 17;
 
   /**
    * The feature id for the '<em><b>Desc</b></em>' attribute list.
@@ -944,26 +972,47 @@ public interface GherkinPackage extends EPackage
   EReference getScenarioWithOutline_Elements();
 
   /**
-   * Returns the meta object for the containment reference '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getHeading <em>Heading</em>}'.
+   * Returns the meta object for the containment reference '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getExample <em>Example</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Example</em>'.
+   * @see de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getExample()
+   * @see #getScenarioWithOutline()
+   * @generated
+   */
+  EReference getScenarioWithOutline_Example();
+
+  /**
+   * Returns the meta object for class '{@link de.sebastianbenz.xgherkin.gherkin.Example <em>Example</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Example</em>'.
+   * @see de.sebastianbenz.xgherkin.gherkin.Example
+   * @generated
+   */
+  EClass getExample();
+
+  /**
+   * Returns the meta object for the containment reference '{@link de.sebastianbenz.xgherkin.gherkin.Example#getHeading <em>Heading</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Heading</em>'.
-   * @see de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getHeading()
-   * @see #getScenarioWithOutline()
+   * @see de.sebastianbenz.xgherkin.gherkin.Example#getHeading()
+   * @see #getExample()
    * @generated
    */
-  EReference getScenarioWithOutline_Heading();
+  EReference getExample_Heading();
 
   /**
-   * Returns the meta object for the containment reference list '{@link de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getRows <em>Rows</em>}'.
+   * Returns the meta object for the containment reference list '{@link de.sebastianbenz.xgherkin.gherkin.Example#getRows <em>Rows</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Rows</em>'.
-   * @see de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline#getRows()
-   * @see #getScenarioWithOutline()
+   * @see de.sebastianbenz.xgherkin.gherkin.Example#getRows()
+   * @see #getExample()
    * @generated
    */
-  EReference getScenarioWithOutline_Rows();
+  EReference getExample_Rows();
 
   /**
    * Returns the meta object for class '{@link de.sebastianbenz.xgherkin.gherkin.ExampleRow <em>Example Row</em>}'.
@@ -1316,12 +1365,30 @@ public interface GherkinPackage extends EPackage
     EReference SCENARIO_WITH_OUTLINE__ELEMENTS = eINSTANCE.getScenarioWithOutline_Elements();
 
     /**
+     * The meta object literal for the '<em><b>Example</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SCENARIO_WITH_OUTLINE__EXAMPLE = eINSTANCE.getScenarioWithOutline_Example();
+
+    /**
+     * The meta object literal for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleImpl <em>Example</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see de.sebastianbenz.xgherkin.gherkin.impl.ExampleImpl
+     * @see de.sebastianbenz.xgherkin.gherkin.impl.GherkinPackageImpl#getExample()
+     * @generated
+     */
+    EClass EXAMPLE = eINSTANCE.getExample();
+
+    /**
      * The meta object literal for the '<em><b>Heading</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference SCENARIO_WITH_OUTLINE__HEADING = eINSTANCE.getScenarioWithOutline_Heading();
+    EReference EXAMPLE__HEADING = eINSTANCE.getExample_Heading();
 
     /**
      * The meta object literal for the '<em><b>Rows</b></em>' containment reference list feature.
@@ -1329,7 +1396,7 @@ public interface GherkinPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference SCENARIO_WITH_OUTLINE__ROWS = eINSTANCE.getScenarioWithOutline_Rows();
+    EReference EXAMPLE__ROWS = eINSTANCE.getExample_Rows();
 
     /**
      * The meta object literal for the '{@link de.sebastianbenz.xgherkin.gherkin.impl.ExampleRowImpl <em>Example Row</em>}' class.

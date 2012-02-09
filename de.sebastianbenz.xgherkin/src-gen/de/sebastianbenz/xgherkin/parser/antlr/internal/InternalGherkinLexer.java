@@ -54,15 +54,15 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_EXAMPLE_HEADING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1258:22: ( 'Examples' RULE_SPACES ':' RULE_SPACES ( '\\r' )? '\\n' )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1258:24: 'Examples' RULE_SPACES ':' RULE_SPACES ( '\\r' )? '\\n'
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1297:22: ( 'Examples' RULE_SPACES ':' RULE_SPACES ( '\\r' )? '\\n' )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1297:24: 'Examples' RULE_SPACES ':' RULE_SPACES ( '\\r' )? '\\n'
             {
             match("Examples"); 
 
             mRULE_SPACES(); 
             match(':'); 
             mRULE_SPACES(); 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1258:63: ( '\\r' )?
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1297:63: ( '\\r' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -71,7 +71,7 @@ public class InternalGherkinLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1258:63: '\\r'
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1297:63: '\\r'
                     {
                     match('\r'); 
 
@@ -95,8 +95,8 @@ public class InternalGherkinLexer extends Lexer {
     // $ANTLR start "RULE_NNL"
     public final void mRULE_NNL() throws RecognitionException {
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1260:19: (~ ( ( '\\r' | '\\n' ) ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1260:21: ~ ( ( '\\r' | '\\n' ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1299:19: (~ ( ( '\\r' | '\\n' ) ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1299:21: ~ ( ( '\\r' | '\\n' ) )
             {
             if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
                 input.consume();
@@ -119,10 +119,10 @@ public class InternalGherkinLexer extends Lexer {
     // $ANTLR start "RULE_NL"
     public final void mRULE_NL() throws RecognitionException {
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1262:18: ( ( '\\r' )? ( '\\n' )? )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1262:20: ( '\\r' )? ( '\\n' )?
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1301:18: ( ( '\\r' )? ( '\\n' )? )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1301:20: ( '\\r' )? ( '\\n' )?
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1262:20: ( '\\r' )?
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1301:20: ( '\\r' )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -131,7 +131,7 @@ public class InternalGherkinLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1262:20: '\\r'
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1301:20: '\\r'
                     {
                     match('\r'); 
 
@@ -140,7 +140,7 @@ public class InternalGherkinLexer extends Lexer {
 
             }
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1262:26: ( '\\n' )?
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1301:26: ( '\\n' )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -149,7 +149,7 @@ public class InternalGherkinLexer extends Lexer {
             }
             switch (alt3) {
                 case 1 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1262:26: '\\n'
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1301:26: '\\n'
                     {
                     match('\n'); 
 
@@ -170,10 +170,10 @@ public class InternalGherkinLexer extends Lexer {
     // $ANTLR start "RULE_SPACES"
     public final void mRULE_SPACES() throws RecognitionException {
         try {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1264:22: ( ( ' ' | '\\t' )* )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1264:24: ( ' ' | '\\t' )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1303:22: ( ( ' ' | '\\t' )* )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1303:24: ( ' ' | '\\t' )*
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1264:24: ( ' ' | '\\t' )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1303:24: ( ' ' | '\\t' )*
             loop4:
             do {
                 int alt4=2;
@@ -220,10 +220,10 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_FEATURE_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1266:19: ( ( 'Narrative:' | 'Feature:' ) ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1266:21: ( 'Narrative:' | 'Feature:' ) ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1305:19: ( ( 'Narrative:' | 'Feature:' ) ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1305:21: ( 'Narrative:' | 'Feature:' ) ( RULE_NNL )* RULE_NL
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1266:21: ( 'Narrative:' | 'Feature:' )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1305:21: ( 'Narrative:' | 'Feature:' )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -241,7 +241,7 @@ public class InternalGherkinLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1266:22: 'Narrative:'
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1305:22: 'Narrative:'
                     {
                     match("Narrative:"); 
 
@@ -249,7 +249,7 @@ public class InternalGherkinLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1266:35: 'Feature:'
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1305:35: 'Feature:'
                     {
                     match("Feature:"); 
 
@@ -259,7 +259,7 @@ public class InternalGherkinLexer extends Lexer {
 
             }
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1266:47: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1305:47: ( RULE_NNL )*
             loop6:
             do {
                 int alt6=2;
@@ -272,7 +272,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1266:47: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1305:47: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -301,12 +301,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_IN_ORDER_TO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1268:18: ( 'In order to' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1268:20: 'In order to' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1307:18: ( 'In order to' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1307:20: 'In order to' ( RULE_NNL )* RULE_NL
             {
             match("In order to"); 
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1268:34: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1307:34: ( RULE_NNL )*
             loop7:
             do {
                 int alt7=2;
@@ -319,7 +319,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1268:34: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1307:34: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -348,12 +348,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_AS_A;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1270:11: ( 'As a' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1270:13: 'As a' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1309:11: ( 'As a' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1309:13: 'As a' ( RULE_NNL )* RULE_NL
             {
             match("As a"); 
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1270:20: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1309:20: ( RULE_NNL )*
             loop8:
             do {
                 int alt8=2;
@@ -366,7 +366,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1270:20: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1309:20: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -395,12 +395,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_I_WANT_TO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1272:16: ( 'I want to ' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1272:18: 'I want to ' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1311:16: ( 'I want to ' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1311:18: 'I want to ' ( RULE_NNL )* RULE_NL
             {
             match("I want to "); 
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1272:31: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1311:31: ( RULE_NNL )*
             loop9:
             do {
                 int alt9=2;
@@ -413,7 +413,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1272:31: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1311:31: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -442,14 +442,14 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_SCENARIO_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1274:20: ( 'Scenario' RULE_SPACES ':' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1274:22: 'Scenario' RULE_SPACES ':' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1313:20: ( 'Scenario' RULE_SPACES ':' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1313:22: 'Scenario' RULE_SPACES ':' ( RULE_NNL )* RULE_NL
             {
             match("Scenario"); 
 
             mRULE_SPACES(); 
             match(':'); 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1274:49: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1313:49: ( RULE_NNL )*
             loop10:
             do {
                 int alt10=2;
@@ -462,7 +462,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt10) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1274:49: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1313:49: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -491,8 +491,8 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_SCENARIO_OUTLINE_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1276:28: ( 'Scenario' RULE_SPACES 'Outline' RULE_SPACES ':' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1276:30: 'Scenario' RULE_SPACES 'Outline' RULE_SPACES ':' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1315:28: ( 'Scenario' RULE_SPACES 'Outline' RULE_SPACES ':' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1315:30: 'Scenario' RULE_SPACES 'Outline' RULE_SPACES ':' ( RULE_NNL )* RULE_NL
             {
             match("Scenario"); 
 
@@ -501,7 +501,7 @@ public class InternalGherkinLexer extends Lexer {
 
             mRULE_SPACES(); 
             match(':'); 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1276:79: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1315:79: ( RULE_NNL )*
             loop11:
             do {
                 int alt11=2;
@@ -514,7 +514,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt11) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1276:79: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1315:79: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -543,14 +543,14 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_BACKGROUND_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1278:22: ( 'Background' RULE_SPACES ':' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1278:24: 'Background' RULE_SPACES ':' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1317:22: ( 'Background' RULE_SPACES ':' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1317:24: 'Background' RULE_SPACES ':' ( RULE_NNL )* RULE_NL
             {
             match("Background"); 
 
             mRULE_SPACES(); 
             match(':'); 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1278:53: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1317:53: ( RULE_NNL )*
             loop12:
             do {
                 int alt12=2;
@@ -563,7 +563,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt12) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1278:53: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1317:53: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -592,12 +592,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_WHEN_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1280:16: ( 'When ' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1280:18: 'When ' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1319:16: ( 'When ' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1319:18: 'When ' ( RULE_NNL )* RULE_NL
             {
             match("When "); 
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1280:26: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1319:26: ( RULE_NNL )*
             loop13:
             do {
                 int alt13=2;
@@ -610,7 +610,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt13) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1280:26: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1319:26: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -639,12 +639,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_THEN_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1282:16: ( 'Then ' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1282:18: 'Then ' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1321:16: ( 'Then ' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1321:18: 'Then ' ( RULE_NNL )* RULE_NL
             {
             match("Then "); 
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1282:26: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1321:26: ( RULE_NNL )*
             loop14:
             do {
                 int alt14=2;
@@ -657,7 +657,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1282:26: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1321:26: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -686,12 +686,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_GIVEN_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1284:17: ( 'Given ' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1284:19: 'Given ' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1323:17: ( 'Given ' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1323:19: 'Given ' ( RULE_NNL )* RULE_NL
             {
             match("Given "); 
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1284:28: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1323:28: ( RULE_NNL )*
             loop15:
             do {
                 int alt15=2;
@@ -704,7 +704,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt15) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1284:28: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1323:28: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -733,12 +733,12 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_AND_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1286:15: ( 'And ' ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1286:17: 'And ' ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1325:15: ( 'And ' ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1325:17: 'And ' ( RULE_NNL )* RULE_NL
             {
             match("And "); 
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1286:24: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1325:24: ( RULE_NNL )*
             loop16:
             do {
                 int alt16=2;
@@ -751,7 +751,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt16) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1286:24: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1325:24: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -780,8 +780,8 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_EXAMPLE_ROW_END;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1288:22: ( '|' RULE_SPACES RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1288:24: '|' RULE_SPACES RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1327:22: ( '|' RULE_SPACES RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1327:24: '|' RULE_SPACES RULE_NL
             {
             match('|'); 
             mRULE_SPACES(); 
@@ -802,11 +802,11 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_EXAMPLE_CELL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1290:19: ( '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )+ )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1290:21: '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1329:19: ( '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )+ )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1329:21: '|' (~ ( ( '\\r' | '\\n' | '|' ) ) )+
             {
             match('|'); 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1290:25: (~ ( ( '\\r' | '\\n' | '|' ) ) )+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1329:25: (~ ( ( '\\r' | '\\n' | '|' ) ) )+
             int cnt17=0;
             loop17:
             do {
@@ -820,7 +820,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1290:25: ~ ( ( '\\r' | '\\n' | '|' ) )
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1329:25: ~ ( ( '\\r' | '\\n' | '|' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='{')||(input.LA(1)>='}' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -860,10 +860,10 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_CODE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:11: ( ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' | '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\'' ) )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:13: ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' | '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\'' )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:11: ( ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' | '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\'' ) )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:13: ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' | '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\'' )
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:13: ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' | '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\'' )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:13: ( '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"' | '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\'' )
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -881,11 +881,11 @@ public class InternalGherkinLexer extends Lexer {
             }
             switch (alt20) {
                 case 1 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:14: '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"'
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:14: '\"\"\"' ( options {greedy=false; } : . )* '\"\"\"'
                     {
                     match("\"\"\""); 
 
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:20: ( options {greedy=false; } : . )*
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:20: ( options {greedy=false; } : . )*
                     loop18:
                     do {
                         int alt18=2;
@@ -919,7 +919,7 @@ public class InternalGherkinLexer extends Lexer {
 
                         switch (alt18) {
                     	case 1 :
-                    	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:48: .
+                    	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:48: .
                     	    {
                     	    matchAny(); 
 
@@ -937,11 +937,11 @@ public class InternalGherkinLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:58: '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\''
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:58: '\\'\\'\\'' ( options {greedy=false; } : . )* '\\'\\'\\''
                     {
                     match("'''"); 
 
-                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:67: ( options {greedy=false; } : . )*
+                    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:67: ( options {greedy=false; } : . )*
                     loop19:
                     do {
                         int alt19=2;
@@ -975,7 +975,7 @@ public class InternalGherkinLexer extends Lexer {
 
                         switch (alt19) {
                     	case 1 :
-                    	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1292:95: .
+                    	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1331:95: .
                     	    {
                     	    matchAny(); 
 
@@ -1011,11 +1011,11 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_TAG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1294:10: ( '@' ( RULE_NNL )+ RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1294:12: '@' ( RULE_NNL )+ RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1333:10: ( '@' ( RULE_NNL )+ RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1333:12: '@' ( RULE_NNL )+ RULE_NL
             {
             match('@'); 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1294:16: ( RULE_NNL )+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1333:16: ( RULE_NNL )+
             int cnt21=0;
             loop21:
             do {
@@ -1029,7 +1029,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt21) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1294:16: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1333:16: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -1062,11 +1062,11 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1296:17: ( '#' ( RULE_NNL )+ RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1296:19: '#' ( RULE_NNL )+ RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1335:17: ( '#' ( RULE_NNL )+ RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1335:19: '#' ( RULE_NNL )+ RULE_NL
             {
             match('#'); 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1296:23: ( RULE_NNL )+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1335:23: ( RULE_NNL )+
             int cnt22=0;
             loop22:
             do {
@@ -1080,7 +1080,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt22) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1296:23: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1335:23: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -1113,8 +1113,8 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1298:11: (~ ( ( '|' | ' ' | '\\t' | '\\r' | '\\n' | '@' ) ) ( RULE_NNL )* RULE_NL )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1298:13: ~ ( ( '|' | ' ' | '\\t' | '\\r' | '\\n' | '@' ) ) ( RULE_NNL )* RULE_NL
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1337:11: (~ ( ( '|' | ' ' | '\\t' | '\\r' | '\\n' | '@' ) ) ( RULE_NNL )* RULE_NL )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1337:13: ~ ( ( '|' | ' ' | '\\t' | '\\r' | '\\n' | '@' ) ) ( RULE_NNL )* RULE_NL
             {
             if ( (input.LA(1)>='\u0000' && input.LA(1)<='\b')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\u001F')||(input.LA(1)>='!' && input.LA(1)<='?')||(input.LA(1)>='A' && input.LA(1)<='{')||(input.LA(1)>='}' && input.LA(1)<='\uFFFF') ) {
                 input.consume();
@@ -1125,7 +1125,7 @@ public class InternalGherkinLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1298:45: ( RULE_NNL )*
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1337:45: ( RULE_NNL )*
             loop23:
             do {
                 int alt23=2;
@@ -1138,7 +1138,7 @@ public class InternalGherkinLexer extends Lexer {
 
                 switch (alt23) {
             	case 1 :
-            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1298:45: RULE_NNL
+            	    // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1337:45: RULE_NNL
             	    {
             	    mRULE_NNL(); 
 
@@ -1167,10 +1167,10 @@ public class InternalGherkinLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1300:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1300:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1339:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1339:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1300:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../de.sebastianbenz.xgherkin/src-gen/de/sebastianbenz/xgherkin/parser/antlr/internal/InternalGherkin.g:1339:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt24=0;
             loop24:
             do {

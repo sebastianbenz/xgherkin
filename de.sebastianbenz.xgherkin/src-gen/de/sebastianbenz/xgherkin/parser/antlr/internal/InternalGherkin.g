@@ -601,23 +601,62 @@ ruleScenarioWithOutline returns [EObject current=null]
 	    }
 
 )
-)+this_EXAMPLE_HEADING_4=RULE_EXAMPLE_HEADING
-    { 
-    newLeafNode(this_EXAMPLE_HEADING_4, grammarAccess.getScenarioWithOutlineAccess().getEXAMPLE_HEADINGTerminalRuleCall_4()); 
-    }
-(
+)+(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getHeadingExampleRowParserRuleCall_5_0()); 
+	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getExampleExampleParserRuleCall_4_0()); 
 	    }
-		lv_heading_5_0=ruleExampleRow		{
+		lv_example_4_0=ruleExample		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getScenarioWithOutlineRule());
 	        }
        		set(
        			$current, 
+       			"example",
+        		lv_example_4_0, 
+        		"Example");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))
+;
+
+
+
+
+
+// Entry rule entryRuleExample
+entryRuleExample returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getExampleRule()); }
+	 iv_ruleExample=ruleExample 
+	 { $current=$iv_ruleExample.current; } 
+	 EOF 
+;
+
+// Rule Example
+ruleExample returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(this_EXAMPLE_HEADING_0=RULE_EXAMPLE_HEADING
+    { 
+    newLeafNode(this_EXAMPLE_HEADING_0, grammarAccess.getExampleAccess().getEXAMPLE_HEADINGTerminalRuleCall_0()); 
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getExampleAccess().getHeadingExampleRowParserRuleCall_1_0()); 
+	    }
+		lv_heading_1_0=ruleExampleRow		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getExampleRule());
+	        }
+       		set(
+       			$current, 
        			"heading",
-        		lv_heading_5_0, 
+        		lv_heading_1_0, 
         		"ExampleRow");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -626,16 +665,16 @@ ruleScenarioWithOutline returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getScenarioWithOutlineAccess().getRowsExampleRowParserRuleCall_6_0()); 
+	        newCompositeNode(grammarAccess.getExampleAccess().getRowsExampleRowParserRuleCall_2_0()); 
 	    }
-		lv_rows_6_0=ruleExampleRow		{
+		lv_rows_2_0=ruleExampleRow		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getScenarioWithOutlineRule());
+	            $current = createModelElementForParent(grammarAccess.getExampleRule());
 	        }
        		add(
        			$current, 
        			"rows",
-        		lv_rows_6_0, 
+        		lv_rows_2_0, 
         		"ExampleRow");
 	        afterParserOrEnumRuleCall();
 	    }

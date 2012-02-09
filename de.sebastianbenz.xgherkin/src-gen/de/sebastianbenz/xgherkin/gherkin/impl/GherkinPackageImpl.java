@@ -9,6 +9,7 @@ import de.sebastianbenz.xgherkin.gherkin.AbstractScenario;
 import de.sebastianbenz.xgherkin.gherkin.AndStep;
 import de.sebastianbenz.xgherkin.gherkin.AsA;
 import de.sebastianbenz.xgherkin.gherkin.Background;
+import de.sebastianbenz.xgherkin.gherkin.Example;
 import de.sebastianbenz.xgherkin.gherkin.ExampleCell;
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.Feature;
@@ -102,6 +103,13 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * @generated
    */
   private EClass scenarioWithOutlineEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass exampleEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -417,7 +425,7 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getScenarioWithOutline_Heading()
+  public EReference getScenarioWithOutline_Example()
   {
     return (EReference)scenarioWithOutlineEClass.getEStructuralFeatures().get(1);
   }
@@ -427,9 +435,29 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getScenarioWithOutline_Rows()
+  public EClass getExample()
   {
-    return (EReference)scenarioWithOutlineEClass.getEStructuralFeatures().get(2);
+    return exampleEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getExample_Heading()
+  {
+    return (EReference)exampleEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getExample_Rows()
+  {
+    return (EReference)exampleEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -639,8 +667,11 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
 
     scenarioWithOutlineEClass = createEClass(SCENARIO_WITH_OUTLINE);
     createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__ELEMENTS);
-    createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__HEADING);
-    createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__ROWS);
+    createEReference(scenarioWithOutlineEClass, SCENARIO_WITH_OUTLINE__EXAMPLE);
+
+    exampleEClass = createEClass(EXAMPLE);
+    createEReference(exampleEClass, EXAMPLE__HEADING);
+    createEReference(exampleEClass, EXAMPLE__ROWS);
 
     exampleRowEClass = createEClass(EXAMPLE_ROW);
     createEReference(exampleRowEClass, EXAMPLE_ROW__CELLS);
@@ -735,8 +766,11 @@ public class GherkinPackageImpl extends EPackageImpl implements GherkinPackage
 
     initEClass(scenarioWithOutlineEClass, ScenarioWithOutline.class, "ScenarioWithOutline", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getScenarioWithOutline_Elements(), this.getNarrativeElement(), null, "elements", null, 0, -1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getScenarioWithOutline_Heading(), this.getExampleRow(), null, "heading", null, 0, 1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getScenarioWithOutline_Rows(), this.getExampleRow(), null, "rows", null, 0, -1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getScenarioWithOutline_Example(), this.getExample(), null, "example", null, 0, 1, ScenarioWithOutline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(exampleEClass, Example.class, "Example", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getExample_Heading(), this.getExampleRow(), null, "heading", null, 0, 1, Example.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getExample_Rows(), this.getExampleRow(), null, "rows", null, 0, -1, Example.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(exampleRowEClass, ExampleRow.class, "ExampleRow", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getExampleRow_Cells(), this.getExampleCell(), null, "cells", null, 0, -1, ExampleRow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

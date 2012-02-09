@@ -231,19 +231,14 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cElementsNarrativeElementParserRuleCall_2_0 = (RuleCall)cElementsAssignment_2.eContents().get(0);
 		private final Assignment cStepsAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cStepsStepParserRuleCall_3_0 = (RuleCall)cStepsAssignment_3.eContents().get(0);
-		private final RuleCall cEXAMPLE_HEADINGTerminalRuleCall_4 = (RuleCall)cGroup.eContents().get(4);
-		private final Assignment cHeadingAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final RuleCall cHeadingExampleRowParserRuleCall_5_0 = (RuleCall)cHeadingAssignment_5.eContents().get(0);
-		private final Assignment cRowsAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final RuleCall cRowsExampleRowParserRuleCall_6_0 = (RuleCall)cRowsAssignment_6.eContents().get(0);
+		private final Assignment cExampleAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cExampleExampleParserRuleCall_4_0 = (RuleCall)cExampleAssignment_4.eContents().get(0);
 		
 		//ScenarioWithOutline:
-		//	tags+=TAG* name=SCENARIO_OUTLINE_TEXT elements+=NarrativeElement* steps+=Step+ EXAMPLE_HEADING heading=ExampleRow
-		//	rows+=ExampleRow*;
+		//	tags+=TAG* name=SCENARIO_OUTLINE_TEXT elements+=NarrativeElement* steps+=Step+ example=Example;
 		public ParserRule getRule() { return rule; }
 
-		//tags+=TAG* name=SCENARIO_OUTLINE_TEXT elements+=NarrativeElement* steps+=Step+ EXAMPLE_HEADING heading=ExampleRow
-		//rows+=ExampleRow*
+		//tags+=TAG* name=SCENARIO_OUTLINE_TEXT elements+=NarrativeElement* steps+=Step+ example=Example
 		public Group getGroup() { return cGroup; }
 
 		//tags+=TAG*
@@ -270,20 +265,43 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 		//Step
 		public RuleCall getStepsStepParserRuleCall_3_0() { return cStepsStepParserRuleCall_3_0; }
 
+		//example=Example
+		public Assignment getExampleAssignment_4() { return cExampleAssignment_4; }
+
+		//Example
+		public RuleCall getExampleExampleParserRuleCall_4_0() { return cExampleExampleParserRuleCall_4_0; }
+	}
+
+	public class ExampleElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Example");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cEXAMPLE_HEADINGTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final Assignment cHeadingAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cHeadingExampleRowParserRuleCall_1_0 = (RuleCall)cHeadingAssignment_1.eContents().get(0);
+		private final Assignment cRowsAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cRowsExampleRowParserRuleCall_2_0 = (RuleCall)cRowsAssignment_2.eContents().get(0);
+		
+		//Example:
+		//	EXAMPLE_HEADING heading=ExampleRow rows+=ExampleRow*;
+		public ParserRule getRule() { return rule; }
+
+		//EXAMPLE_HEADING heading=ExampleRow rows+=ExampleRow*
+		public Group getGroup() { return cGroup; }
+
 		//EXAMPLE_HEADING
-		public RuleCall getEXAMPLE_HEADINGTerminalRuleCall_4() { return cEXAMPLE_HEADINGTerminalRuleCall_4; }
+		public RuleCall getEXAMPLE_HEADINGTerminalRuleCall_0() { return cEXAMPLE_HEADINGTerminalRuleCall_0; }
 
 		//heading=ExampleRow
-		public Assignment getHeadingAssignment_5() { return cHeadingAssignment_5; }
+		public Assignment getHeadingAssignment_1() { return cHeadingAssignment_1; }
 
 		//ExampleRow
-		public RuleCall getHeadingExampleRowParserRuleCall_5_0() { return cHeadingExampleRowParserRuleCall_5_0; }
+		public RuleCall getHeadingExampleRowParserRuleCall_1_0() { return cHeadingExampleRowParserRuleCall_1_0; }
 
 		//rows+=ExampleRow*
-		public Assignment getRowsAssignment_6() { return cRowsAssignment_6; }
+		public Assignment getRowsAssignment_2() { return cRowsAssignment_2; }
 
 		//ExampleRow
-		public RuleCall getRowsExampleRowParserRuleCall_6_0() { return cRowsExampleRowParserRuleCall_6_0; }
+		public RuleCall getRowsExampleRowParserRuleCall_2_0() { return cRowsExampleRowParserRuleCall_2_0; }
 	}
 
 	public class ExampleRowElements extends AbstractParserRuleElementFinder {
@@ -588,6 +606,7 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	private AbstractScenarioElements pAbstractScenario;
 	private ScenarioElements pScenario;
 	private ScenarioWithOutlineElements pScenarioWithOutline;
+	private ExampleElements pExample;
 	private ExampleRowElements pExampleRow;
 	private ExampleCellElements pExampleCell;
 	private BackgroundElements pBackground;
@@ -714,14 +733,23 @@ public class GherkinGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ScenarioWithOutline:
-	//	tags+=TAG* name=SCENARIO_OUTLINE_TEXT elements+=NarrativeElement* steps+=Step+ EXAMPLE_HEADING heading=ExampleRow
-	//	rows+=ExampleRow*;
+	//	tags+=TAG* name=SCENARIO_OUTLINE_TEXT elements+=NarrativeElement* steps+=Step+ example=Example;
 	public ScenarioWithOutlineElements getScenarioWithOutlineAccess() {
 		return (pScenarioWithOutline != null) ? pScenarioWithOutline : (pScenarioWithOutline = new ScenarioWithOutlineElements());
 	}
 	
 	public ParserRule getScenarioWithOutlineRule() {
 		return getScenarioWithOutlineAccess().getRule();
+	}
+
+	//Example:
+	//	EXAMPLE_HEADING heading=ExampleRow rows+=ExampleRow*;
+	public ExampleElements getExampleAccess() {
+		return (pExample != null) ? pExample : (pExample = new ExampleElements());
+	}
+	
+	public ParserRule getExampleRule() {
+		return getExampleAccess().getRule();
 	}
 
 	//ExampleRow:

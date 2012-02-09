@@ -76,6 +76,7 @@ public class GherkinFactoryImpl extends EFactoryImpl implements GherkinFactory
       case GherkinPackage.ABSTRACT_SCENARIO: return createAbstractScenario();
       case GherkinPackage.SCENARIO: return createScenario();
       case GherkinPackage.SCENARIO_WITH_OUTLINE: return createScenarioWithOutline();
+      case GherkinPackage.EXAMPLE: return createExample();
       case GherkinPackage.EXAMPLE_ROW: return createExampleRow();
       case GherkinPackage.EXAMPLE_CELL: return createExampleCell();
       case GherkinPackage.BACKGROUND: return createBackground();
@@ -186,6 +187,17 @@ public class GherkinFactoryImpl extends EFactoryImpl implements GherkinFactory
   {
     ScenarioWithOutlineImpl scenarioWithOutline = new ScenarioWithOutlineImpl();
     return scenarioWithOutline;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Example createExample()
+  {
+    ExampleImpl example = new ExampleImpl();
+    return example;
   }
 
   /**

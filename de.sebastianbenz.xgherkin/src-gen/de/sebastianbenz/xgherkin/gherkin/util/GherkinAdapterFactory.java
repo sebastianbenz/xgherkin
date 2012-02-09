@@ -123,6 +123,11 @@ public class GherkinAdapterFactory extends AdapterFactoryImpl
         return createScenarioWithOutlineAdapter();
       }
       @Override
+      public Adapter caseExample(Example object)
+      {
+        return createExampleAdapter();
+      }
+      @Override
       public Adapter caseExampleRow(ExampleRow object)
       {
         return createExampleRowAdapter();
@@ -315,6 +320,21 @@ public class GherkinAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createScenarioWithOutlineAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link de.sebastianbenz.xgherkin.gherkin.Example <em>Example</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see de.sebastianbenz.xgherkin.gherkin.Example
+   * @generated
+   */
+  public Adapter createExampleAdapter()
   {
     return null;
   }

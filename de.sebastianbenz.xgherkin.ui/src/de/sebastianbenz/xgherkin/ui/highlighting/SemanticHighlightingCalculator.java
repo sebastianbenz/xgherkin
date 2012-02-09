@@ -23,9 +23,9 @@ import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.IHighlightedPositionAcceptor;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.ISemanticHighlightingCalculator;
 
+import de.sebastianbenz.xgherkin.gherkin.Example;
 import de.sebastianbenz.xgherkin.gherkin.ExampleRow;
 import de.sebastianbenz.xgherkin.gherkin.GherkinPackage;
-import de.sebastianbenz.xgherkin.gherkin.ScenarioWithOutline;
 import de.sebastianbenz.xgherkin.gherkin.Step;
 import de.sebastianbenz.xgherkin.gherkin.util.GherkinSwitch;
 
@@ -43,18 +43,17 @@ public class SemanticHighlightingCalculator implements
 		}
 
 		@Override
-		public Boolean caseScenarioWithOutline(ScenarioWithOutline object) {
-			ExampleRow heading = object.getHeading();
+		public Boolean caseExample(Example example) {
+			ExampleRow heading = example.getHeading();
 			if (heading == null) {
 				return Boolean.TRUE;
 			}
 			ICompositeNode node = NodeModelUtils.getNode(heading);
-
 			acceptor.addPosition(node.getOffset(), node.getLength(),
 					HighlightingConfiguration.CODE_BOLD_ID);
 			return Boolean.TRUE;
 		}
-
+		
 		@Override
 		public Boolean caseStep(Step object) {
 			String desc = object.getDesc().get(0);
