@@ -9,7 +9,7 @@
    <feature url="features/de.sebastianbenz.xgherkin_1.0.1.201108220008.jar" id="de.sebastianbenz.xgherkin" version="1.0.1.201108220008">
       <category name="Xgherkin"/>
    </feature>
-   <feature url="features/de.sebastianbenz.xgherkin_1.0.2.201202091201.jar" id="de.sebastianbenz.xgherkin" version="1.0.2.201202091201">
+   <feature url="features/de.sebastianbenz.xgherkin_1.0.2.201202091314.jar" id="de.sebastianbenz.xgherkin" version="1.0.2.201202091314">
       <category name="Xgherkin"/>
    </feature>
    <category-def name="Xgherkin" label="Xgherkin"/>
