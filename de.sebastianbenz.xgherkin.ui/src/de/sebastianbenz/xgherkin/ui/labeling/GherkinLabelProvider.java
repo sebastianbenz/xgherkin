@@ -53,7 +53,6 @@ public class GherkinLabelProvider extends DefaultEObjectLabelProvider {
 	String text(ExampleRow row){
 		return "| " + Joiner.on(" |Ê").join(transform(row.getCells(), new Function<ExampleCell, String>() {
 
-			@Override
 			public String apply(ExampleCell from) {
 				return from.getValue();
 			}

@@ -12,13 +12,11 @@ public class GherkingValueConverter extends DefaultTerminalConverters {
 	
 	private IValueConverter<String> cellValueConverter = new AbstractValueConverter<String>() {
 
-		@Override
 		public String toValue(String string, INode node)
 				throws ValueConverterException {
 			return string.substring(1).trim();
 		}
 
-		@Override
 		public String toString(String value) throws ValueConverterException {
 			return "| " + value + " ";
 		}
