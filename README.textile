@@ -12,7 +12,7 @@ http://sebastianbenz.github.com/xgherkin/updates
 
 h2. Dependencies
 
-Xtext 2.0 
+[Xtext 2.2.1](http://www.eclipse.org/Xtext/download/)
 
 h2. License
 
