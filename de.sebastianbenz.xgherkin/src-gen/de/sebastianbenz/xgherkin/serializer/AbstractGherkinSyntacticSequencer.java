@@ -11,8 +11,8 @@ import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 
-@SuppressWarnings("restriction")
-public class AbstractGherkinSyntacticSequencer extends AbstractSyntacticSequencer {
+@SuppressWarnings("all")
+public abstract class AbstractGherkinSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected GherkinGrammarAccess grammarAccess;
 	
@@ -30,11 +30,18 @@ public class AbstractGherkinSyntacticSequencer extends AbstractSyntacticSequence
 		return "";
 	}
 	
+	/**
+	 * terminal EXAMPLE_HEADING: 'Examples' SPACES ':' SPACES '\r'? '\n';
+	 */
 	protected String getEXAMPLE_HEADINGToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);
 		return "Examples:\n";
 	}
+	
+	/**
+	 * terminal EXAMPLE_ROW_END: '|' SPACES NL;
+	 */
 	protected String getEXAMPLE_ROW_ENDToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);

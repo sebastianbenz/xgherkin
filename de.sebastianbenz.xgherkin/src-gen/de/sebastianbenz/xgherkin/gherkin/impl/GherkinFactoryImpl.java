@@ -1,7 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
  */
 package de.sebastianbenz.xgherkin.gherkin.impl;
 
@@ -33,7 +30,7 @@ public class GherkinFactoryImpl extends EFactoryImpl implements GherkinFactory
   {
     try
     {
-      GherkinFactory theGherkinFactory = (GherkinFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.sebastianbenz.de/xgherkin/Gherkin"); 
+      GherkinFactory theGherkinFactory = (GherkinFactory)EPackage.Registry.INSTANCE.getEFactory(GherkinPackage.eNS_URI);
       if (theGherkinFactory != null)
       {
         return theGherkinFactory;

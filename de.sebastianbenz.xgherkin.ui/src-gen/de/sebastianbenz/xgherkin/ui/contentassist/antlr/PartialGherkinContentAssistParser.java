@@ -15,6 +15,7 @@ import org.eclipse.xtext.util.PolymorphicDispatcher;
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
+@SuppressWarnings("restriction")
 public class PartialGherkinContentAssistParser extends GherkinParser implements IPartialContentAssistParser {
 
 	private AbstractRule rule;

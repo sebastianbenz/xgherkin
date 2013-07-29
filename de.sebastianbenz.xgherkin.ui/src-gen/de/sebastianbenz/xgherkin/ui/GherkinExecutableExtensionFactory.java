@@ -8,6 +8,8 @@ import org.osgi.framework.Bundle;
 
 import com.google.inject.Injector;
 
+import de.sebastianbenz.xgherkin.ui.internal.GherkinActivator;
+
 /**
  * This class was generated. Customizations should only happen in a newly
  * introduced subclass. 
@@ -16,12 +18,12 @@ public class GherkinExecutableExtensionFactory extends AbstractGuiceAwareExecuta
 
 	@Override
 	protected Bundle getBundle() {
-		return de.sebastianbenz.xgherkin.ui.internal.GherkinActivator.getInstance().getBundle();
+		return GherkinActivator.getInstance().getBundle();
 	}
 	
 	@Override
 	protected Injector getInjector() {
-		return de.sebastianbenz.xgherkin.ui.internal.GherkinActivator.getInstance().getInjector("de.sebastianbenz.xgherkin.Gherkin");
+		return GherkinActivator.getInstance().getInjector(GherkinActivator.DE_SEBASTIANBENZ_XGHERKIN_GHERKIN);
 	}
 	
 }
