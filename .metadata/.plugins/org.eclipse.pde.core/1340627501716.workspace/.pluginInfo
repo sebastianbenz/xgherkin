@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="748" localization="OSGI-INF/l10n/bundle" name="Xgherkin Runtime" project="de.sebastianbenz.xgherkin" provider="Sebastian Benz"/>
+	<bundle bundleID="750" class="de.sebastianbenz.xgherkin.ui.internal.GherkinActivator" localization="OSGI-INF/l10n/bundle" name="Xgherkin UI" project="de.sebastianbenz.xgherkin.ui" provider="Sebastian Benz"/>
+	<bundle bundleID="749" localization="OSGI-INF/l10n/bundle" name="de.sebastianbenz.xgherkin.tests" project="de.sebastianbenz.xgherkin.tests" provider="Sebastian Benz"/>
+</map>

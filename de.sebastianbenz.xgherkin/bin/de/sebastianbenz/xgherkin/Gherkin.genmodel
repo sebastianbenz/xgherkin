@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.sebastianbenz.xgherkin/src-gen" editDirectory="/de.sebastianbenz.xgherkin.edit/src"
+    editorDirectory="/de.sebastianbenz.xgherkin.editor/src" modelPluginID="de.sebastianbenz.xgherkin"
+    forceOverwrite="true" modelName="Gherkin" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="de.sebastianbenz.xgherkin.edit"
+    editorPluginID="de.sebastianbenz.xgherkin.editor" runtimeVersion="2.9">
+  <genPackages prefix="Gherkin" basePackage="de.sebastianbenz.xgherkin" disposableProviderFactory="true"
+      ecorePackage="Gherkin.ecore#/">
+    <genClasses ecoreClass="Gherkin.ecore#//Feature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//Feature/tags"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//Feature/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Feature/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Feature/scenarios"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//NarrativeElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//NarrativeElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//FreeText"/>
+    <genClasses ecoreClass="Gherkin.ecore#//AsA"/>
+    <genClasses ecoreClass="Gherkin.ecore#//InOrderTo"/>
+    <genClasses ecoreClass="Gherkin.ecore#//IWantTo"/>
+    <genClasses ecoreClass="Gherkin.ecore#//AbstractScenario">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//AbstractScenario/tags"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//AbstractScenario/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//AbstractScenario/steps"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//Scenario">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Scenario/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//ScenarioWithOutline">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ScenarioWithOutline/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ScenarioWithOutline/example"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//Example">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Example/heading"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Example/rows"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//ExampleRow">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//ExampleRow/cells"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//ExampleCell">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//ExampleCell/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//Background"/>
+    <genClasses ecoreClass="Gherkin.ecore#//Step">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//Step/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Gherkin.ecore#//Step/rows"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//WhenStep">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//WhenStep/tags"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//ThenStep">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//ThenStep/tags"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//GivenStep">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Gherkin.ecore#//GivenStep/tags"/>
+    </genClasses>
+    <genClasses ecoreClass="Gherkin.ecore#//AndStep"/>
+  </genPackages>
+</genmodel:GenModel>

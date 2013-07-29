@@ -6,5 +6,8 @@
    <feature url="features/de.sebastianbenz.xgherkin_1.0.3.201205031156.jar" id="de.sebastianbenz.xgherkin" version="1.0.3.201205031156">
       <category name="Xgherkin"/>
    </feature>
+   <feature url="features/de.sebastianbenz.xgherkin_1.1.0.201307292351.jar" id="de.sebastianbenz.xgherkin" version="1.1.0.201307292351">
+      <category name="Xgherkin"/>
+   </feature>
    <category-def name="Xgherkin" label="Xgherkin"/>
 </site>
