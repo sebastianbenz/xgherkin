@@ -36,14 +36,14 @@ AbstractScenario:
 ;
 
 Scenario:
-	tags+=TAG* 
+	tags+=TAG*
 	name=SCENARIO_TEXT
 	elements+=NarrativeElement*
 	(steps += Step)+
 ;
 
 ScenarioWithOutline:
-	tags+=TAG* 
+	tags+=TAG*
 	name=SCENARIO_OUTLINE_TEXT
 	elements+=NarrativeElement*
 	(steps += Step)+
@@ -65,7 +65,7 @@ ExampleCell:
 ;
 
 Background:
-	tags+=TAG* 
+	tags+=TAG*
 	name=BACKGROUND_TEXT
 	(steps += Step)*
 ;
@@ -121,9 +121,7 @@ terminal CODE: '"""' -> '"""' | "'''" -> "'''";
 
 terminal TAG: '@' NNL+ NL;
 
-terminal SL_COMMENT: '#' NNL+ NL;
+terminal SL_COMMENT: '#' NNL* NL;
 
 terminal TEXT: !('|'|' '|'\t'|'\r'|'\n'|'@') NNL* NL;
 terminal WS  : (' '|'\t'|'\r'|'\n')+;
-
-
